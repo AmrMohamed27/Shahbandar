@@ -5,19 +5,6 @@ import { env } from "@/lib/env";
 import { headers } from "next/headers";
 import { redirect } from "next/navigation";
 
-export const signInWithGoogle = async () => {
-  const response = await auth.api.signInSocial({
-    body: {
-      provider: "google",
-      callbackURL: env.ORIGIN_URL,
-    },
-  });
-  if (!response.url) {
-    throw new Error("No URL found in response");
-  }
-  redirect(response.url);
-};
-
 export const signInWithCredentials = async () => {
   const response = await auth.api.signInEmail({
     body: {
