@@ -1,6 +1,7 @@
 "use server";
 
 import { auth } from "@/lib/auth";
+import { env } from "@/lib/env";
 import { headers } from "next/headers";
 import { redirect } from "next/navigation";
 
@@ -8,7 +9,7 @@ export const signInWithGoogle = async () => {
   const response = await auth.api.signInSocial({
     body: {
       provider: "google",
-      callbackURL: "http://localhost:3000",
+      callbackURL: env.ORIGIN_URL,
     },
   });
   if (!response.url) {
@@ -22,7 +23,7 @@ export const signInWithCredentials = async () => {
     body: {
       email: "amr@gm.com",
       password: "password",
-      callbackURL: "http://localhost:3000",
+      callbackURL: env.ORIGIN_URL,
     },
   });
   if (!response.url) {
