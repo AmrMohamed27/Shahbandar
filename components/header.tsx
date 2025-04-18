@@ -4,23 +4,37 @@ import { authClient } from "@/lib/auth-client";
 import { createAuthClient } from "better-auth/react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { useEffect, useState } from "react";
 import SignInWithGoogle from "./sign-in-with-google";
 import { Button } from "./ui/button";
+import { Skeleton } from "./ui/skeleton";
+
 const { useSession } = createAuthClient();
 
 const Header = () => {
   const { data, isPending, refetch } = useSession();
   const router = useRouter();
-  const user = data?.user;
+  const [isClient, setIsClient] = useState(false);
+
+  // Only render auth-dependent UI after client-side hydration
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
   return (
     <div className="flex flex-row justify-between items-center mx-auto p-4 container">
       {/* Logo */}
       <Link href="/">Shahbandar</Link>
+
       {/* Auth Buttons */}
       <div className="flex flex-row items-center gap-4">
-        {isPending ? (
-          <div>Loading...</div>
-        ) : user ? (
+        {!isClient ? (
+          // Show a placeholder during server render and initial hydration
+          <Skeleton className="w-20 h-9" />
+        ) : isPending ? (
+          <Skeleton className="bg-muted-foreground w-20 h-9" />
+        ) : data?.user ? (
+          // Log Out Button
           <Button
             onClick={async () => {
               await authClient.signOut({
@@ -37,6 +51,7 @@ const Header = () => {
           </Button>
         ) : (
           <>
+            {/* Sign In Buttons */}
             <SignInWithGoogle />
             <Button onClick={signInWithCredentials}>
               Sign In with Credentials
