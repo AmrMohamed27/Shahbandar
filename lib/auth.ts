@@ -11,6 +11,7 @@ export const auth = betterAuth({
     provider: "pg",
   }),
   appName: "Shahbandar",
+  secret: env.BETTER_AUTH_SECRET,
   // advanced: {
   //   crossSubDomainCookies: {
   //     enabled: true,
