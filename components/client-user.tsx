@@ -7,7 +7,7 @@ const ClientUser = () => {
   const { data: session } = authClient.useSession();
   const t = useTranslations("HomePage");
   return (
-    <div>
+    <div className="h-[5000px]">
       {t("title")}, {session?.user.name}
     </div>
   );
