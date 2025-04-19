@@ -8,6 +8,7 @@ import { useEffect, useState } from "react";
 import SignInWithGoogle from "./sign-in-with-google";
 import { Button } from "./ui/button";
 import { Skeleton } from "./ui/skeleton";
+import { DarkModeToggle } from "./dark-mode-toggle";
 
 const { useSession } = createAuthClient();
 
@@ -28,6 +29,7 @@ const Header = () => {
 
       {/* Auth Buttons */}
       <div className="flex flex-row items-center gap-4">
+        <DarkModeToggle />
         {!isClient ? (
           // Show a placeholder during server render and initial hydration
           <Skeleton className="w-20 h-9" />
@@ -36,6 +38,7 @@ const Header = () => {
         ) : data?.user ? (
           // Log Out Button
           <Button
+            className="bg-primary-green-400"
             onClick={async () => {
               await authClient.signOut({
                 fetchOptions: {
