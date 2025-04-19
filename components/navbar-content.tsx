@@ -34,7 +34,9 @@ const NavbarContent = () => {
       <ul className="hidden lg:flex flex-row items-center gap-6 text-lg">
         {Object.keys(NavLinks).map((key) => (
           <li key={key}>
-            <Link href={`/${key}`}>{t(key as NavLink)}</Link>
+            <Link href={`#${key === "home" ? "" : key}`}>
+              {t(key as NavLink)}
+            </Link>
           </li>
         ))}
       </ul>

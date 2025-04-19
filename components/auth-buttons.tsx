@@ -1,11 +1,9 @@
-import React from "react";
-import { Skeleton } from "./ui/skeleton";
-import { Button } from "./ui/button";
-import { authClient } from "@/lib/auth-client";
-import SignInWithGoogle from "./sign-in-with-google";
-import { signInWithCredentials, signUpWithCredentials } from "@/actions/auth";
 import { useRouter } from "@/i18n/navigation";
+import { authClient } from "@/lib/auth-client";
 import { createAuthClient } from "better-auth/react";
+import SignInWithGoogle from "./sign-in-with-google";
+import { Button } from "./ui/button";
+import { Skeleton } from "./ui/skeleton";
 
 const { useSession } = createAuthClient();
 
@@ -22,7 +20,7 @@ const AuthButtons = ({ isClient }: Props) => {
         <Skeleton className="w-full lg:w-20 h-9" />
       ) : data?.user ? (
         <Button
-          className="bg-primary-green-400"
+          className="bg-secondary-brown-400 hover:bg-secondary-brown-300 text-white"
           onClick={async () => {
             await authClient.signOut({
               fetchOptions: {
@@ -39,12 +37,6 @@ const AuthButtons = ({ isClient }: Props) => {
       ) : (
         <div className="flex flex-col gap-4 max-lg:w-full">
           <SignInWithGoogle />
-          <Button onClick={signInWithCredentials}>
-            Sign In with Credentials
-          </Button>
-          <Button onClick={signUpWithCredentials}>
-            Sign Up with Credentials
-          </Button>
         </div>
       )}
     </div>
