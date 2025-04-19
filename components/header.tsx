@@ -9,6 +9,7 @@ import SignInWithGoogle from "./sign-in-with-google";
 import { Button } from "./ui/button";
 import { Skeleton } from "./ui/skeleton";
 import { DarkModeToggle } from "./dark-mode-toggle";
+import ChangeLanguage from "./change-language";
 
 const { useSession } = createAuthClient();
 
@@ -27,9 +28,13 @@ const Header = () => {
       {/* Logo */}
       <Link href="/">Shahbandar</Link>
 
-      {/* Auth Buttons */}
+      {/* Buttons */}
       <div className="flex flex-row items-center gap-4">
+        {/* Dark Mode */}
         <DarkModeToggle />
+        {/* Language */}
+        <ChangeLanguage />
+        {/* Auth */}
         {!isClient ? (
           // Show a placeholder during server render and initial hydration
           <Skeleton className="w-20 h-9" />
@@ -53,6 +58,7 @@ const Header = () => {
             Log Out
           </Button>
         ) : (
+          // Sign In / Sign Up Buttons
           <>
             {/* Sign In Buttons */}
             <SignInWithGoogle />
