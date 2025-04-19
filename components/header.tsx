@@ -1,29 +1,13 @@
 "use client";
-import { signInWithCredentials, signUpWithCredentials } from "@/actions/auth";
-import { authClient } from "@/lib/auth-client";
-import { createAuthClient } from "better-auth/react";
-import Link from "next/link";
-import { useRouter } from "next/navigation";
-import { useEffect, useState } from "react";
-import SignInWithGoogle from "./sign-in-with-google";
-import { Button } from "./ui/button";
-import { Skeleton } from "./ui/skeleton";
-import { DarkModeToggle } from "./dark-mode-toggle";
-import ChangeLanguage from "./change-language";
-import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
-
-const { useSession } = createAuthClient();
+import { AnimatePresence, motion } from "framer-motion";
+import { useEffect, useState } from "react";
+import NavbarContent from "./navbar-content";
 
 const Header = () => {
-  const { data, isPending, refetch } = useSession();
-  const router = useRouter();
-  const [isClient, setIsClient] = useState(false);
   const [scrolledPast, setScrolledPast] = useState(false);
 
   useEffect(() => {
-    setIsClient(true);
-
     const handleScroll = () => {
       const scrollThreshold = 300;
 
@@ -40,8 +24,6 @@ const Header = () => {
 
   return (
     <div className="h-16">
-      {" "}
-      {/* This creates space for the header */}
       <AnimatePresence>
         {/* When scrolledPast is true, show this fixed header */}
         {scrolledPast && (
@@ -52,48 +34,7 @@ const Header = () => {
             exit={{ y: -100, opacity: 0 }}
             transition={{ duration: 0.5, ease: "easeInOut" }}
           >
-            <div className="flex flex-row justify-between items-center mx-auto p-4 container">
-              {/* Logo */}
-              <Link href="/">Shahbandar</Link>
-
-              {/* Buttons */}
-              <div className="flex flex-row items-center gap-4">
-                <DarkModeToggle />
-                <ChangeLanguage />
-
-                {!isClient ? (
-                  <Skeleton className="w-20 h-9" />
-                ) : isPending ? (
-                  <Skeleton className="bg-muted-foreground w-20 h-9" />
-                ) : data?.user ? (
-                  <Button
-                    className="bg-primary-green-400"
-                    onClick={async () => {
-                      await authClient.signOut({
-                        fetchOptions: {
-                          onSuccess: () => {
-                            router.push("/");
-                            refetch();
-                          },
-                        },
-                      });
-                    }}
-                  >
-                    Log Out
-                  </Button>
-                ) : (
-                  <>
-                    <SignInWithGoogle />
-                    <Button onClick={signInWithCredentials}>
-                      Sign In with Credentials
-                    </Button>
-                    <Button onClick={signUpWithCredentials}>
-                      Sign Up with Credentials
-                    </Button>
-                  </>
-                )}
-              </div>
-            </div>
+            <NavbarContent />
           </motion.div>
         )}
       </AnimatePresence>
@@ -104,48 +45,7 @@ const Header = () => {
           scrolledPast ? "opacity-0 pointer-events-none" : "opacity-100"
         )}
       >
-        <div className="flex flex-row justify-between items-center mx-auto p-4 container">
-          {/* Logo */}
-          <Link href="/">Shahbandar</Link>
-
-          {/* Buttons */}
-          <div className="flex flex-row items-center gap-4">
-            <DarkModeToggle />
-            <ChangeLanguage />
-
-            {!isClient ? (
-              <Skeleton className="w-20 h-9" />
-            ) : isPending ? (
-              <Skeleton className="bg-muted-foreground w-20 h-9" />
-            ) : data?.user ? (
-              <Button
-                className="bg-primary-green-400"
-                onClick={async () => {
-                  await authClient.signOut({
-                    fetchOptions: {
-                      onSuccess: () => {
-                        router.push("/");
-                        refetch();
-                      },
-                    },
-                  });
-                }}
-              >
-                Log Out
-              </Button>
-            ) : (
-              <>
-                <SignInWithGoogle />
-                <Button onClick={signInWithCredentials}>
-                  Sign In with Credentials
-                </Button>
-                <Button onClick={signUpWithCredentials}>
-                  Sign Up with Credentials
-                </Button>
-              </>
-            )}
-          </div>
-        </div>
+        <NavbarContent />
       </div>
     </div>
   );

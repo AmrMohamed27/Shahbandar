@@ -6,12 +6,12 @@ import {
   DropdownMenuRadioItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { Locale, locales } from "@/i18n/config";
+import { languages } from "@/constants";
+import { Locale } from "@/i18n/config";
 import { usePathname, useRouter } from "@/i18n/navigation";
 import { ChevronDown } from "lucide-react";
 import { useLocale } from "next-intl";
 import { Button } from "./ui/button";
-import { languages } from "@/constants";
 
 const ChangeLanguage = () => {
   const currentLocale = useLocale();

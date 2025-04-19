@@ -2,5 +2,13 @@
   "HomePage": {
     "title": "Bienvenue sur la page d'accueil",
     "description": "Ceci est la page d'accueil de notre application."
+  },
+  "NavLinks": {
+    "home": "Accueil",
+    "about": "À propos",
+    "departments": "Départements",
+    "products": "Produits",
+    "clients": "Clients",
+    "contact": "Nous contacter"
   }
 }

@@ -2,5 +2,28 @@
   "HomePage": {
     "title": "Welcome to the Home Page",
     "description": "This is the home page of our application."
+  },
+  "NavLinks": {
+    "home": "Home",
+    "about": "About",
+    "departments": "Departments",
+    "products": "Products",
+    "clients": "Clients",
+    "contact": "Contact Us"
+  },
+  "Footer": {
+    "footerText": "© 2025 El-Shahbandar. All rights reserved."
+  },
+  "AboutPage": {
+    "title": "About Us",
+    "description": "This page contains information about our application."
+  },
+  "ContactPage": {
+    "title": "Contact Us",
+    "description": "This page contains contact information."
+  },
+  "ErrorPage": {
+    "notFound": "404 Not Found",
+    "errorMessage": "The page you are looking for does not exist."
   }
 }
