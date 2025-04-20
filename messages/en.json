@@ -152,7 +152,7 @@
     "description": "This page contains contact information."
   },
   "ErrorPage": {
-    "notFound": "404 Not Found",
+    "notFound": "Error 404 - Not Found",
     "errorMessage": "The page you are looking for does not exist."
   }
 }

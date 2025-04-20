@@ -9,7 +9,7 @@ const HeroSection = () => {
   return (
     <div className="relative flex justify-center items-center h-96">
       {/* Title and subtitle */}
-      <AnimatedSection className="z-20 border-0 text-center" id="hero">
+      <AnimatedSection className="z-20 border-0 text-center" id="home">
         <h1
           className="font-bold text-2xl md:text-3xl lg:text-7xl"
           dangerouslySetInnerHTML={{

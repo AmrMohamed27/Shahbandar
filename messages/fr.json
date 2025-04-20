@@ -142,5 +142,9 @@
   },
   "Footer": {
     "footerText": "© 2025 Shahbandar Inc. Tous droits réservés."
+  },
+  "ErrorPage": {
+    "notFound": "Erreur 404 - Page non trouvée",
+    "errorMessage": "La page que vous recherchez n'existe pas."
   }
 }
