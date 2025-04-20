@@ -2,11 +2,13 @@
 import { authClient } from "@/lib/auth-client";
 import { Button } from "./ui/button";
 import { env } from "@/lib/env";
+import { useTranslations } from "next-intl";
 
 const SignInWithGoogle = () => {
+  const t = useTranslations("Auth.Buttons");
   return (
     <Button
-      className="bg-primary-green hover:bg-primary-green-600"
+      className=""
       variant={"outline"}
       onClick={async () => {
         await authClient.signIn.social({
@@ -15,7 +17,7 @@ const SignInWithGoogle = () => {
         });
       }}
     >
-      Sign In With Google
+      {t("login")}
     </Button>
   );
 };

@@ -46,6 +46,83 @@
         "title": "Notre <green>Slogan</green>",
         "text": "Où la qualité rencontre la terre."
       }
+    },
+    "Departments": {
+      "title": "départements <green>de l'entreprise</green>",
+      "list": {
+        "1": {
+          "text": "Production",
+          "image": "/assets/images/production.jpg"
+        },
+        "2": {
+          "text": "Recherche et Développement",
+          "image": "/assets/images/rnd.jpeg"
+        },
+        "3": {
+          "text": "Ventes et marketing",
+          "image": "/assets/images/sales.jpeg"
+        },
+        "4": {
+          "text": "Silos et entrepôts",
+          "image": "/assets/images/silos.jpeg"
+        },
+        "5": {
+          "text": "Réfrigérateurs",
+          "image": "/assets/images/fridge.jpg"
+        },
+        "6": {
+          "text": "Affaires administratives",
+          "image": "/assets/images/admin.jpg"
+        }
+      }
+    },
+    "Products": {
+      "title": "Nos <green>Produits</green>",
+      "list": {
+        "1": {
+          "text": "Graines de plantation d'été"
+        },
+        "2": {
+          "text": "ًGraines de plantation d'hiver"
+        },
+        "3": {
+          "text": "Autres graines"
+        }
+      }
+    },
+    "Clients": {
+      "title": "Nos <green>Clients</green>",
+      "description": "Nous sommes fiers de servir une large gamme de clients, y compris des agriculteurs, des entreprises agricoles, des distributeurs, des agences gouvernementales et des exportateurs."
+    },
+    "Contact": {
+      "title": "Nous <green>contacter</green>",
+      "description": "Pour toute demande, veuillez nous contacter à :",
+      "Email": {
+        "label": "Email:",
+        "value": "example@email.com"
+      },
+      "Phone": {
+        "label": "Téléphone:",
+        "value": "+20 123 456 7890"
+      },
+      "Address": {
+        "label": "Adresse:",
+        "value": "123 Rue de l'Agriculture, Alexandrie, Égypte"
+      },
+      "Content": {
+        "label": "Message:"
+      },
+      "FullName": {
+        "label": "Nom et prénom:"
+      },
+      "Submit": "Soumettre",
+      "socialMedia": {
+        "label": "Suivez-nous:",
+        "facebook": "www.facebook.com/shahbandar",
+        "twitter": "x.com/shahbandar",
+        "instagram": "www.instagram.com/shahbandar",
+        "youtube": "www.youtube.com/@shahbandar"
+      }
     }
   },
   "NavLinks": {
@@ -55,6 +132,13 @@
     "products": "Produits",
     "clients": "Clients",
     "contact": "Nous contacter"
+  },
+  "Auth": {
+    "Buttons": {
+      "login": "Se connecter",
+      "register": "Créer un compte",
+      "logout": "Se déconnecter"
+    }
   },
   "Footer": {
     "footerText": "© 2025 Shahbandar Inc. Tous droits réservés."

@@ -1,7 +1,7 @@
 {
   "HomePage": {
     "Hero": {
-      "title": "المستقبل <green>يبدأ</green> من هنا",
+      "title": "المستقبل <green>يبدأ</green> من الأرض",
       "subtitle": "من حقول وادي النيل إلى مشاريع الاستصلاح - بذورنا تدعم مستقبل الزراعة وازدهارها"
     },
     "About": {
@@ -46,6 +46,83 @@
         "title": "<green>شعارنا</green>",
         "text": "حيث تلتقي الجودة بالأرض."
       }
+    },
+    "Departments": {
+      "title": "أقسام <green>الشركة</green>",
+      "list": {
+        "1": {
+          "text": "الإنتاج",
+          "image": "/assets/images/production.jpg"
+        },
+        "2": {
+          "text": "البحوث والتطوير",
+          "image": "/assets/images/rnd.jpeg"
+        },
+        "3": {
+          "text": "المبيعات والتسويق",
+          "image": "/assets/images/sales.jpeg"
+        },
+        "4": {
+          "text": "الصوامع والمخازن",
+          "image": "/assets/images/silos.jpeg"
+        },
+        "5": {
+          "text": "الثلاجات",
+          "image": "/assets/images/fridge.jpg"
+        },
+        "6": {
+          "text": "الشؤون الإدارية",
+          "image": "/assets/images/admin.jpg"
+        }
+      }
+    },
+    "Products": {
+      "title": "<green>منتجاتنا</green>",
+      "list": {
+        "1": {
+          "text": "تقاوي صيفية"
+        },
+        "2": {
+          "text": "تقاوي شتوية"
+        },
+        "3": {
+          "text": "بذور"
+        }
+      }
+    },
+    "Clients": {
+      "title": "<green>عملاؤنا</green>",
+      "description": "نحن فخورون بالعمل مع مجموعة متنوعة من العملاء، بدءًا من المزارعين الصغار إلى الشركات الكبرى وكبار التجار والجهات الحكومية وصولا إلى المصدرين للخارج."
+    },
+    "Contact": {
+      "title": "تواصل <green>معنا</green>",
+      "description": "للاستفسارات، يرجى التواصل معنا من خلال:",
+      "Email": {
+        "label": "البريد الإلكتروني:",
+        "value": "example@email.com"
+      },
+      "Phone": {
+        "label": "الهاتف:",
+        "value": "+20 123 456 7890"
+      },
+      "Address": {
+        "label": "العنوان:",
+        "value": "123 شارع النيل، الإسكندرية، مصر"
+      },
+      "Content": {
+        "label": "الرسالة:"
+      },
+      "FullName": {
+        "label": "الاسم الكامل:"
+      },
+      "Submit": "إرسال",
+      "socialMedia": {
+        "label": "تابعنا على وسائل التواصل الاجتماعي:",
+        "facebook": "www.facebook.com/shahbandar",
+        "twitter": "x.com/shahbandar",
+        "instagram": "www.instagram.com/shahbandar",
+        "youtube": "www.youtube.com/@shahbandar"
+      }
     }
   },
   "NavLinks": {
@@ -55,6 +132,13 @@
     "products": "منتجاتنا",
     "clients": "عملاؤنا",
     "contact": "تواصل معنا"
+  },
+  "Auth": {
+    "Buttons": {
+      "login": "تسجيل الدخول",
+      "register": "إنشاء حساب",
+      "logout": "تسجيل الخروج"
+    }
   },
   "Footer": {
     "footerText": "© 2025 شركة الشهبندر. جميع الحقوق محفوظة."

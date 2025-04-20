@@ -57,7 +57,7 @@ const MobileMenu = ({ isClient }: Props) => {
                 className="hover:bg-muted px-4 py-2 rounded-md cursor-pointer"
                 onClick={() => setOpen(false)}
               >
-                <Link href={`#${key === "home" ? "" : key}`}>
+                <Link href={`#${key}`}>
                   {t(key as NavLink)}
                 </Link>
               </li>

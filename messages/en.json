@@ -46,6 +46,83 @@
         "title": "Our <green>Slogan</green>",
         "text": "Where Quality Meets the Earth."
       }
+    },
+    "Departments": {
+      "title": "Company <green>Departments</green>",
+      "list": {
+        "1": {
+          "text": "Production",
+          "image": "/assets/images/production.jpg"
+        },
+        "2": {
+          "text": "Research and Development",
+          "image": "/assets/images/rnd.jpeg"
+        },
+        "3": {
+          "text": "Sales and Marketing",
+          "image": "/assets/images/sales.jpeg"
+        },
+        "4": {
+          "text": "Silos and Warehouses",
+          "image": "/assets/images/silos.jpeg"
+        },
+        "5": {
+          "text": "Refrigerators",
+          "image": "/assets/images/fridge.jpg"
+        },
+        "6": {
+          "text": "Administrative Affairs",
+          "image": "/assets/images/admin.jpg"
+        }
+      }
+    },
+    "Products": {
+      "title": "Our <green>Products</green>",
+      "list": {
+        "1": {
+          "text": "Summer Planting Seeds"
+        },
+        "2": {
+          "text": "Winter Planting Seeds"
+        },
+        "3": {
+          "text": "Other Seeds"
+        }
+      }
+    },
+    "Clients": {
+      "title": "Our <green>Clients</green>",
+      "description": "We are proud to serve a diverse range of clients, including farmers, agricultural companies, distributors, government agencies and exporters."
+    },
+    "Contact": {
+      "title": "Contact <green>Us</green>",
+      "description": "For inquiries, please reach out to us at:",
+      "Email": {
+        "label": "Email:",
+        "value": "example@email.com"
+      },
+      "Phone": {
+        "label": "Phone:",
+        "value": "+20 123 456 7890"
+      },
+      "Address": {
+        "label": "Address:",
+        "value": "123 Agricultural St, Cairo, Egypt"
+      },
+      "Content": {
+        "label": "Message:"
+      },
+      "FullName": {
+        "label": "Full Name:"
+      },
+      "Submit": "Submit",
+      "socialMedia": {
+        "label": "Follow us on:",
+        "facebook": "www.facebook.com/shahbandar",
+        "twitter": "x.com/shahbandar",
+        "instagram": "www.instagram.com/shahbandar",
+        "youtube": "www.youtube.com/@shahbandar"
+      }
     }
   },
   "NavLinks": {
@@ -55,6 +132,13 @@
     "products": "Products",
     "clients": "Clients",
     "contact": "Contact Us"
+  },
+  "Auth": {
+    "Buttons": {
+      "login": "Sign In",
+      "register": "Create an Account",
+      "logout": "Log Out"
+    }
   },
   "Footer": {
     "footerText": "© 2025 Shahbandar Inc. All rights reserved."
