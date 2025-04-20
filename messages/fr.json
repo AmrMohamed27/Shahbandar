@@ -1,7 +1,52 @@
 {
   "HomePage": {
-    "title": "Bienvenue sur la page d'accueil",
-    "description": "Ceci est la page d'accueil de notre application."
+    "Hero": {
+      "title": "L'avenir <green>pousse</green> dans le sol",
+      "subtitle": "Des fermes de la vallée du Nil aux projets de réhabilitation du désert, nos semences alimentent l'avenir de l'agriculture durable."
+    },
+    "About": {
+      "title": "à propos <green>de nous</green>",
+      "description": "Né de l'héritage agricole profond de l'Égypte, nous, à Shahbandar, avons avancé l'esprit du Nil et la sagesse des générations d'agriculteurs. Depuis notre fondation, nous nous sommes consacrés à soutenir les communautés agricoles du pays avec des graines de haute qualité adaptées aux divers climats de l'Égypte. Notre vision est de soutenir l'agriculture égyptienne en fournissant des graines de confiance et de haute qualité qui aident les agriculteurs - des petits exploitants aux producteurs à grande échelle - développent des récoltes plus fortes et des cultures plus résilientes.",
+      "Goals": {
+        "title": "Nos <green>Objectifs</green>",
+        "list": {
+          "2": {
+            "text": "Être un partenaire fiable pour les agriculteurs, les entreprises agricoles et les distributeurs."
+          },
+          "3": {
+            "text": "Pour promouvoir de meilleures pratiques agricoles grâce aux conseils, à la recherche et à l'expertise locale."
+          },
+          "4": {
+            "text": "Pour contribuer à la sécurité alimentaire, à la productivité et à la croissance économique dans les zones rurales égyptiennes."
+          }
+        }
+      },
+      "Values": {
+        "title": "Nos <green>valeurs</green>",
+        "list": {
+          "1": {
+            "title": "Confiance",
+            "text": "Par l'honnêteté et les résultats cohérents."
+          },
+          "2": {
+            "title": "Respect",
+            "text": "En écoutant et en comprenant nos clients."
+          },
+          "3": {
+            "title": "Qualité",
+            "text": "Grâce à notre engagement envers l'excellence dans chaque semence que nous fournissons."
+          },
+          "4": {
+            "title": "Fierté",
+            "text": "De notre héritage égyptien et des agriculteurs que nous servons."
+          }
+        }
+      },
+      "Slogan": {
+        "title": "Notre <green>Slogan</green>",
+        "text": "Où la qualité rencontre la terre."
+      }
+    }
   },
   "NavLinks": {
     "home": "Accueil",
@@ -10,5 +55,8 @@
     "products": "Produits",
     "clients": "Clients",
     "contact": "Nous contacter"
+  },
+  "Footer": {
+    "footerText": "© 2025 Shahbandar Inc. Tous droits réservés."
   }
 }

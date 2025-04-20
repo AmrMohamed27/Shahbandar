@@ -1,7 +1,52 @@
 {
   "HomePage": {
-    "title": "Welcome to the Home Page",
-    "description": "This is the home page of our application."
+    "Hero": {
+      "title": "The Future <green>Grows</green> in the Ground",
+      "subtitle": "From Nile Valley farms to desert reclamation projects — our seeds power the future of sustainable agriculture."
+    },
+    "About": {
+      "title": "About <green>Us</green>",
+      "description": "Born from Egypt's deep agricultural legacy, we in Shahbandar carry forward the spirit of the Nile and the wisdom of generations of farmers. Since our founding, we've dedicated ourselves to supporting the country's farming communities with high-quality seeds tailored to Egypt's diverse climates. Our vision is to support Egyptian agriculture by providing trusted, high-quality seeds that help farmers — from smallholders to large-scale producers — grow stronger harvests and more resilient crops.",
+      "Goals": {
+        "title": "Our <green>Goals</green>",
+        "list": {
+          "2": {
+            "text": "To be a reliable partner for farmers, agricultural companies, and distributors."
+          },
+          "3": {
+            "text": "To promote better farming practices through guidance, research, and local expertise."
+          },
+          "4": {
+            "text": "To contribute to food security, productivity, and economic growth in Egypt's rural areas."
+          }
+        }
+      },
+      "Values": {
+        "title": "Our <green>Values</green>",
+        "list": {
+          "1": {
+            "title": "Trust",
+            "text": "Through honesty and consistent results."
+          },
+          "2": {
+            "title": "Respect",
+            "text": "Through listening to and understanding our customers."
+          },
+          "3": {
+            "title": "Quality",
+            "text": "Through our commitment to excellence in every seed we provide."
+          },
+          "4": {
+            "title": "Pride",
+            "text": "Of our Egyptian heritage and the farmers we serve."
+          }
+        }
+      },
+      "Slogan": {
+        "title": "Our <green>Slogan</green>",
+        "text": "Where Quality Meets the Earth."
+      }
+    }
   },
   "NavLinks": {
     "home": "Home",
@@ -12,7 +57,7 @@
     "contact": "Contact Us"
   },
   "Footer": {
-    "footerText": "© 2025 El-Shahbandar. All rights reserved."
+    "footerText": "© 2025 Shahbandar Inc. All rights reserved."
   },
   "AboutPage": {
     "title": "About Us",

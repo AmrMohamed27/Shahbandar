@@ -9,7 +9,7 @@ const Header = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollThreshold = 300;
+      const scrollThreshold = 100;
 
       if (window.scrollY > scrollThreshold && !scrolledPast) {
         setScrolledPast(true);
@@ -28,9 +28,9 @@ const Header = () => {
         {/* When scrolledPast is true, show this fixed header */}
         {scrolledPast && (
           <motion.div
-            className="top-0 right-0 left-0 z-50 fixed bg-background/95 shadow-md backdrop-blur-sm border-b-2 border-black"
+            className="top-0 right-0 left-0 z-50 fixed bg-background backdrop-blur-2xl border-b-2"
             initial={{ y: -100, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
+            animate={{ y: 0, opacity: 0.9 }}
             exit={{ y: -100, opacity: 0 }}
             transition={{ duration: 0.5, ease: "easeInOut" }}
           >
@@ -39,14 +39,17 @@ const Header = () => {
         )}
       </AnimatePresence>
       {/* This is the initial absolute header that's always present when not scrolled */}
-      <div
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.7, ease: "easeInOut" }}
         className={cn(
           "absolute top-0 left-0 right-0 z-40",
           scrolledPast ? "opacity-0 pointer-events-none" : "opacity-100"
         )}
       >
         <NavbarContent />
-      </div>
+      </motion.div>
     </div>
   );
 };

@@ -6,6 +6,7 @@ import { Zain } from "next/font/google";
 import { getLangDir } from "rtl-detect";
 import { ThemeProvider } from "../providers/theme-provider";
 import { notFound } from "next/navigation";
+import Footer from "@/components/footer";
 
 const zain = Zain({
   variable: "--font-zain",
@@ -41,7 +42,8 @@ export default async function LocaleLayout({
         >
           <NextIntlClientProvider>
             <Header />
-            <main className="mt-24 min-h-screen">{children}</main>
+            <main className="min-h-screen">{children}</main>
+            <Footer />
           </NextIntlClientProvider>
         </ThemeProvider>
       </body>

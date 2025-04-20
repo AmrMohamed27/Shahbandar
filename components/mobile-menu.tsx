@@ -1,4 +1,4 @@
-import React from "react";
+"use client";
 import {
   Sheet,
   SheetContent,
@@ -13,6 +13,7 @@ import Image from "next/image";
 import { useMessages, useTranslations } from "next-intl";
 import { NavLink } from "@/types";
 import AuthButtons from "./auth-buttons";
+import { useState } from "react";
 
 interface Props {
   isClient: boolean;
@@ -21,8 +22,13 @@ interface Props {
 const MobileMenu = ({ isClient }: Props) => {
   const { NavLinks } = useMessages();
   const t = useTranslations("NavLinks");
+  const [open, setOpen] = useState(false);
+
+  const toggleOpen = () => {
+    setOpen((open) => !open);
+  };
   return (
-    <Sheet>
+    <Sheet open={open} onOpenChange={toggleOpen}>
       <SheetTrigger asChild>
         <Button variant={"outline"} size={"icon"}>
           <MenuIcon />
@@ -49,8 +55,11 @@ const MobileMenu = ({ isClient }: Props) => {
               <li
                 key={key}
                 className="hover:bg-muted px-4 py-2 rounded-md cursor-pointer"
+                onClick={() => setOpen(false)}
               >
-                <Link href={`/${key}`}>{t(key as NavLink)}</Link>
+                <Link href={`#${key === "home" ? "" : key}`}>
+                  {t(key as NavLink)}
+                </Link>
               </li>
             ))}
           </ul>
