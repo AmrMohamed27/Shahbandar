@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl";
 import React from "react";
-import AnimatedSection from "../animated-section";
+import AnimatedSection from "./animated-section";
 import { renderHtml } from "@/lib/utils";
 import { Mail, Notebook, Phone } from "lucide-react";
 import ContactForm from "../contact-form";

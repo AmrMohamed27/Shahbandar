@@ -1,7 +1,7 @@
 import { cn, renderHtml } from "@/lib/utils";
 import { ProductsListText } from "@/types";
 import { useMessages, useTranslations } from "next-intl";
-import AnimatedSection from "../animated-section";
+import AnimatedSection from "./animated-section";
 import { Snowflake, Sun, Wheat } from "lucide-react";
 
 const ProductsSection = () => {

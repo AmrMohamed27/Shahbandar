@@ -62,28 +62,46 @@
       "title": "départements <green>de l'entreprise</green>",
       "list": {
         "1": {
-          "text": "Production",
-          "image": "/assets/images/production.jpg"
+          "id": "production",
+          "title": "Production",
+          "image": "/assets/images/production.jpg",
+          "href": "/departments/production",
+          "text": "Le département de production de l’entreprise est chargé de cultiver les semences de base dans notre grande ferme de recherche située dans la région de Farafra, en Égypte, ou sur des terres sous contrat avec de grandes entreprises ou des agriculteurs importants à travers le pays. Ce département joue un rôle central car il est responsable de la qualité des semences produites et de leur conformité aux normes agricoles. Il regroupe les meilleurs ingénieurs en production de semences en Égypte, forts d’une grande expérience dans des entreprises internationales, ce qui fait d’eux les leaders du secteur."
         },
         "2": {
-          "text": "Recherche et Développement",
-          "image": "/assets/images/rnd.jpeg"
+          "id": "rnd",
+          "title": "Recherche et Développement",
+          "image": "/assets/images/rnd.jpeg",
+          "href": "/departments/rnd",
+          "text": "Dans ce département vital, les semences sont continuellement testées pour évaluer leur qualité et leur conformité aux normes internationales. Le département est également chargé d’introduire de nouvelles variétés que l’entreprise produira exclusivement sous son nom sur les marchés locaux et mondiaux. Il comprend d’éminents universitaires égyptiens spécialisés dans la recherche agricole, titulaires de doctorats en sciences agricoles, avec une riche expérience pratique."
         },
         "3": {
-          "text": "Ventes et marketing",
-          "image": "/assets/images/sales.jpeg"
+          "id": "sales",
+          "title": "Ventes et Marketing",
+          "image": "/assets/images/sales.jpeg",
+          "href": "/departments/sales",
+          "text": "La mission du département des ventes et du marketing ne se limite pas à vendre nos produits. Il s’attache également à analyser en permanence les chiffres de vente, le comportement des consommateurs agricoles, ainsi que les tendances du marché mondial afin de proposer des produits adaptés aux marchés locaux et internationaux. Le département comprend des ingénieurs qualifiés académiquement, scientifiquement et pratiquement, possédant une grande expérience du marché local et une expertise approfondie en agriculture et en marketing."
         },
         "4": {
-          "text": "Silos et entrepôts",
-          "image": "/assets/images/silos.jpeg"
+          "id": "silos",
+          "title": "Silos et Entrepôts",
+          "image": "/assets/images/silos.jpeg",
+          "href": "/departments/silos",
+          "text": "Notre entreprise est un pionnier dans le secteur de la production de semences, étant la première à posséder des silos à grains et à semences pour faciliter la production et préserver les semences de manière optimale tout au long de l’année. Nous disposons d’une capacité de stockage pouvant atteindre trois mille tonnes. De plus, l’entreprise possède plusieurs entrepôts certifiés par le Ministère de l’Agriculture pour stocker le produit final avant distribution. Ces entrepôts sont sécurisés et conçus pour faciliter la distribution dans toute l’Égypte et répondre aux normes internationales d’exportation des semences."
         },
         "5": {
-          "text": "Réfrigérateurs",
-          "image": "/assets/images/fridge.jpg"
+          "id": "fridges",
+          "title": "Chambres Froides",
+          "image": "/assets/images/fridge.jpg",
+          "href": "/departments/refrigeration",
+          "text": "Notre entreprise dispose d’espaces de réfrigération suffisants pour assurer la conservation adéquate des semences et des graines en période de forte chaleur, garantissant ainsi la qualité optimale du produit final et un rendement élevé. Les chambres froides sont situées dans notre siège principal dans le gouvernorat d’Assouan, au sud de l’Égypte."
         },
         "6": {
-          "text": "Affaires administratives",
-          "image": "/assets/images/admin.jpg"
+          "id": "admin",
+          "title": "Affaires Administratives",
+          "image": "/assets/images/admin.jpg",
+          "href": "/departments/administration",
+          "text": "Notre service administratif organise principalement les transactions des clients, garantissant une livraison fluide et efficace du produit au client final. Il assure également une comptabilité précise et des performances administratives exemplaires, en cohérence avec notre valeur fondamentale : le client est au cœur de notre activité. Le service comprend les branches suivantes : comptabilité, ressources humaines, logistique et secrétariat."
         }
       }
     },

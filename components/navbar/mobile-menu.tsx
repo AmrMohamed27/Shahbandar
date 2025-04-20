@@ -6,14 +6,14 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import { Button } from "./ui/button";
+import { Button } from "../ui/button";
 import { MenuIcon } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import Image from "next/image";
 import { useMessages, useTranslations } from "next-intl";
 import { NavLink } from "@/types";
-import AuthButtons from "./auth-buttons";
 import { useState } from "react";
+import AuthButtons from "./auth-buttons";
 
 interface Props {
   isClient: boolean;

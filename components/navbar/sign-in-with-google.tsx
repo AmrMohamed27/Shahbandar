@@ -1,6 +1,6 @@
 "use client";
 import { authClient } from "@/lib/auth-client";
-import { Button } from "./ui/button";
+import { Button } from "../ui/button";
 import { env } from "@/lib/env";
 import { useTranslations } from "next-intl";
 

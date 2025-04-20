@@ -2,7 +2,7 @@ import { NextIntlClientProvider, useLocale, useTranslations } from "next-intl";
 import React from "react";
 import { getLangDir } from "rtl-detect";
 import { ThemeProvider } from "./providers/theme-provider";
-import Header from "@/components/header";
+import Header from "@/components/navbar/header";
 import Footer from "@/components/footer";
 import { Zain } from "next/font/google";
 const zain = Zain({

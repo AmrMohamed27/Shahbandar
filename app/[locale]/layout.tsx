@@ -1,4 +1,4 @@
-import Header from "@/components/header";
+import Header from "@/components/navbar/header";
 import { routing } from "@/i18n/routing";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { Zain } from "next/font/google";
@@ -6,6 +6,8 @@ import { getLangDir } from "rtl-detect";
 import { ThemeProvider } from "../providers/theme-provider";
 import { notFound } from "next/navigation";
 import Footer from "@/components/footer";
+import { Suspense } from "react";
+import Loader from "@/components/loader";
 
 const zain = Zain({
   variable: "--font-zain",
@@ -36,7 +38,9 @@ export default async function LocaleLayout({
         >
           <NextIntlClientProvider>
             <Header />
-            <main className="min-h-screen">{children}</main>
+            <main className="min-h-screen">
+              <Suspense fallback={<Loader />}>{children}</Suspense>
+            </main>
             <Footer />
           </NextIntlClientProvider>
         </ThemeProvider>

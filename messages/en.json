@@ -62,28 +62,46 @@
       "title": "Company <green>Departments</green>",
       "list": {
         "1": {
-          "text": "Production",
-          "image": "/assets/images/production.jpg"
+          "id": "production",
+          "title": "Production",
+          "image": "/assets/images/production.jpg",
+          "href": "/departments/production",
+          "text": "The Production Department in the company is responsible for cultivating foundation seeds at our major research farm in the Farafra region of Egypt, or on lands contracted with major companies or large-scale farmers across different parts of Egypt. The department plays a central role, being responsible for the quality and conformity of the seeds produced, ensuring they meet agricultural standards. It is staffed by some of Egypt’s top seed production engineers, who bring extensive experience from global companies, positioning them among the leading seed cultivation experts in the country."
         },
         "2": {
-          "text": "Research and Development",
-          "image": "/assets/images/rnd.jpeg"
+          "id": "rnd",
+          "title": "Research and Development",
+          "image": "/assets/images/rnd.jpeg",
+          "href": "/departments/rnd",
+          "text": "In this vital department, seeds are continuously tested to assess their quality and compliance with international standards. The department is also responsible for introducing new varieties that the company will produce exclusively under its name in both local and global markets. It includes some of Egypt's finest agricultural academics, all holding PhDs in agricultural sciences, and possessing deep and extensive practical experience."
         },
         "3": {
-          "text": "Sales and Marketing",
-          "image": "/assets/images/sales.jpeg"
+          "id": "sales",
+          "title": "Sales and Marketing",
+          "image": "/assets/images/sales.jpeg",
+          "href": "/departments/sales",
+          "text": "The mission of the Sales and Marketing Department goes beyond simply selling our products. The department constantly analyzes sales figures, agricultural consumer behavior, and global market trends to offer products tailored to both local and international markets. It includes engineers who are academically, scientifically, and practically qualified, all with vast experience in the local market and strong expertise in both agriculture and marketing."
         },
         "4": {
-          "text": "Silos and Warehouses",
-          "image": "/assets/images/silos.jpeg"
+          "id": "silos",
+          "title": "Silos and Warehouses",
+          "image": "/assets/images/silos.jpeg",
+          "href": "/departments/silos",
+          "text": "Our company is a pioneer in the seed production industry, being the first to own grain and seed silos to facilitate the production process and optimally preserve seeds scientifically, practically, and hygienically throughout the year. Our storage capacity reaches up to three thousand tons. We also have several qualified and Ministry-of-Agriculture-certified warehouses for storing the final product before distribution. These warehouses are secure and designed to facilitate distribution across Egypt and to meet global seed export standards."
         },
         "5": {
-          "text": "Refrigerators",
-          "image": "/assets/images/fridge.jpg"
+          "id": "fridges",
+          "title": "Refrigeration",
+          "image": "/assets/images/fridge.jpg",
+          "href": "/departments/refrigeration",
+          "text": "Our company has sufficient cooling spaces to ensure the proper preservation of seeds and grains during hot weather. This guarantees the optimal condition and superior qualities of the final product for high productivity. The refrigeration units are located at our main center in Aswan Governorate, southern Egypt."
         },
         "6": {
-          "text": "Administrative Affairs",
-          "image": "/assets/images/admin.jpg"
+          "id": "admin",
+          "title": "Administration",
+          "image": "/assets/images/admin.jpg",
+          "href": "/departments/administration",
+          "text": "Our administrative unit is primarily responsible for organizing client transactions, ensuring the product reaches the final customer smoothly and efficiently. It also guarantees accurate accounting and excellent administrative performance, reflecting our core value that the customer is at the heart of our work. The department includes branches for accounting, human resources, logistics, and secretarial services."
         }
       }
     },

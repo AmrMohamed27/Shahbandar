@@ -1,7 +1,7 @@
 import { renderHtml } from "@/lib/utils";
 import { useTranslations } from "next-intl";
-import AnimatedSection from "../animated-section";
-import { DepartmentsCarousel } from "../departments-carousel";
+import AnimatedSection from "./animated-section";
+import { DepartmentsList } from "./departments-list";
 
 const DepartmentsSection = () => {
   const t = useTranslations("HomePage.Departments");
@@ -14,7 +14,7 @@ const DepartmentsSection = () => {
         className="font-bold text-xl md:text-3xl lg:text-5xl"
         dangerouslySetInnerHTML={{ __html: renderHtml(t.raw("title")) }}
       />
-      <DepartmentsCarousel />
+      <DepartmentsList />
     </AnimatedSection>
   );
 };

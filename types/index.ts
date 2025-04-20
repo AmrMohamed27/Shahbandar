@@ -33,6 +33,20 @@ export type DepartmentsListText =
   | "4.text"
   | "5.text"
   | "6.text";
+export type DepartmentsListId =
+  | "1.id"
+  | "2.id"
+  | "3.id"
+  | "4.id"
+  | "5.id"
+  | "6.id";
+export type DepartmentsListTitle =
+  | "1.title"
+  | "2.title"
+  | "3.title"
+  | "4.title"
+  | "5.title"
+  | "6.title";
 export type DepartmentsListImage =
   | "1.image"
   | "2.image"
@@ -40,6 +54,21 @@ export type DepartmentsListImage =
   | "4.image"
   | "5.image"
   | "6.image";
+export type DepartmentsListHref =
+  | "1.href"
+  | "2.href"
+  | "3.href"
+  | "4.href"
+  | "5.href"
+  | "6.href";
+
+export interface DepartmentObject {
+  text: string;
+  image: string;
+  title: string;
+  href: string;
+  id: string;
+}
 
 export type ProductsListText = "list.2.text" | "list.3.text" | "list.1.text";
 

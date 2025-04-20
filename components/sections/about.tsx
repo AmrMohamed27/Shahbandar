@@ -13,7 +13,7 @@ import {
   UsersRound,
 } from "lucide-react";
 import { useMessages, useTranslations } from "next-intl";
-import AnimatedSection from "../animated-section";
+import AnimatedSection from "./animated-section";
 import { Button } from "../ui/button";
 import { Link } from "@/i18n/navigation";
 

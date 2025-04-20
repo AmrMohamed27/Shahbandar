@@ -1,5 +1,5 @@
 import AboutParagraphs from "@/components/about-paragraphs";
-import AnimatedSection from "@/components/animated-section";
+import AnimatedSection from "@/components/sections/animated-section";
 import { renderHtml } from "@/lib/utils";
 import { useTranslations } from "next-intl";
 import React from "react";

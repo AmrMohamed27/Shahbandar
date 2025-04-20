@@ -2,8 +2,8 @@ import { useRouter } from "@/i18n/navigation";
 import { authClient } from "@/lib/auth-client";
 import { createAuthClient } from "better-auth/react";
 import SignInWithGoogle from "./sign-in-with-google";
-import { Button } from "./ui/button";
-import { Skeleton } from "./ui/skeleton";
+import { Button } from "../ui/button";
+import { Skeleton } from "../ui/skeleton";
 import { useTranslations } from "next-intl";
 
 const { useSession } = createAuthClient();

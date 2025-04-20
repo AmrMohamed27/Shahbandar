@@ -11,7 +11,7 @@ import { Locale } from "@/i18n/config";
 import { usePathname, useRouter } from "@/i18n/navigation";
 import { ChevronDown } from "lucide-react";
 import { useLocale } from "next-intl";
-import { Button } from "./ui/button";
+import { Button } from "../ui/button";
 
 const ChangeLanguage = () => {
   const currentLocale = useLocale();

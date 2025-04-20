@@ -1,5 +1,5 @@
 import React from "react";
-import AnimatedSection from "../animated-section";
+import AnimatedSection from "./animated-section";
 import { renderHtml } from "@/lib/utils";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
