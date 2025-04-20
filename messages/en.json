@@ -10,14 +10,20 @@
       "Goals": {
         "title": "Our <green>Goals</green>",
         "list": {
+          "1": {
+            "text": "To have our products spread across all of Egypt, achieving the best reputation for our brand, Shahbandar."
+          },
           "2": {
-            "text": "To be a reliable partner for farmers, agricultural companies, and distributors."
+            "text": "To expand our exports throughout the Arab world and African countries."
           },
           "3": {
-            "text": "To promote better farming practices through guidance, research, and local expertise."
+            "text": "To continuously develop our products and add new ones that serve the market at least every two years."
           },
           "4": {
-            "text": "To contribute to food security, productivity, and economic growth in Egypt's rural areas."
+            "text": "To expand the use of the latest market research methods to improve our services and products."
+          },
+          "5": {
+            "text": "To support agricultural expansion in Egypt’s new lands with products that suit the nature and requirements of these areas."
           }
         }
       },
@@ -25,27 +31,32 @@
         "title": "Our <green>Values</green>",
         "list": {
           "1": {
-            "title": "Trust",
-            "text": "Through honesty and consistent results."
+            "title": "Commitment",
+            "text": "to high-quality specifications in the production of planting seeds"
           },
           "2": {
-            "title": "Respect",
-            "text": "Through listening to and understanding our customers."
+            "title": "Adherence",
+            "text": "to the highest standards of scientific research to develop our products."
           },
           "3": {
-            "title": "Quality",
-            "text": "Through our commitment to excellence in every seed we provide."
+            "title": "Support",
+            "text": "provided to traders, companies and farmers through the guidance of our engineers and technical experts."
           },
           "4": {
-            "title": "Pride",
-            "text": "Of our Egyptian heritage and the farmers we serve."
+            "title": "Reaching",
+            "text": "all our customers in Egypt, along with the Arab and African markets."
+          },
+          "5": {
+            "title": "Working",
+            "text": "according to the policy that The customer is the core of our business, and protecting our brand by respecting our customers."
           }
         }
       },
       "Slogan": {
         "title": "Our <green>Slogan</green>",
         "text": "Where Quality Meets the Earth."
-      }
+      },
+      "Button": "Read more"
     },
     "Departments": {
       "title": "Company <green>Departments</green>",
@@ -144,8 +155,18 @@
     "footerText": "© 2025 Shahbandar Inc. All rights reserved."
   },
   "AboutPage": {
-    "title": "About Us",
-    "description": "This page contains information about our application."
+    "h1": "About <green>Us</green>",
+    "brief": {
+      "p1": "Shahbandar Company was established in 1995 as a commercial company in the field of agricultural production, particularly grains and crops. As the company expanded its operations across the republic, it became necessary for us to evolve. Thus, in 2004, Shahbandar entered the field of seed and crop production.",
+      "p2": "Development is a constant approach for us, which is why we established a Research and Development department to serve as a core pillar of Shahbandar Company. This department has made a significant contribution to the Shahbandar brand.",
+      "p3": "Over time, the company has developed itself and now has many commercial varieties. Among the most important maize varieties, for example: the Single Hybrid 167, which is one of the Ministry of Agriculture’s most important varieties and is now exclusively owned by the company. Also, the second exclusive variety from the Ministry to Shahbandar is the Triple Hybrid 353. In addition, the company also offers other maize seed varieties from the Ministry such as 168, 368, 321, and other well-known varieties.",
+      "p4": "As for wheat varieties, the company produces all strains developed by the Ministry of Agriculture. It produces more than ten high-quality varieties. Shahbandar has gained a prominent name and a large market share in the production and marketing of high-yield Egyptian wheat varieties. The company also produces barley, clover, fava beans, soybeans, rice, and other crops.",
+      "p5": "In the field of scientific research, Shahbandar has a team of researchers specializing in maize and other crop production. We give great importance to practical research for the benefit of Egyptian farmers and to uphold the reputation of Egyptian agricultural products in the global export market. The company also has new varieties under registration with the Ministry of Agriculture. Notably, Shahbandar is the only seed production company in Egypt that owns silos for proper seed storage, as well as a seed storage refrigerator at its headquarters in Aswan.",
+      "p6": "Regarding the local market, Shahbandar has a presence in all governorates of Egypt and has a network of agents across the country, even in the major centers. Of course, we cannot overlook the large agricultural companies in Egypt, where we also have a strong presence. Most of these major companies trust the Shahbandar name and rely on it for the supply of seed and crop varieties, making Shahbandar seeds among the strongest suppliers to Egypt’s top agricultural companies.",
+      "p7": "As for the export market, the Shahbandar brand is present in more than eight African countries, including Senegal, Uganda, Algeria, Libya, and Sudan. Shahbandar has developed a strong administrative system and maintains constant oversight to protect the brand from counterfeiting and imitation, in order to safeguard our product and farmers’ trust.",
+      "p8": "Shahbandar’s production engineers provide full guidance to companies and farmers to ensure greater and better productivity, including the establishment of demonstration fields for farmers.",
+      "p9": "As for the Marketing and Sales Department, Shahbandar has invested in a strong marketing and sales team to conduct thorough scientific market studies, develop plans for product improvement, introduce new products into Egypt’s crop cultivation map, and support major traders in reaching farmers across Egypt through well-planned, practical, and field-implemented strategies."
+    }
   },
   "ContactPage": {
     "title": "Contact Us",

@@ -10,14 +10,20 @@
       "Goals": {
         "title": "Nos <green>Objectifs</green>",
         "list": {
+          "1": {
+            "text": "Que nos produits se répandent dans toute l'Égypte en assurant la meilleure réputation pour notre marque Shahbandar."
+          },
           "2": {
-            "text": "Être un partenaire fiable pour les agriculteurs, les entreprises agricoles et les distributeurs."
+            "text": "Nous étendre à l'exportation dans tout le monde arabe et les pays africains."
           },
           "3": {
-            "text": "Pour promouvoir de meilleures pratiques agricoles grâce aux conseils, à la recherche et à l'expertise locale."
+            "text": "Développer continuellement nos produits et ajouter de nouveaux produits qui répondent aux besoins du marché au moins tous les deux ans."
           },
           "4": {
-            "text": "Pour contribuer à la sécurité alimentaire, à la productivité et à la croissance économique dans les zones rurales égyptiennes."
+            "text": "Étendre l'utilisation des dernières méthodes d'étude de marché pour améliorer nos services et produits."
+          },
+          "5": {
+            "text": "Soutenir l'expansion agricole en Égypte dans les nouvelles terres avec des produits adaptés à la nature et aux exigences de ces régions."
           }
         }
       },
@@ -25,27 +31,32 @@
         "title": "Nos <green>valeurs</green>",
         "list": {
           "1": {
-            "title": "Confiance",
-            "text": "Par l'honnêteté et les résultats cohérents."
+            "title": "Engagement",
+            "text": "envers des spécifications de haute qualité dans la production de semences."
           },
           "2": {
-            "title": "Respect",
-            "text": "En écoutant et en comprenant nos clients."
+            "title": "Conformité",
+            "text": "aux normes les plus élevées de recherche scientifique pour développer nos produits."
           },
           "3": {
-            "title": "Qualité",
-            "text": "Grâce à notre engagement envers l'excellence dans chaque semence que nous fournissons."
+            "title": "Soutien",
+            "text": "fourni aux commerçants, entreprises et agriculteurs grâce aux conseils de nos ingénieurs et experts techniques."
           },
           "4": {
-            "title": "Fierté",
-            "text": "De notre héritage égyptien et des agriculteurs que nous servons."
+            "title": "Portée",
+            "text": "de tous nos clients en Égypte, ainsi que des marchés arabes et africains."
+          },
+          "5": {
+            "title": "Engagement envers le client",
+            "text": "selon la politique que le client est au cœur de notre activité, et en protégeant notre marque par le respect de nos clients."
           }
         }
       },
       "Slogan": {
         "title": "Notre <green>Slogan</green>",
         "text": "Où la qualité rencontre la terre."
-      }
+      },
+      "Button": "En savoir plus"
     },
     "Departments": {
       "title": "départements <green>de l'entreprise</green>",
@@ -138,6 +149,20 @@
       "login": "Se connecter",
       "register": "Créer un compte",
       "logout": "Se déconnecter"
+    }
+  },
+  "AboutPage": {
+    "h1": "À propos <green>de nous</green>",
+    "brief": {
+      "p1": "La société Shahbandar a été fondée en 1995 en tant qu'entreprise commerciale dans le domaine de la production agricole, en particulier les céréales et les cultures. Avec l’expansion des activités de l’entreprise dans toute la République, il est devenu nécessaire pour nous d’évoluer. Ainsi, en 2004, Shahbandar s’est orientée vers la production de semences et de graines.",
+      "p2": "Le développement est une démarche constante pour nous. C’est pourquoi nous avons créé un département de recherche et développement, qui constitue un pilier essentide la société Shahbandar. Ce département contribue de manière significative à la marque Shahbandar.",
+      "p3": "Avec le temps, l’entreprise s’est développée et possède désormais de nombreuses variétés commerciales. Parmi les variétés les plus importantes de maïs figurent par exemple : l’hybride simple 167, l’une des variétés les plus importantes du Ministère de l’Agriculture et désormais une variété exclusive à l’entreprise. De même, la seconde variété exclusive accordée par le ministère à Shahbandar est l’hybride triple 353. En plus de cela, l’entreprise propose d’autres variétés de maïs du ministère comme 168, 368, 321 et d’autres variétés connues.",
+      "p4": "Concernant les variétés de blé, l’entreprise produit toutes les souches développées par le Ministère de l’Agriculture. Elle produit plus de dix variétés de haute qualité. Shahbandar s’est fait un grand nom et détient une part de marché importante dans la production et la commercialisation des variétés de blé égyptien à haut rendement. L’entreprise produit également des semences d’orge, de trèfle, de fèves, de soja, de riz et d'autres cultures.",
+      "p5": "Dans le domaine de la recherche scientifique, Shahbandar dispose d’une équipe de chercheurs spécialisés dans la production de maïs et d'autres cultures. Nous accordons une grande importance à la recherche appliquée dans l’intérêt des agriculteurs égyptiens, ainsi que pour la réputation des produits agricoles égyptiens sur le marché mondial de l’exportation. L’entreprise possède également de nouvelles variétés en cours d’enregistrement auprès du Ministère de l’Agriculture. Il convient de noter que Shahbandar est la seule entreprise de production de semences en Égypte à posséder des silos pour le stockage approprié des semences, ainsi qu’une chambre froide pour la conservation des semences dans son siège principal à Assouan.",
+      "p6": "Concernant le marché local, la société Shahbandar est présente dans toutes les provinces d’Égypte, avec un réseau d’agents dans toutes les régions, même dans les grands centres urbains. Il ne faut pas non plus oublier le secteur des grandes entreprises agricoles en Égypte, où nous avons également une forte présence. La majorité de ces grandes entreprises font confiance à la marque Shahbandar et comptent sur elle pour l’approvisionnement en semences et variétés agricoles, ce qui fait des semences Shahbandar l’un des fournisseurs les plus puissants auprès des grandes sociétés agricoles égyptiennes.",
+      "p7": "Quant au marché de l’exportation, la marque Shahbandar est présente dans plus de huit pays africains, notamment le Sénégal, l’Ouganda, l’Algérie, la Libye et le Soudan. Shahbandar a mis en place un système administratif solide et assure un suivi constant pour protéger la marque contre la contrefaçon et l’imitation, afin de protéger notre produit et la confiance des agriculteurs.",
+      "p8": "Les ingénieurs du département de production de Shahbandar fournissent toutes les directives nécessaires aux entreprises et aux agriculteurs pour garantir une productivité plus élevée et de meilleure qualité, y compris l’établissement de champs de démonstration pour les agriculteurs.",
+      "p9": "Concernant le département marketing et ventes, Shahbandar a veillé à disposer d’une équipe solide afin d’étudier le marché de manière scientifique, établir des plans pour le développement de nos produits et l’introduction de nouveaux produits dans la carte des cultures agricoles en Égypte, ainsi que pour soutenir les grands commerçants afin d’atteindre tous les agriculteurs égyptiens, grâce à des plans pratiques, scientifiques et appliqués sur le terrain."
     }
   },
   "Footer": {

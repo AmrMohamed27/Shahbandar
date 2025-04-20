@@ -2,36 +2,43 @@ import { renderHtml } from "@/lib/utils";
 import { GoalsListText, ValuesListText, ValuesListTitle } from "@/types";
 import {
   BadgeCheck,
-  Flag,
-  HandHeart,
-  Handshake,
+  FlaskConical,
+  Globe,
   Leaf,
-  Star,
-  Users,
-  Wheat,
+  Plane,
+  Sprout,
+  Tractor,
+  TrendingUp,
+  UserRoundPlus,
+  UsersRound,
 } from "lucide-react";
-import React from "react";
-import AnimatedSection from "../animated-section";
 import { useMessages, useTranslations } from "next-intl";
+import AnimatedSection from "../animated-section";
+import { Button } from "../ui/button";
+import { Link } from "@/i18n/navigation";
 
 const AboutSection = () => {
   const t = useTranslations("HomePage");
   const messages = useMessages();
   const goals = messages.HomePage.About.Goals.list;
   const goalsIcons = [
-    { icon: <Wheat key={0} size={32} /> },
-    { icon: <Handshake key={1} size={32} /> },
+    { icon: <Sprout key={0} size={32} /> },
+    { icon: <Globe key={1} size={32} /> },
     { icon: <Leaf key={2} size={32} /> },
-    { icon: <HandHeart key={3} size={32} /> },
+    { icon: <TrendingUp key={3} size={32} /> },
+    { icon: <Tractor key={4} size={32} /> },
   ];
   const values = messages.HomePage.About.Values.list;
   const valuesIcons = [
     {
       icon: <BadgeCheck key={0} size={24} className="text-primary-green" />,
     },
-    { icon: <Users key={1} size={24} className="text-primary-green" /> },
-    { icon: <Star key={2} size={24} className="text-primary-green" /> },
-    { icon: <Flag key={3} size={24} className="text-primary-green" /> },
+    { icon: <FlaskConical key={1} size={24} className="text-primary-green" /> },
+    {
+      icon: <UserRoundPlus key={2} size={24} className="text-primary-green" />,
+    },
+    { icon: <Plane key={3} size={24} className="text-primary-green" /> },
+    { icon: <UsersRound key={4} size={24} className="text-primary-green" /> },
   ];
   return (
     <AnimatedSection
@@ -48,6 +55,11 @@ const AboutSection = () => {
           }}
         ></h2>
         <p className="lg:max-w-[60%]">{t("About.description")}</p>
+        <Link href={"/about"}>
+          <Button variant={"green"} size={"lg"}>
+            {t("About.Button")}
+          </Button>
+        </Link>
       </div>
 
       {/* Our Goals */}
@@ -62,7 +74,7 @@ const AboutSection = () => {
           {Object.keys(goals).map((key) => (
             <li
               key={key}
-              className="flex flex-col items-center gap-4 bg-primary-green dark:bg-primary-green-300 px-8 py-16 rounded-md text-white text-center basis-full md:basis-1/2 lg:basis-1/3 xl:basis-1/5"
+              className="flex flex-col items-center gap-4 bg-primary-green dark:bg-primary-green-300 px-8 py-16 rounded-md text-white text-center basis-full md:basis-1/2 lg:basis-1/3 xl:basis-1/6"
             >
               {/* Icon */}
               {goalsIcons[parseInt(key) - 1].icon}
@@ -80,7 +92,7 @@ const AboutSection = () => {
             __html: renderHtml(t.raw("About.Values.title")),
           }}
         />
-        <ul className="flex flex-row flex-wrap justify-center items-start">
+        <ul className="flex flex-row flex-wrap justify-start items-start gap-y-2">
           {Object.keys(values).map((key) => (
             <li
               key={key}
