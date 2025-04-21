@@ -12,8 +12,8 @@ import { Input } from "@/components/ui/input";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useTranslations } from "next-intl";
 import { useForm } from "react-hook-form";
+import TextareaAutosize from "react-textarea-autosize";
 import { z } from "zod";
-import { Textarea } from "./ui/textarea";
 
 const formSchema = z.object({
   fullName: z.string(),
@@ -80,7 +80,10 @@ const ContactForm = () => {
             <FormItem>
               <FormLabel>{t("Content.label")}</FormLabel>
               <FormControl>
-                <Textarea {...field} />
+                <TextareaAutosize
+                  className="flex bg-transparent dark:bg-input/30 disabled:opacity-50 shadow-xs px-3 py-2 border border-input aria-invalid:border-destructive focus-visible:border-ring rounded-md outline-none aria-invalid:ring-destructive/20 focus-visible:ring-[3px] focus-visible:ring-ring/50 dark:aria-invalid:ring-destructive/40 w-full min-h-16 placeholder:text-muted-foreground md:text-sm text-base transition-[color,box-shadow] field-sizing-content resize-none disabled:cursor-not-allowed"
+                  {...field}
+                />
               </FormControl>
               <FormMessage />
             </FormItem>

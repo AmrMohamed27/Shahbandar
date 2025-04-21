@@ -37,6 +37,7 @@
     "react-dom": "^19.0.0",
     "react-fast-marquee": "^1.6.5",
     "react-hook-form": "^7.55.0",
+    "react-textarea-autosize": "^8.5.9",
     "rtl-detect": "^1.1.2",
     "tailwind-merge": "^3.2.0",
     "tw-animate-css": "^1.2.5",
