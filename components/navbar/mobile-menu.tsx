@@ -12,13 +12,9 @@ import { useMessages, useTranslations } from "next-intl";
 import Image from "next/image";
 import { useState } from "react";
 import { Button } from "../ui/button";
-import AuthButtons from "./auth-buttons";
 
-interface Props {
-  isClient: boolean;
-}
 
-const MobileMenu = ({ isClient }: Props) => {
+const MobileMenu = () => {
   const { NavLinks } = useMessages();
   const t = useTranslations("NavLinks");
   type keyType = Parameters<typeof t>[0];
@@ -61,8 +57,6 @@ const MobileMenu = ({ isClient }: Props) => {
               </li>
             ))}
           </ul>
-          {/* Auth Buttons */}
-          <AuthButtons isClient={isClient} />
         </div>
       </SheetContent>
     </Sheet>

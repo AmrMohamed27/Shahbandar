@@ -1,24 +1,17 @@
 import { Link } from "@/i18n/navigation";
 import { useMessages, useTranslations } from "next-intl";
 import Image from "next/image";
-import { useEffect, useState } from "react";
-import AuthButtons from "./auth-buttons";
+import ClientsHoverCard from "../clients-hover-card";
+import DepartmentsHoverCard from "../departments/departments-hover-card";
 import ChangeLanguage from "./change-language";
 import { DarkModeToggle } from "./dark-mode-toggle";
 import MobileMenu from "./mobile-menu";
-import DepartmentsHoverCard from "../departments/departments-hover-card";
-import ClientsHoverCard from "../clients-hover-card";
 
 const NavbarContent = () => {
-  const [isClient, setIsClient] = useState(false);
 
   const { NavLinks } = useMessages();
   const t = useTranslations("NavLinks");
   type keyType = Parameters<typeof t>[0];
-
-  useEffect(() => {
-    setIsClient(true);
-  }, []);
 
   return (
     <div className="flex flex-row justify-between items-center mx-auto px-2 sm:px-4 md:px-8 lg:px-8 py-4 container">
@@ -52,13 +45,9 @@ const NavbarContent = () => {
       <div className="flex flex-row items-center gap-4">
         <DarkModeToggle />
         <ChangeLanguage />
-        {/* Desktop Auth stuff */}
-        <div className="max-lg:hidden">
-          <AuthButtons isClient={isClient} />
-        </div>
         {/* Mobile Menu */}
         <div className="lg:hidden">
-          <MobileMenu isClient={isClient} />
+          <MobileMenu />
         </div>
       </div>
     </div>
