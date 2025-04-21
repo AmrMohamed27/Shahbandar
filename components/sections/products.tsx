@@ -1,15 +1,14 @@
 import { cn, renderHtml } from "@/lib/utils";
-import { ProductsListText } from "@/types";
+import { Snowflake, Sun, Wheat } from "lucide-react";
 import { useMessages, useTranslations } from "next-intl";
 import AnimatedSection from "./animated-section";
-import { Snowflake, Sun, Wheat } from "lucide-react";
-
 const ProductsSection = () => {
   const t = useTranslations("HomePage.Products");
+  type keyType = Parameters<typeof t>[0];
   const messages = useMessages();
   const products = Object.keys(messages.HomePage.Products.list).map((key) => {
     return {
-      text: t(`list.${key}.text` as ProductsListText),
+      text: t(`list.${key}.text` as keyType),
     };
   });
   const productIcons = [

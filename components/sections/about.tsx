@@ -1,5 +1,5 @@
+import { Link } from "@/i18n/navigation";
 import { renderHtml } from "@/lib/utils";
-import { GoalsListText, ValuesListText, ValuesListTitle } from "@/types";
 import {
   BadgeCheck,
   FlaskConical,
@@ -13,12 +13,12 @@ import {
   UsersRound,
 } from "lucide-react";
 import { useMessages, useTranslations } from "next-intl";
-import AnimatedSection from "./animated-section";
 import { Button } from "../ui/button";
-import { Link } from "@/i18n/navigation";
+import AnimatedSection from "./animated-section";
 
 const AboutSection = () => {
   const t = useTranslations("HomePage");
+  type keyType = Parameters<typeof t>[0];
   const messages = useMessages();
   const goals = messages.HomePage.About.Goals.list;
   const goalsIcons = [
@@ -78,7 +78,7 @@ const AboutSection = () => {
             >
               {/* Icon */}
               {goalsIcons[parseInt(key) - 1].icon}
-              {t(`About.Goals.list.${key}.text` as GoalsListText)}
+              {t(`About.Goals.list.${key}.text` as keyType)}
             </li>
           ))}
         </ul>
@@ -104,11 +104,9 @@ const AboutSection = () => {
               </div>
               <div className="flex flex-col items-start text-start">
                 <span className="font-semibold text-primary-green lg:text-lg">
-                  {t(`About.Values.list.${key}.title` as ValuesListTitle)}
+                  {t(`About.Values.list.${key}.title` as keyType)}
                 </span>
-                <span>
-                  {t(`About.Values.list.${key}.text` as ValuesListText)}
-                </span>
+                <span>{t(`About.Values.list.${key}.text` as keyType)}</span>
               </div>
             </li>
           ))}

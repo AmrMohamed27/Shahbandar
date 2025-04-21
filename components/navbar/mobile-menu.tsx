@@ -6,13 +6,12 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import { Button } from "../ui/button";
-import { MenuIcon } from "lucide-react";
 import { Link } from "@/i18n/navigation";
-import Image from "next/image";
+import { MenuIcon } from "lucide-react";
 import { useMessages, useTranslations } from "next-intl";
-import { NavLink } from "@/types";
+import Image from "next/image";
 import { useState } from "react";
+import { Button } from "../ui/button";
 import AuthButtons from "./auth-buttons";
 
 interface Props {
@@ -22,6 +21,7 @@ interface Props {
 const MobileMenu = ({ isClient }: Props) => {
   const { NavLinks } = useMessages();
   const t = useTranslations("NavLinks");
+  type keyType = Parameters<typeof t>[0];
   const [open, setOpen] = useState(false);
 
   const toggleOpen = () => {
@@ -57,7 +57,7 @@ const MobileMenu = ({ isClient }: Props) => {
                 className="hover:bg-muted px-4 py-2 rounded-md cursor-pointer"
                 onClick={() => setOpen(false)}
               >
-                <Link href={`/#${key}`}>{t(key as NavLink)}</Link>
+                <Link href={`/#${key}`}>{t(key as keyType)}</Link>
               </li>
             ))}
           </ul>

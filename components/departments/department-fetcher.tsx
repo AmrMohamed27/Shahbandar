@@ -1,13 +1,5 @@
-import {
-  DepartmentsListHref,
-  DepartmentsListId,
-  DepartmentsListImage,
-  DepartmentsListText,
-  DepartmentsListTitle,
-} from "@/types";
 import { useMessages, useTranslations } from "next-intl";
 import { notFound } from "next/navigation";
-import React from "react";
 import DepartmentPage from "./department-page";
 
 type Props = {
@@ -16,15 +8,16 @@ type Props = {
 
 const DepartmentFetcher = ({ id }: Props) => {
   const t = useTranslations("HomePage.Departments.list");
+  type keyType = Parameters<typeof t>[0];
   const messages = useMessages();
   const department = Object.keys(messages.HomePage.Departments.list)
     .map((key) => {
       return {
-        text: t(`${key}.text` as DepartmentsListText),
-        image: t(`${key}.image` as DepartmentsListImage),
-        title: t(`${key}.title` as DepartmentsListTitle),
-        href: t(`${key}.href` as DepartmentsListHref),
-        id: t(`${key}.id` as DepartmentsListId),
+        text: t(`${key}.text` as keyType),
+        image: t(`${key}.image` as keyType),
+        title: t(`${key}.title` as keyType),
+        href: t(`${key}.href` as keyType),
+        id: t(`${key}.id` as keyType),
       };
     })
     .find((dep) => dep.id === id);

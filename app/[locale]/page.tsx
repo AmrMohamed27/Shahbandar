@@ -8,7 +8,7 @@ import ProductsSection from "@/components/sections/products";
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-10">
+    <div className="flex flex-col gap-10" id="home">
       <HeroSection />
       <AboutSection />
       <DepartmentsSection />

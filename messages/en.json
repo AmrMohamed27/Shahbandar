@@ -121,7 +121,61 @@
     },
     "Clients": {
       "title": "Our <green>Clients</green>",
-      "description": "We are proud to serve a diverse range of clients, including farmers, agricultural companies, distributors, government agencies and exporters."
+      "description": "We are proud to serve a diverse range of clients, including farmers, agricultural companies, distributors, government agencies and exporters.",
+      "button": "Read more",
+      "list": {
+        "1": {
+          "title": "Government Entities",
+          "text": "Thanks to the strong reputation of the Shahbandar Seeds brand, we have gained the trust of most government entities that distribute agricultural seeds to farmers and agribusinesses. Our company works with government agricultural extension centers in all governorates of Egypt, as well as with all branches of the Agrarian Reform Authority. We also work with public sector companies involved in agricultural production."
+        },
+        "2": {
+          "title": "Major Companies",
+          "text": "The Shahbandar Seeds brand is trusted by the largest agricultural companies in Egypt, particularly in regions like Toshka, El Owaynat, the Oases, the New Valley, and the Dabaa Axis. Examples include:"
+        },
+        "3": {
+          "title": "Top Traders",
+          "text": "Thanks to our network of agents and distributors, Shahbandar seeds are widely accessible. Our products are trusted by leading seed traders across Egypt, whether in the Delta, Upper Egypt, or major agricultural regions like Nubaria, Wadi Al Natrun, Salhia, the New Valley, Toshka, and El Owaynat."
+        },
+        "4": {
+          "title": "International Exports",
+          "text": "Our export journey began in Algeria, where many traders approved of Egyptian corn seeds produced by Shahbandar. The export market later expanded to include West African countries like Senegal and Mali. As our presence in Africa grew, we decided to open a new branch in Uganda to gradually cover East Africa. We have also exported to Arab countries such as Sudan and Syria. Shahbandar Seeds continues to pursue expansion into more Arab and African countries."
+        }
+      },
+      "sublist": {
+        "1": {
+          "location": "Garf Hussein",
+          "c1": "Lahaye Agricultural Development Company"
+        },
+        "2": {
+          "location": "Toshka",
+          "c1": "Al Zahra Emirati Company",
+          "c2": "South Valley Company",
+          "c3": "Al Baraka Company",
+          "c4": "South Upper Egypt Company",
+          "c5": "Zeraa Company"
+        },
+        "3": {
+          "location": "El Owaynat",
+          "c1": "Navigator Company",
+          "c2": "Cleopatra Company",
+          "c3": "Rakhā Company",
+          "c4": "Baghdadeya Group",
+          "c5": "American-Saudi Company",
+          "c6": "Al-Saudi Company",
+          "c7": "Ahmed Al-Oqail Farm",
+          "c8": "Ministry of Agriculture's Agriculture Sector in El Owaynat"
+        },
+        "4": {
+          "location": "Farafra",
+          "c1": "Cairo Capital Company",
+          "c2": "Green Seeds Company"
+        },
+        "5": {
+          "location": "Dabaa Axis",
+          "c1": "Dakahlia Company",
+          "c2": "Wadi Feed Company"
+        }
+      }
     },
     "Contact": {
       "title": "Contact <green>Us</green>",

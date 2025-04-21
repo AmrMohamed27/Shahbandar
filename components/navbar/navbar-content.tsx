@@ -1,18 +1,18 @@
 import { Link } from "@/i18n/navigation";
-import { NavLink } from "@/types";
 import { useMessages, useTranslations } from "next-intl";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 import AuthButtons from "./auth-buttons";
 import ChangeLanguage from "./change-language";
 import { DarkModeToggle } from "./dark-mode-toggle";
 import MobileMenu from "./mobile-menu";
-import { useEffect, useState } from "react";
 
 const NavbarContent = () => {
   const [isClient, setIsClient] = useState(false);
 
   const { NavLinks } = useMessages();
   const t = useTranslations("NavLinks");
+  type keyType = Parameters<typeof t>[0];
 
   useEffect(() => {
     setIsClient(true);
@@ -34,7 +34,7 @@ const NavbarContent = () => {
       <ul className="hidden lg:flex flex-row items-center gap-6 text-lg">
         {Object.keys(NavLinks).map((key) => (
           <li key={key}>
-            <Link href={`/#${key}`}>{t(key as NavLink)}</Link>
+            <Link href={`/#${key}`}>{t(key as keyType)}</Link>
           </li>
         ))}
       </ul>

@@ -1,9 +1,4 @@
-import {
-  DepartmentsListHref,
-  DepartmentsListImage,
-  DepartmentsListText,
-  DepartmentsListTitle,
-} from "@/types";
+import { Link } from "@/i18n/navigation";
 import {
   ChartNoAxesCombined,
   SearchCheck,
@@ -13,19 +8,19 @@ import {
   Wheat,
 } from "lucide-react";
 import { useMessages, useTranslations } from "next-intl";
-import { Link } from "@/i18n/navigation";
 import { Separator } from "../ui/separator";
 
 export function DepartmentsList() {
   const t = useTranslations("HomePage.Departments.list");
+  type keyType = Parameters<typeof t>[0];
   const messages = useMessages();
   const departments = Object.keys(messages.HomePage.Departments.list).map(
     (key) => {
       return {
-        text: t(`${key}.text` as DepartmentsListText),
-        image: t(`${key}.image` as DepartmentsListImage),
-        title: t(`${key}.title` as DepartmentsListTitle),
-        href: t(`${key}.href` as DepartmentsListHref),
+        text: t(`${key}.text` as keyType),
+        image: t(`${key}.image` as keyType),
+        title: t(`${key}.title` as keyType),
+        href: t(`${key}.href` as keyType),
       };
     }
   );
