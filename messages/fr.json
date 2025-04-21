@@ -6,7 +6,7 @@
     },
     "About": {
       "title": "à propos <green>de nous</green>",
-      "description": "Né de l'héritage agricole profond de l'Égypte, nous, à Shahbandar, avons avancé l'esprit du Nil et la sagesse des générations d'agriculteurs. Depuis notre fondation, nous nous sommes consacrés à soutenir les communautés agricoles du pays avec des graines de haute qualité adaptées aux divers climats de l'Égypte. Notre vision est de soutenir l'agriculture égyptienne en fournissant des graines de confiance et de haute qualité qui aident les agriculteurs - des petits exploitants aux producteurs à grande échelle - développent des récoltes plus fortes et des cultures plus résilientes.",
+      "description": "Shahbandar est une entreprise égyptienne de premier plan dans la production de semences et de cultures, forte de décennies d’expertise et d’innovation agricole. Depuis 1995, nous accompagnons les agriculteurs en Égypte et en Afrique avec des variétés à haut rendement et une recherche fiable.",
       "Goals": {
         "title": "Nos <green>Objectifs</green>",
         "list": {
@@ -182,15 +182,23 @@
       "description": "Pour toute demande, veuillez nous contacter à :",
       "Email": {
         "label": "Email:",
-        "value": "example@email.com"
+        "value": "info@shahbandar.tech"
+      },
+      "Email2": {
+        "label": "Email:",
+        "value": "eaea131215@gmail.com"
       },
       "Phone": {
         "label": "Téléphone:",
-        "value": "+20 123 456 7890"
+        "value": "+201126957895"
+      },
+      "Phone2": {
+        "label": "Téléphone:",
+        "value": "+201155995467"
       },
       "Address": {
         "label": "Adresse:",
-        "value": "123 Rue de l'Agriculture, Alexandrie, Égypte"
+        "value": "El-Ghonaymeya, Route Occidentale du Désert, Edfu - Assouan, Égypte"
       },
       "Content": {
         "label": "Message:"
@@ -200,11 +208,8 @@
       },
       "Submit": "Soumettre",
       "socialMedia": {
-        "label": "Suivez-nous:",
-        "facebook": "www.facebook.com/shahbandar",
-        "twitter": "x.com/shahbandar",
-        "instagram": "www.instagram.com/shahbandar",
-        "youtube": "www.youtube.com/@shahbandar"
+        "label": "Suivez-nous sur les réseaux sociaux",
+        "link": "https://www.facebook.com/profile.php?id=100087597900802"
       }
     }
   },

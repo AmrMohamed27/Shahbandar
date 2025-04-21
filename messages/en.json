@@ -6,7 +6,7 @@
     },
     "About": {
       "title": "About <green>Us</green>",
-      "description": "Born from Egypt's deep agricultural legacy, we in Shahbandar carry forward the spirit of the Nile and the wisdom of generations of farmers. Since our founding, we've dedicated ourselves to supporting the country's farming communities with high-quality seeds tailored to Egypt's diverse climates. Our vision is to support Egyptian agriculture by providing trusted, high-quality seeds that help farmers — from smallholders to large-scale producers — grow stronger harvests and more resilient crops.",
+      "description": "Shahbandar is a leading Egyptian company in seed and crop production, backed by decades of agricultural expertise and innovation. Since 1995, we've grown to serve farmers across Egypt and Africa with high-yield varieties and trusted research.",
       "Goals": {
         "title": "Our <green>Goals</green>",
         "list": {
@@ -182,15 +182,23 @@
       "description": "For inquiries, please reach out to us at:",
       "Email": {
         "label": "Email:",
-        "value": "example@email.com"
+        "value": "info@shahbandar.tech"
+      },
+      "Email2": {
+        "label": "Email:",
+        "value": "eaea131215@gmail.com"
       },
       "Phone": {
         "label": "Phone:",
-        "value": "+20 123 456 7890"
+        "value": "+201126957895"
+      },
+      "Phone2": {
+        "label": "Phone:",
+        "value": "+201155995467"
       },
       "Address": {
         "label": "Address:",
-        "value": "123 Agricultural St, Cairo, Egypt"
+        "value": "El-Ghonaymeya, Western Desert Road, Edfu - Aswan, Egypt"
       },
       "Content": {
         "label": "Message:"
@@ -200,11 +208,8 @@
       },
       "Submit": "Submit",
       "socialMedia": {
-        "label": "Follow us on:",
-        "facebook": "www.facebook.com/shahbandar",
-        "twitter": "x.com/shahbandar",
-        "instagram": "www.instagram.com/shahbandar",
-        "youtube": "www.youtube.com/@shahbandar"
+        "label": "Follow us on social media",
+        "link": "https://www.facebook.com/profile.php?id=100087597900802"
       }
     }
   },

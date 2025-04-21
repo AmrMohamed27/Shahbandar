@@ -17,7 +17,7 @@ const MarqueeComponent = () => {
   return (
     <div dir="ltr">
       <Marquee
-        className="before:top-0 after:top-0 after:right-0 before:left-0 before:z-10 after:z-10 before:absolute after:absolute before:bg-gradient-to-r after:bg-gradient-to-l before:from-white after:from-white dark:before:from-zinc-950 dark:after:from-zinc-950 before:to-transparent after:to-transparent mx-auto before:w-10 after:w-10 max-w-[1200px] before:h-full after:h-full before:content-[''] after:content-[''] container"
+        className="before:top-0 after:top-0 after:right-0 before:left-0 before:z-10 after:z-10 before:absolute after:absolute before:bg-gradient-to-r after:bg-gradient-to-l before:from-background after:from-background before:to-transparent after:to-transparent mx-auto before:w-10 after:w-10 max-w-[1200px] before:h-full after:h-full before:content-[''] after:content-[''] container"
         autoFill
         pauseOnHover
       >

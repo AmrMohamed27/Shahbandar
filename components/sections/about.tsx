@@ -15,6 +15,7 @@ import {
 import { useMessages, useTranslations } from "next-intl";
 import { Button } from "../ui/button";
 import AnimatedSection from "./animated-section";
+import Image from "next/image";
 
 const AboutSection = () => {
   const t = useTranslations("HomePage");
@@ -47,19 +48,28 @@ const AboutSection = () => {
       duration={0.8}
     >
       {/* About us */}
-      <div className="flex flex-col justify-center items-center gap-4 text-center">
-        <h2
-          className="font-bold text-xl md:text-3xl lg:text-5xl"
-          dangerouslySetInnerHTML={{
-            __html: renderHtml(t.raw("About.title")),
-          }}
-        ></h2>
-        <p className="lg:max-w-[60%]">{t("About.description")}</p>
-        <Link href={"/about"}>
-          <Button variant={"green"} size={"lg"}>
-            {t("About.Button")}
-          </Button>
-        </Link>
+      <div className="flex flex-col justify-center items-center gap-4 w-full">
+        <div className="flex flex-col justify-center items-center gap-4 text-center">
+          <h2
+            className="font-bold text-xl md:text-3xl lg:text-5xl"
+            dangerouslySetInnerHTML={{
+              __html: renderHtml(t.raw("About.title")),
+            }}
+          ></h2>
+          <Image
+            src="/assets/images/original-logo-green.png"
+            alt="logo"
+            width={500}
+            height={500}
+            className={"h-auto  max-w-[150px]"}
+          />
+          <p className="">{t("About.description")}</p>
+          <Link href={"/about"}>
+            <Button variant={"green"} size={"lg"}>
+              {t("About.Button")}
+            </Button>
+          </Link>
+        </div>
       </div>
 
       {/* Our Goals */}
@@ -70,11 +80,11 @@ const AboutSection = () => {
             __html: renderHtml(t.raw("About.Goals.title")),
           }}
         />
-        <ul className="flex flex-row flex-wrap justify-center gap-x-8 gap-y-4">
+        <ul className="flex flex-row flex-wrap justify-between gap-x-4 gap-y-4">
           {Object.keys(goals).map((key) => (
             <li
               key={key}
-              className="flex flex-col items-center gap-4 bg-primary-green dark:bg-primary-green-300 px-8 py-16 rounded-md text-white text-center basis-full md:basis-1/2 lg:basis-1/3 xl:basis-1/6"
+              className="flex flex-col flex-1 items-center gap-4 bg-primary-green dark:bg-primary-green-300 px-8 py-16 rounded-md text-white text-center basis-full md:basis-1/3 xl:basis-1/6"
             >
               {/* Icon */}
               {goalsIcons[parseInt(key) - 1].icon}

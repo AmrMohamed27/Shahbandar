@@ -19,14 +19,15 @@ const NavbarContent = () => {
   }, []);
 
   return (
-    <div className="flex flex-row justify-between items-center mx-auto p-4 container">
+    <div className="flex flex-row justify-between items-center mx-auto px-2 sm:px-4 md:px-8 lg:px-8 py-4 container">
       {/* Logo */}
       <Link href="/">
         <Image
-          src={"/assets/images/logo-green.png"}
+          src={"/assets/images/original-logo-green.png"}
           alt="logo"
           width={100}
           height={100}
+          className="w-10 h-auto"
         />
       </Link>
 

@@ -39,7 +39,7 @@ const MobileMenu = ({ isClient }: Props) => {
           <SheetTitle>
             <Link href="/">
               <Image
-                src={"/assets/images/logo-green.png"}
+                src={"/assets/images/original-logo-green.png"}
                 alt="logo"
                 width={100}
                 height={100}

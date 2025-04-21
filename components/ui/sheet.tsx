@@ -5,6 +5,8 @@ import * as SheetPrimitive from "@radix-ui/react-dialog";
 import { XIcon } from "lucide-react";
 
 import { cn } from "@/lib/utils";
+import { useLocale } from "next-intl";
+import { getLangDir } from "rtl-detect";
 
 function Sheet({ ...props }: React.ComponentProps<typeof SheetPrimitive.Root>) {
   return <SheetPrimitive.Root data-slot="sheet" {...props} />;
@@ -52,6 +54,8 @@ function SheetContent({
 }: React.ComponentProps<typeof SheetPrimitive.Content> & {
   side?: "top" | "right" | "bottom" | "left";
 }) {
+  const locale = useLocale();
+  const direction = getLangDir(locale);
   return (
     <SheetPortal>
       <SheetOverlay />
@@ -72,7 +76,12 @@ function SheetContent({
         {...props}
       >
         {children}
-        <SheetPrimitive.Close className="top-6 right-4 absolute data-[state=open]:bg-secondary opacity-70 hover:opacity-100 rounded-xs focus:outline-hidden focus:ring-2 focus:ring-ring ring-offset-background focus:ring-offset-2 transition-opacity disabled:pointer-events-none">
+        <SheetPrimitive.Close
+          className={cn(
+            "top-6 absolute data-[state=open]:bg-secondary opacity-70 hover:opacity-100 rounded-xs focus:outline-hidden focus:ring-2 focus:ring-ring ring-offset-background focus:ring-offset-2 transition-opacity disabled:pointer-events-none",
+            direction === "rtl" ? "left-4" : "right-4"
+          )}
+        >
           <XIcon className="size-4" />
           <span className="sr-only">Close</span>
         </SheetPrimitive.Close>

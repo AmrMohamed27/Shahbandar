@@ -29,39 +29,45 @@ const ClientsPage = () => {
                 </h2>
               </div>
               <p>{t(`list.${key}.text` as keyType)}</p>
-              {key === "2" &&
-                Object.keys(clientSublist).map((key, index) => {
-                  const companies: string[] = [];
-                  for (let i = 1; i <= 8; i++) {
-                    if (!t.has(`sublist.${key}.c${i}` as keyType)) {
-                      break;
+              {key === "2" && (
+                <div className="flex flex-col gap-4">
+                  {Object.keys(clientSublist).map((key, index) => {
+                    const companies: string[] = [];
+                    for (let i = 1; i <= 8; i++) {
+                      if (!t.has(`sublist.${key}.c${i}` as keyType)) {
+                        break;
+                      }
+                      companies.push(t(`sublist.${key}.c${i}` as keyType));
                     }
-                    companies.push(t(`sublist.${key}.c${i}` as keyType));
-                  }
-                  return (
-                    <div
-                      key={index}
-                      className="flex flex-row gap-2 px-4 md:px-8 lg:px-16"
-                    >
-                      <div className="flex flex-row items-center gap-2">
-                        <MapPin className="text-primary-green" size={16} />
-                        <h3 className="font-semibold md:text-lg">
-                          {t(`sublist.${key}.location` as keyType)}:
-                        </h3>
+                    return (
+                      <div
+                        key={index}
+                        className="flex flex-row flex-wrap gap-2"
+                      >
+                        <div className="flex flex-row items-center gap-2">
+                          <MapPin className="text-primary-green" size={16} />
+                          <h3 className="font-semibold md:text-lg">
+                            {t(`sublist.${key}.location` as keyType)}:
+                          </h3>
+                        </div>
+                        <div className="flex flex-row flex-wrap items-center gap-2">
+                          {companies.map((company, index) => (
+                            <React.Fragment key={index}>
+                              <span>{company}</span>
+                              {index < companies.length - 1 && (
+                                <Separator
+                                  orientation="vertical"
+                                  className="max-h-4"
+                                />
+                              )}
+                            </React.Fragment>
+                          ))}
+                        </div>
                       </div>
-                      <div className="flex flex-row items-center gap-2">
-                        {companies.map((company, index) => (
-                          <React.Fragment key={index}>
-                            <span>{company}</span>
-                            {index < companies.length - 1 && (
-                              <Separator orientation="vertical" />
-                            )}
-                          </React.Fragment>
-                        ))}
-                      </div>
-                    </div>
-                  );
-                })}
+                    );
+                  })}
+                </div>
+              )}
             </React.Fragment>
           ))}
         </div>

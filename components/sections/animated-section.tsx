@@ -23,7 +23,7 @@ const AnimatedSection = ({
       whileInView={{ y: 0, opacity }}
       viewport={{ once: true }}
       transition={{ duration, ease: "easeInOut" }}
-      className={cn("border-t-2 pt-12 px-2 sm:px-4 md:px-8  mt-8", className)}
+      className={cn("border-t-2 pt-12 px-2 sm:px-4 md:px-8 mt-8", className)}
       id={id}
     >
       {children}
