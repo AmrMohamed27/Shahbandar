@@ -125,18 +125,22 @@
       "button": "En savoir plus",
       "list": {
         "1": {
+          "id": "gov",
           "title": "Organismes gouvernementaux",
           "text": "Grâce à la renommée de la marque Shahbandar pour les semences, nous avons gagné la confiance de la plupart des organismes gouvernementaux qui distribuent des semences agricoles aux agriculteurs et aux entreprises agricoles. Notre entreprise collabore avec les centres de vulgarisation agricole gouvernementaux dans toutes les provinces d'Égypte, ainsi qu'avec toutes les branches de la Réforme Agraire. Nous travaillons également avec les entreprises du secteur public spécialisées dans la production agricole."
         },
         "2": {
+          "id": "companies",
           "title": "Grandes entreprises",
           "text": "La marque Shahbandar est reconnue par les plus grandes entreprises agricoles en Égypte, notamment dans les régions de Toshka, El Owaynat, les Oasis, la Nouvelle Vallée et l'Axe de Dabaa. En voici quelques exemples :"
         },
         "3": {
+          "id": "traders",
           "title": "Grands commerçants",
           "text": "Grâce à notre réseau d'agents et de distributeurs, vous pouvez facilement trouver les semences Shahbandar. Nos produits sont distribués par les plus grands commerçants de semences à travers toute l'Égypte, que ce soit dans le Delta, en Haute-Égypte ou dans les grandes zones agricoles comme Nubariya, Wadi Al Natrun, Salhia, la Nouvelle Vallée, Toshka et El Owaynat."
         },
         "4": {
+          "id": "exports",
           "title": "Exportations internationales",
           "text": "Les exportations de Shahbandar ont commencé en Algérie, où de nombreux commerçants ont approuvé les semences de maïs égyptiennes produites par notre entreprise. Le secteur export s'est ensuite élargi à d'autres pays d'Afrique de l'Ouest comme le Sénégal et le Mali. Avec notre expansion en Afrique, nous avons ouvert une nouvelle succursale en Ouganda pour couvrir progressivement l'Afrique de l'Est. Nous avons également exporté vers d'autres pays arabes tels que le Soudan et la Syrie. Shahbandar continue à se développer dans le monde arabe et en Afrique."
         }
@@ -208,7 +212,7 @@
       },
       "Submit": "Soumettre",
       "socialMedia": {
-        "label": "Suivez-nous sur les réseaux sociaux",
+        "label": "Suivez-nous sur Facebook",
         "link": "https://www.facebook.com/profile.php?id=100087597900802"
       }
     }
@@ -220,6 +224,34 @@
     "products": "Produits",
     "clients": "Clients",
     "contact": "Nous contacter"
+  },
+  "NavDepartments": {
+    "1": {
+      "label": "Production",
+      "href": "/departments/production"
+    },
+    "2": {
+      "label": "Recherche et Développement",
+      "href": "/departments/rnd"
+    },
+    "3": {
+      "label": "Ventes et Marketing",
+      "href": "/departments/sales"
+    },
+    "4": {
+      "label": "Silos et Entrepôts",
+      "href": "/departments/silos"
+    },
+    "5": {
+      "label": "Affaires Administratives",
+      "href": "/departments/administration"
+    }
+  },
+  "Dark": {
+    "light": "Clair",
+    "dark": "Sombre",
+    "system": "Système",
+    "sr": "Basculer le thème"
   },
   "Auth": {
     "Buttons": {

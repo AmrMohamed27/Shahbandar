@@ -9,29 +9,38 @@ const ClientsPage = () => {
   const t = useTranslations("HomePage.Clients");
   const messages = useMessages();
   type keyType = Parameters<typeof t>[0];
-  const clientMessages = messages.HomePage.Clients.list;
-  const clientSublist = messages.HomePage.Clients.sublist;
+  const clients = messages.HomePage.Clients.list;
+  const companiesSublist = messages.HomePage.Clients.sublist;
 
   return (
     <div className="mx-auto px-2 container">
-      <AnimatedSection className="flex flex-col items-center gap-10 mt-4 pt-0 border-0">
+      <AnimatedSection
+        className="flex flex-col items-center gap-10 mt-4 pt-0 border-0"
+        firstChild
+      >
         <h1
           className="font-bold text-xl md:text-3xl lg:text-5xl"
           dangerouslySetInnerHTML={{ __html: renderHtml(t.raw("title")) }}
         />
         <div className="flex flex-col gap-4">
-          {Object.keys(clientMessages).map((key, index) => (
-            <React.Fragment key={index}>
-              <div className="flex flex-row items-center gap-2">
-                <Layers className="text-primary-green" size={16} />
-                <h2 className="font-semibold text-lg md:text-xl lg:text-2xl">
-                  {t(`list.${key}.title` as keyType)}
-                </h2>
+          {Object.keys(clients).map((key, index) => (
+            <div
+              className="flex flex-col gap-4"
+              id={t(`list.${key}.id` as keyType)}
+              key={index}
+            >
+              <div className="flex flex-col gap-0">
+                <div className="flex flex-row items-center gap-2">
+                  <Layers className="text-primary-green" size={16} />
+                  <h2 className="font-semibold text-lg md:text-xl lg:text-2xl">
+                    {t(`list.${key}.title` as keyType)}
+                  </h2>
+                </div>
+                <p>{t(`list.${key}.text` as keyType)}</p>
               </div>
-              <p>{t(`list.${key}.text` as keyType)}</p>
               {key === "2" && (
-                <div className="flex flex-col gap-4">
-                  {Object.keys(clientSublist).map((key, index) => {
+                <div className="flex flex-col gap-2">
+                  {Object.keys(companiesSublist).map((key, index) => {
                     const companies: string[] = [];
                     for (let i = 1; i <= 8; i++) {
                       if (!t.has(`sublist.${key}.c${i}` as keyType)) {
@@ -68,7 +77,7 @@ const ClientsPage = () => {
                   })}
                 </div>
               )}
-            </React.Fragment>
+            </div>
           ))}
         </div>
       </AnimatedSection>

@@ -125,18 +125,22 @@
       "button": "Read more",
       "list": {
         "1": {
+          "id": "gov",
           "title": "Government Entities",
           "text": "Thanks to the strong reputation of the Shahbandar Seeds brand, we have gained the trust of most government entities that distribute agricultural seeds to farmers and agribusinesses. Our company works with government agricultural extension centers in all governorates of Egypt, as well as with all branches of the Agrarian Reform Authority. We also work with public sector companies involved in agricultural production."
         },
         "2": {
+          "id": "companies",
           "title": "Major Companies",
           "text": "The Shahbandar Seeds brand is trusted by the largest agricultural companies in Egypt, particularly in regions like Toshka, El Owaynat, the Oases, the New Valley, and the Dabaa Axis. Examples include:"
         },
         "3": {
+          "id": "traders",
           "title": "Top Traders",
           "text": "Thanks to our network of agents and distributors, Shahbandar seeds are widely accessible. Our products are trusted by leading seed traders across Egypt, whether in the Delta, Upper Egypt, or major agricultural regions like Nubaria, Wadi Al Natrun, Salhia, the New Valley, Toshka, and El Owaynat."
         },
         "4": {
+          "id": "exports",
           "title": "International Exports",
           "text": "Our export journey began in Algeria, where many traders approved of Egyptian corn seeds produced by Shahbandar. The export market later expanded to include West African countries like Senegal and Mali. As our presence in Africa grew, we decided to open a new branch in Uganda to gradually cover East Africa. We have also exported to Arab countries such as Sudan and Syria. Shahbandar Seeds continues to pursue expansion into more Arab and African countries."
         }
@@ -208,7 +212,7 @@
       },
       "Submit": "Submit",
       "socialMedia": {
-        "label": "Follow us on social media",
+        "label": "Follow us on Facebook",
         "link": "https://www.facebook.com/profile.php?id=100087597900802"
       }
     }
@@ -220,6 +224,34 @@
     "products": "Products",
     "clients": "Clients",
     "contact": "Contact Us"
+  },
+  "NavDepartments": {
+    "1": {
+      "label": "Production",
+      "href": "/departments/production"
+    },
+    "2": {
+      "label": "Research and Development",
+      "href": "/departments/rnd"
+    },
+    "3": {
+      "label": "Sales and Marketing",
+      "href": "/departments/sales"
+    },
+    "4": {
+      "label": "Silos and Warehouses",
+      "href": "/departments/silos"
+    },
+    "5": {
+      "label": "Administration",
+      "href": "/departments/administration"
+    }
+  },
+  "Dark": {
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System",
+    "sr": "Toggle theme"
   },
   "Auth": {
     "Buttons": {

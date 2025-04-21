@@ -8,6 +8,7 @@ type Props = {
   id?: string;
   duration?: number;
   opacity?: number;
+  firstChild?: boolean;
 };
 
 const AnimatedSection = ({
@@ -16,8 +17,19 @@ const AnimatedSection = ({
   id,
   duration = 0.5,
   opacity = 1,
+  firstChild = false,
 }: Props) => {
-  return (
+  return firstChild ? (
+    <motion.div
+      initial={{ y: -100, opacity: 0 }}
+      animate={{ y: 0, opacity }}
+      transition={{ duration, ease: "easeInOut" }}
+      className={cn("border-t-2 pt-12 px-2 sm:px-4 md:px-8 mt-8", className)}
+      id={id}
+    >
+      {children}
+    </motion.div>
+  ) : (
     <motion.div
       initial={{ y: -100, opacity: 0 }}
       whileInView={{ y: 0, opacity }}

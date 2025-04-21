@@ -6,6 +6,8 @@ import AuthButtons from "./auth-buttons";
 import ChangeLanguage from "./change-language";
 import { DarkModeToggle } from "./dark-mode-toggle";
 import MobileMenu from "./mobile-menu";
+import DepartmentsHoverCard from "../departments/departments-hover-card";
+import ClientsHoverCard from "../clients-hover-card";
 
 const NavbarContent = () => {
   const [isClient, setIsClient] = useState(false);
@@ -35,7 +37,13 @@ const NavbarContent = () => {
       <ul className="hidden lg:flex flex-row items-center gap-6 text-lg">
         {Object.keys(NavLinks).map((key) => (
           <li key={key}>
-            <Link href={`/#${key}`}>{t(key as keyType)}</Link>
+            {key === "departments" ? (
+              <DepartmentsHoverCard label={t(key as keyType)} id={`/#${key}`} />
+            ) : key === "clients" ? (
+              <ClientsHoverCard label={t(key as keyType)} link={`${key}`} />
+            ) : (
+              <Link href={`/#${key}`}>{t(key as keyType)}</Link>
+            )}
           </li>
         ))}
       </ul>

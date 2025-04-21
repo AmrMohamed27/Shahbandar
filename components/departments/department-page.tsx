@@ -24,7 +24,7 @@ const DepartmentPage = ({ department }: Props) => {
         <motion.div
           className="z-20 mt-0 px-2 sm:px-4 md:px-8 pt-0 border-0"
           initial={{ y: -100, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
+          animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.5, ease: "easeInOut" }}
           id="home"
         >
@@ -44,7 +44,7 @@ const DepartmentPage = ({ department }: Props) => {
       <motion.div
         className="mt-0 px-2 sm:px-4 md:px-8 pt-0 border-0"
         initial={{ y: -100, opacity: 0 }}
-        whileInView={{ y: 0, opacity: 1 }}
+        animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5, ease: "easeInOut" }}
       >
         <ul className="flex flex-col gap-2">

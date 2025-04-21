@@ -89,7 +89,9 @@ const ContactForm = () => {
             </FormItem>
           )}
         />
-        <Button type="submit">{t("Submit")}</Button>
+        <Button type="submit" variant={"green"}>
+          {t("Submit")}
+        </Button>
       </form>
     </Form>
   );
