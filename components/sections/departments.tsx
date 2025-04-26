@@ -1,4 +1,4 @@
-import { renderHtml } from "@/lib/utils";
+import { renderGreenHtml } from "@/lib/utils";
 import { useTranslations } from "next-intl";
 import AnimatedSection from "./animated-section";
 import { DepartmentsList } from "./departments-list";
@@ -12,7 +12,7 @@ const DepartmentsSection = () => {
     >
       <h2
         className="font-bold text-xl md:text-3xl lg:text-5xl"
-        dangerouslySetInnerHTML={{ __html: renderHtml(t.raw("title")) }}
+        dangerouslySetInnerHTML={{ __html: renderGreenHtml(t.raw("title")) }}
       />
       <DepartmentsList />
     </AnimatedSection>

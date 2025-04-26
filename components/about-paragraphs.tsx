@@ -1,4 +1,7 @@
+import { renderBoldHtml } from "@/lib/utils";
+import { Check } from "lucide-react";
 import { useMessages, useTranslations } from "next-intl";
+import { Fragment } from "react";
 
 const AboutParagraphs = () => {
   const messages = useMessages();
@@ -6,14 +9,19 @@ const AboutParagraphs = () => {
   const t = useTranslations("AboutPage.brief");
   type keyType = Parameters<typeof t>[0];
   const paragraphs = Object.keys(paragraphsObject).map((key) =>
-    t(key as keyType)
+    t.raw(key as keyType)
   );
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col gap-2">
       {paragraphs.map((text, index) => (
-        <p key={index} className="[&:not(:first-child)]:mt-6 leading-7">
-          {text}
-        </p>
+        <Fragment key={index}>
+          <div className="flex flex-row items-start gap-2">
+            <Check className="mt-1 text-primary-green shrink-0" size={16} />
+            <span
+              dangerouslySetInnerHTML={{ __html: renderBoldHtml(text) }}
+            ></span>
+          </div>
+        </Fragment>
       ))}
     </div>
   );

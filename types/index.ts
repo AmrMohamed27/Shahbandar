@@ -5,3 +5,11 @@ export interface DepartmentObject {
   href: string;
   id: string;
 }
+
+export interface ProductObject {
+  id: string;
+  title: string;
+  text: string;
+  image: string;
+  href: string;
+}

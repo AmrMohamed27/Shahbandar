@@ -37,7 +37,7 @@ const DepartmentPage = ({ department }: Props) => {
           alt={title}
           width={1000}
           height={100}
-          className="top-0 left-0 absolute opacity-50 w-full h-full object-cover"
+          className="top-0 left-0 absolute opacity-80 dark:opacity-50 w-full h-full object-cover"
         />
       </div>
       {/* Text */}
@@ -50,7 +50,7 @@ const DepartmentPage = ({ department }: Props) => {
         <ul className="flex flex-col gap-2">
           {sentences.map((s, i) => (
             <li key={i} className="flex flex-row gap-2">
-              <Check className="text-primary-green" />
+              <Check className="text-primary-green shrink-0" size={16} />
               <span>
                 {s}.
                 <br />

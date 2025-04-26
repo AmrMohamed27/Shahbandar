@@ -6,9 +6,16 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 // Function to handle HTML in translation strings
-export const renderHtml = (htmlString: string) => {
+export const renderGreenHtml = (htmlString: string) => {
   return htmlString.replace(
     /<green>(.*?)<\/green>/g,
     '<span class="text-primary-green">$1</span>'
+  );
+};
+
+export const renderBoldHtml = (htmlString: string) => {
+  return htmlString.replace(
+    /<bold>(.*?)<\/bold>/g,
+    '<span class="font-bold text-lg">$1</span>'
   );
 };

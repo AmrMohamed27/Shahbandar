@@ -1,6 +1,6 @@
 import React from "react";
 import AnimatedSection from "./animated-section";
-import { renderHtml } from "@/lib/utils";
+import { renderGreenHtml } from "@/lib/utils";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 
@@ -13,7 +13,7 @@ const HeroSection = () => {
         <h1
           className="font-bold text-2xl md:text-3xl lg:text-7xl"
           dangerouslySetInnerHTML={{
-            __html: renderHtml(t.raw("Hero.title")),
+            __html: renderGreenHtml(t.raw("Hero.title")),
           }}
         ></h1>
         <p className="text-lg">{t("Hero.subtitle")}</p>
@@ -23,7 +23,7 @@ const HeroSection = () => {
         alt="Wheat field"
         width={800}
         height={500}
-        className="top-0 left-0 absolute opacity-50 w-full h-96 object-cover"
+        className="top-0 left-0 absolute opacity-50 opacity-70 w-full h-96 object-cover"
       />
     </div>
   );

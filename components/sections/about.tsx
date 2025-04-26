@@ -1,5 +1,5 @@
 import { Link } from "@/i18n/navigation";
-import { renderHtml } from "@/lib/utils";
+import { renderBoldHtml, renderGreenHtml } from "@/lib/utils";
 import {
   BadgeCheck,
   FlaskConical,
@@ -53,7 +53,7 @@ const AboutSection = () => {
           <h2
             className="font-bold text-xl md:text-3xl lg:text-5xl"
             dangerouslySetInnerHTML={{
-              __html: renderHtml(t.raw("About.title")),
+              __html: renderGreenHtml(t.raw("About.title")),
             }}
           ></h2>
           <Image
@@ -63,7 +63,12 @@ const AboutSection = () => {
             height={500}
             className={"h-auto  max-w-[150px]"}
           />
-          <p className="">{t("About.description")}</p>
+          <p
+            className=""
+            dangerouslySetInnerHTML={{
+              __html: renderBoldHtml(t.raw("About.description")),
+            }}
+          ></p>
           <Link href={"/about"}>
             <Button variant={"green"} size={"lg"}>
               {t("About.Button")}
@@ -77,7 +82,7 @@ const AboutSection = () => {
         <h2
           className="font-bold text-xl md:text-2xl lg:text-3xl"
           dangerouslySetInnerHTML={{
-            __html: renderHtml(t.raw("About.Goals.title")),
+            __html: renderGreenHtml(t.raw("About.Goals.title")),
           }}
         />
         <ul className="flex flex-row flex-wrap justify-between gap-x-4 gap-y-4">
@@ -99,7 +104,7 @@ const AboutSection = () => {
         <h2
           className="font-bold text-xl md:text-2xl lg:text-3xl"
           dangerouslySetInnerHTML={{
-            __html: renderHtml(t.raw("About.Values.title")),
+            __html: renderGreenHtml(t.raw("About.Values.title")),
           }}
         />
         <ul className="flex flex-row flex-wrap justify-start items-start gap-y-2">
@@ -116,7 +121,13 @@ const AboutSection = () => {
                 <span className="font-semibold text-primary-green lg:text-lg">
                   {t(`About.Values.list.${key}.title` as keyType)}
                 </span>
-                <span>{t(`About.Values.list.${key}.text` as keyType)}</span>
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: renderBoldHtml(
+                      t.raw(`About.Values.list.${key}.text` as keyType)
+                    ),
+                  }}
+                ></span>
               </div>
             </li>
           ))}
@@ -128,7 +139,7 @@ const AboutSection = () => {
         <h2
           className="font-bold text-xl md:text-2xl lg:text-3xl"
           dangerouslySetInnerHTML={{
-            __html: renderHtml(t.raw("About.Slogan.title")),
+            __html: renderGreenHtml(t.raw("About.Slogan.title")),
           }}
         ></h2>
         <p className="font-semibold text-xl">{t("About.Slogan.text")}</p>

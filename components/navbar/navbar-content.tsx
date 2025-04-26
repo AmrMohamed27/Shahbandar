@@ -1,14 +1,14 @@
 import { Link } from "@/i18n/navigation";
 import { useMessages, useTranslations } from "next-intl";
 import Image from "next/image";
-import ClientsHoverCard from "../clients-hover-card";
+import ClientsHoverCard from "../clients/clients-hover-card";
 import DepartmentsHoverCard from "../departments/departments-hover-card";
 import ChangeLanguage from "./change-language";
 import { DarkModeToggle } from "./dark-mode-toggle";
 import MobileMenu from "./mobile-menu";
+import ProductHoverCard from "../products/product-hover-card";
 
 const NavbarContent = () => {
-
   const { NavLinks } = useMessages();
   const t = useTranslations("NavLinks");
   type keyType = Parameters<typeof t>[0];
@@ -34,6 +34,10 @@ const NavbarContent = () => {
               <DepartmentsHoverCard label={t(key as keyType)} id={`/#${key}`} />
             ) : key === "clients" ? (
               <ClientsHoverCard label={t(key as keyType)} link={`${key}`} />
+            ) : key === "products" ? (
+              <ProductHoverCard label={t(key as keyType)} id={`/#${key}`} />
+            ) : key === "about" ? (
+              <Link href={`/${key}`}>{t(key as keyType)}</Link>
             ) : (
               <Link href={`/#${key}`}>{t(key as keyType)}</Link>
             )}

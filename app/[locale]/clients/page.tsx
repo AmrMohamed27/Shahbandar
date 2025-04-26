@@ -1,6 +1,6 @@
 import AnimatedSection from "@/components/sections/animated-section";
 import { Separator } from "@/components/ui/separator";
-import { renderHtml } from "@/lib/utils";
+import { renderBoldHtml, renderGreenHtml } from "@/lib/utils";
 import { Layers, MapPin } from "lucide-react";
 import { useMessages, useTranslations } from "next-intl";
 import React from "react";
@@ -20,7 +20,7 @@ const ClientsPage = () => {
       >
         <h1
           className="font-bold text-xl md:text-3xl lg:text-5xl"
-          dangerouslySetInnerHTML={{ __html: renderHtml(t.raw("title")) }}
+          dangerouslySetInnerHTML={{ __html: renderGreenHtml(t.raw("title")) }}
         />
         <div className="flex flex-col gap-4">
           {Object.keys(clients).map((key, index) => (
@@ -31,12 +31,18 @@ const ClientsPage = () => {
             >
               <div className="flex flex-col gap-0">
                 <div className="flex flex-row items-center gap-2">
-                  <Layers className="text-primary-green" size={16} />
+                  <Layers className="text-primary-green shrink-0" size={16} />
                   <h2 className="font-semibold text-lg md:text-xl lg:text-2xl">
                     {t(`list.${key}.title` as keyType)}
                   </h2>
                 </div>
-                <p>{t(`list.${key}.text` as keyType)}</p>
+                <p
+                  dangerouslySetInnerHTML={{
+                    __html: renderBoldHtml(
+                      t.raw(`list.${key}.text` as keyType)
+                    ),
+                  }}
+                ></p>
               </div>
               {key === "2" && (
                 <div className="flex flex-col gap-2">
@@ -54,7 +60,10 @@ const ClientsPage = () => {
                         className="flex flex-row flex-wrap gap-2"
                       >
                         <div className="flex flex-row items-center gap-2">
-                          <MapPin className="text-primary-green" size={16} />
+                          <MapPin
+                            className="text-primary-green shrink-0"
+                            size={16}
+                          />
                           <h3 className="font-semibold md:text-lg">
                             {t(`sublist.${key}.location` as keyType)}:
                           </h3>

@@ -8,11 +8,14 @@ import {
 } from "@/components/ui/sheet";
 import { Link } from "@/i18n/navigation";
 import { MenuIcon } from "lucide-react";
-import { useMessages, useTranslations } from "next-intl";
+import { useLocale, useMessages, useTranslations } from "next-intl";
 import Image from "next/image";
 import { useState } from "react";
+import ClientsCollapsible from "../clients/clients-collapsible";
+import DepartmentsCollapsible from "../departments/departments-collapsible";
 import { Button } from "../ui/button";
-
+import ProductsCollapsible from "../products/product-collapsible";
+import { getLangDir } from "rtl-detect";
 
 const MobileMenu = () => {
   const { NavLinks } = useMessages();
@@ -23,6 +26,10 @@ const MobileMenu = () => {
   const toggleOpen = () => {
     setOpen((open) => !open);
   };
+
+  const locale = useLocale();
+  const side = getLangDir(locale) === "ltr" ? "left" : "right";
+
   return (
     <Sheet open={open} onOpenChange={toggleOpen}>
       <SheetTrigger asChild>
@@ -30,17 +37,19 @@ const MobileMenu = () => {
           <MenuIcon />
         </Button>
       </SheetTrigger>
-      <SheetContent>
+      <SheetContent className="overflow-y-scroll" side={side}>
         <SheetHeader>
           <SheetTitle>
-            <Link href="/">
-              <Image
-                src={"/assets/images/original-logo-green.png"}
-                alt="logo"
-                width={100}
-                height={100}
-              />
-            </Link>
+            <div className="max-w-[80px]">
+              <Link href="/" className="">
+                <Image
+                  src={"/assets/images/original-logo-green.png"}
+                  alt="logo"
+                  width={100}
+                  height={100}
+                />
+              </Link>
+            </div>
           </SheetTitle>
         </SheetHeader>
 
@@ -50,10 +59,27 @@ const MobileMenu = () => {
             {Object.keys(NavLinks).map((key) => (
               <li
                 key={key}
-                className="hover:bg-muted px-4 py-2 rounded-md cursor-pointer"
+                className="flex *:flex-1 hover:bg-muted px-4 py-2 rounded-md cursor-pointer"
                 onClick={() => setOpen(false)}
               >
-                <Link href={`/#${key}`}>{t(key as keyType)}</Link>
+                {key === "departments" ? (
+                  <DepartmentsCollapsible label={t(key as keyType)} />
+                ) : key === "clients" ? (
+                  <ClientsCollapsible
+                    label={t(key as keyType)}
+                    link={`${key}`}
+                  />
+                ) : key === "products" ? (
+                  <ProductsCollapsible label={t(key as keyType)} />
+                ) : key === "about" ? (
+                  <Link className="w-full" href={`/${key}`}>
+                    {t(key as keyType)}
+                  </Link>
+                ) : (
+                  <Link className="w-full" href={`/#${key}`}>
+                    {t(key as keyType)}
+                  </Link>
+                )}
               </li>
             ))}
           </ul>

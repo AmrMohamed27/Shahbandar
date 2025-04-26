@@ -1,4 +1,5 @@
 "use client";
+import { sendContactEmail } from "@/actions/contact";
 import { Button } from "@/components/ui/button";
 import {
   Form,
@@ -10,18 +11,20 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { Ban, Mail } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { useForm } from "react-hook-form";
 import TextareaAutosize from "react-textarea-autosize";
+import { toast } from "sonner";
 import { z } from "zod";
 
-const formSchema = z.object({
-  fullName: z.string(),
-  email: z.string().email(),
-  content: z.string(),
-});
-
 const ContactForm = () => {
+  const t = useTranslations("HomePage.Contact");
+  const formSchema = z.object({
+    fullName: z.string().min(2, t("FullName.message")),
+    email: z.string().email(t("formEmail.message")),
+    content: z.string().min(1, t("Content.message")),
+  });
   // 1. Define your form.
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -33,11 +36,24 @@ const ContactForm = () => {
   });
 
   // 2. Define a submit handler.
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values);
+  async function onSubmit(values: z.infer<typeof formSchema>) {
+    const { email, fullName, content } = values;
+    const { success } = await sendContactEmail(email, fullName, content);
+    if (success) {
+      toast(t("success"), {
+        icon: <Mail size={16} />,
+        closeButton: true,
+        style: { backgroundColor: "#008000" },
+      });
+    } else {
+      toast(t("fail"), {
+        icon: <Ban size={16} />,
+        closeButton: true,
+        style: { backgroundColor: "#800000" },
+      });
+    }
   }
 
-  const t = useTranslations("HomePage.Contact");
   return (
     <Form {...form}>
       <form
@@ -64,7 +80,7 @@ const ContactForm = () => {
           name="email"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>{t("Email.label")}</FormLabel>
+              <FormLabel>{t("formEmail.label")}</FormLabel>
               <FormControl>
                 <Input placeholder="example@email.com" {...field} />
               </FormControl>

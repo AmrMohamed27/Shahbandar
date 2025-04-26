@@ -8,6 +8,7 @@ import { notFound } from "next/navigation";
 import Footer from "@/components/footer";
 import { Suspense } from "react";
 import Loader from "@/components/loader";
+import { Toaster } from "@/components/ui/sonner";
 
 const zain = Zain({
   variable: "--font-zain",
@@ -39,7 +40,10 @@ export default async function LocaleLayout({
           <NextIntlClientProvider>
             <Header />
             <main className="min-h-screen">
-              <Suspense fallback={<Loader />}>{children}</Suspense>
+              <Suspense fallback={<Loader />}>
+                {children}
+                <Toaster />
+              </Suspense>
             </main>
             <Footer />
           </NextIntlClientProvider>

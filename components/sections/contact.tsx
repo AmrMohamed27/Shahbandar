@@ -1,5 +1,5 @@
 import { Link } from "@/i18n/navigation";
-import { renderHtml } from "@/lib/utils";
+import { renderGreenHtml } from "@/lib/utils";
 import { Mail, Notebook, Phone } from "lucide-react";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
@@ -16,7 +16,7 @@ const ContactSection = () => {
       <h2
         className="font-bold md:text-3xl lg:text-5xl"
         dangerouslySetInnerHTML={{
-          __html: renderHtml(t.raw("title")),
+          __html: renderGreenHtml(t.raw("title")),
         }}
       ></h2>
       <div className="flex flex-row flex-wrap justify-between items-start gap-16 w-full">
