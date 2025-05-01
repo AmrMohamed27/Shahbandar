@@ -41,9 +41,9 @@ const ClientsHoverCard = ({ label, link }: Props) => {
             <li key={index}>
               <Link
                 href={`/${link}#${id}`}
-                className="flex flex-row items-center gap-2 hover:underline"
+                className="flex flex-row gap-2 hover:underline"
               >
-                <Layers className="text-primary-green" size={16} />
+                <Layers className="mt-1 text-primary-green" size={16} />
                 <span>{title}</span>
               </Link>
             </li>

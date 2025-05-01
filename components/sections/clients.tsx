@@ -1,6 +1,6 @@
 import React from "react";
 import AnimatedSection from "./animated-section";
-import { renderGreenHtml } from "@/lib/utils";
+import { renderBoldHtml, renderGreenHtml } from "@/lib/utils";
 import { useTranslations } from "next-intl";
 import MarqueeComponent from "../marquee";
 import { Button } from "../ui/button";
@@ -21,7 +21,12 @@ const ClientsSection = () => {
           }}
         ></h2>
         <div className="flex flex-col items-center gap-2">
-          <p className="lg:max-w-[60%] text-center">{t("description")}</p>
+          <p
+            className="lg:max-w-[60%] text-center"
+            dangerouslySetInnerHTML={{
+              __html: renderBoldHtml(t.raw("description")),
+            }}
+          ></p>
           <Link href="/clients">
             <Button variant={"green"}>{t("button")}</Button>
           </Link>

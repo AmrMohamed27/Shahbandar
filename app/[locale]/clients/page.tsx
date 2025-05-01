@@ -1,9 +1,12 @@
+"use client";
 import AnimatedSection from "@/components/sections/animated-section";
 import { Separator } from "@/components/ui/separator";
 import { renderBoldHtml, renderGreenHtml } from "@/lib/utils";
 import { Layers, MapPin } from "lucide-react";
 import { useMessages, useTranslations } from "next-intl";
+import Image from "next/image";
 import React from "react";
+import { motion } from "framer-motion";
 
 const ClientsPage = () => {
   const t = useTranslations("HomePage.Clients");
@@ -18,10 +21,31 @@ const ClientsPage = () => {
         className="flex flex-col items-center gap-10 mt-4 pt-0 border-0"
         firstChild
       >
-        <h1
-          className="font-bold text-xl md:text-3xl lg:text-5xl"
-          dangerouslySetInnerHTML={{ __html: renderGreenHtml(t.raw("title")) }}
-        />
+        {/* Image */}
+        <div className="relative flex justify-center items-center w-full h-96">
+          {/* Title */}
+          <motion.div
+            className="z-20 mt-0 px-2 sm:px-4 md:px-8 pt-0 border-0"
+            initial={{ y: -100, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.5, ease: "easeInOut" }}
+            id="home"
+          >
+            <h1
+              className="font-bold text-2xl md:text-3xl lg:text-7xl"
+              dangerouslySetInnerHTML={{
+                __html: renderGreenHtml(t.raw("title")),
+              }}
+            />
+          </motion.div>
+          <Image
+            src={"/assets/images/clients.jpeg"}
+            alt={"clients"}
+            width={1000}
+            height={100}
+            className="top-0 left-0 absolute opacity-90 dark:opacity-50 w-full h-full object-cover"
+          />
+        </div>
         <div className="flex flex-col gap-4">
           {Object.keys(clients).map((key, index) => (
             <div

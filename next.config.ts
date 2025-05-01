@@ -1,7 +1,11 @@
 import { NextConfig } from "next";
 import createNextIntlPlugin from "next-intl/plugin";
 
-const nextConfig: NextConfig = {};
+const nextConfig: NextConfig = {
+  images: {
+    minimumCacheTTL: 5,
+  },
+};
 
 const withNextIntl = createNextIntlPlugin({
   experimental: {

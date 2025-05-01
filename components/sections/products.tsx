@@ -1,9 +1,9 @@
-import { cn, renderGreenHtml } from "@/lib/utils";
+import { Link } from "@/i18n/navigation";
+import { renderGreenHtml } from "@/lib/utils";
 import { Snowflake, Sun, Wheat } from "lucide-react";
 import { useMessages, useTranslations } from "next-intl";
-import AnimatedSection from "./animated-section";
-import { Link } from "@/i18n/navigation";
 import Image from "next/image";
+import AnimatedSection from "./animated-section";
 const ProductsSection = () => {
   const t = useTranslations("HomePage.Products");
   type keyType = Parameters<typeof t>[0];
@@ -36,10 +36,7 @@ const ProductsSection = () => {
           <Link
             href={href}
             key={index}
-            className={cn(
-              "px-8 py-4 rounded-lg min-w-[300px] flex-1 relative",
-              "border-2 border-primary-green "
-            )}
+            className="relative flex-1 px-8 py-4 border-2 border-primary-green rounded-lg min-w-[300px] h-[150px]"
           >
             <Image
               src={image}
@@ -48,7 +45,7 @@ const ProductsSection = () => {
               height={1080}
               className="absolute inset-0 opacity-70 rounded-lg w-full h-full object-cover"
             />
-            <div className="*:z-50 flex flex-col justify-center items-center gap-4">
+            <div className="*:z-50 flex flex-col justify-center items-center gap-4 h-full">
               {productIcons[index].icon}
               <span className="font-semibold text-lg md:text-xl lg:text-2xl text-center">
                 {title}

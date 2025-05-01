@@ -27,7 +27,7 @@ const AboutPage = () => {
           ></h1>
         </motion.div>
         <Image
-          src={"/assets/images/about.jpg"}
+          src={"/assets/images/about.jpeg"}
           alt={"about"}
           width={1000}
           height={100}
@@ -38,7 +38,31 @@ const AboutPage = () => {
         className="flex flex-col items-center gap-10 pt-0 pb-4 border-0"
         firstChild
       >
+        {/* Paragraphs */}
         <AboutParagraphs />
+        {/* Gallery */}
+        <div className="flex flex-col items-center gap-4">
+          {/* Header */}
+          <h2 className="font-bold text-lg md:text-xl lg:text-2xl">
+            {t("gallery")}
+          </h2>
+          <div className="gap-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full">
+            {Array.from({ length: 24 }).map((_, index) => (
+              <div
+                key={index}
+                className="flex justify-center items-center h-[300px]"
+              >
+                <Image
+                  src={`/assets/images/about/about (${index + 1}).jpeg`}
+                  alt=""
+                  width={1920}
+                  height={1080}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
       </AnimatedSection>
     </div>
   );

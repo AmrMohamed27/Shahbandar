@@ -134,15 +134,15 @@ const AboutSection = () => {
         </ul>
       </div>
 
-      {/* Our Slogan */}
+      {/* Our Vision */}
       <div className="flex flex-col justify-center items-center gap-4 text-center">
         <h2
           className="font-bold text-xl md:text-2xl lg:text-3xl"
           dangerouslySetInnerHTML={{
-            __html: renderGreenHtml(t.raw("About.Slogan.title")),
+            __html: renderGreenHtml(t.raw("About.Vision.title")),
           }}
         ></h2>
-        <p className="font-semibold text-xl">{t("About.Slogan.text")}</p>
+        <p className="font-semibold text-xl">{t("About.Vision.text")}</p>
       </div>
     </AnimatedSection>
   );

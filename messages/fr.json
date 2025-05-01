@@ -5,25 +5,25 @@
       "subtitle": "Des fermes de la vallée du Nil aux projets de réhabilitation du désert, nos semences alimentent l'avenir de l'agriculture durable."
     },
     "About": {
-      "title": "à propos <green>de nous</green>",
+      "title": "À propos <green>de Nous</green>",
       "description": "<bold>Shahbandar</bold> est une entreprise égyptienne de premier plan dans la production de semences et de cultures, forte de décennies d’expertise et d’innovation agricole. Depuis 1995, nous accompagnons les agriculteurs en Égypte et en Afrique avec des variétés à haut rendement et une recherche fiable.",
       "Goals": {
         "title": "Nos <green>Objectifs</green>",
         "list": {
           "1": {
-            "text": "Que nos produits se répandent dans toute l'Égypte en assurant la meilleure réputation pour notre marque Shahbandar."
+            "text": "Établir la marque « Shahbandar » comme référence de qualité et de fiabilité dans l'ensemble du territoire égyptien."
           },
           "2": {
-            "text": "Nous étendre à l'exportation dans tout le monde arabe et les pays africains."
+            "text": "Développer notre présence et nos parts de marché dans les pays arabes et africains."
           },
           "3": {
-            "text": "Développer continuellement nos produits et ajouter de nouveaux produits qui répondent aux besoins du marché au moins tous les deux ans."
+            "text": "Améliorer continuellement notre gamme de produits et introduire de nouvelles variétés adaptées aux besoins du marché à un rythme soutenu (maximum biennal)."
           },
           "4": {
-            "text": "Étendre l'utilisation des dernières méthodes d'étude de marché pour améliorer nos services et produits."
+            "text": "Exploiter les études de marché les plus récentes pour optimiser nos services et notre offre de produits."
           },
           "5": {
-            "text": "Soutenir l'expansion agricole en Égypte dans les nouvelles terres avec des produits adaptés à la nature et aux exigences de ces régions."
+            "text": "Fournir des solutions semencières spécifiques pour accompagner le développement agricole de l'Égypte sur de nouvelles terres."
           }
         }
       },
@@ -31,77 +31,77 @@
         "title": "Nos <green>valeurs</green>",
         "list": {
           "1": {
-            "title": "Engagement",
-            "text": "envers des spécifications de haute qualité dans la production de semences."
+            "title": "Qualité et Conformité ",
+            "text": "Respecter rigoureusement les normes internationales de qualité dans l'ensemble de notre processus de production de semences."
           },
           "2": {
-            "title": "Conformité",
-            "text": "aux normes les plus élevées de recherche scientifique pour développer nos produits."
+            "title": "Exigence Scientifique ",
+            "text": "Mettre en œuvre une recherche scientifique rigoureuse pour l'amélioration continue de nos produits."
           },
           "3": {
-            "title": "Soutien",
-            "text": "fourni aux commerçants, entreprises et agriculteurs grâce aux conseils de nos ingénieurs et experts techniques."
+            "title": "Partenariat et Accompagnement ",
+            "text": "Soutenir activement nos partenaires commerciaux, les entreprises et les agriculteurs par des conseils experts et une assistance technique dédiée."
           },
           "4": {
-            "title": "Portée",
-            "text": "de tous nos clients en Égypte, ainsi que des marchés arabes et africains."
+            "title": "Portée et Accessibilité ",
+            "text": "Assurer une présence étendue sur le marché égyptien et développer notre couverture des marchés arabes et africains."
           },
           "5": {
-            "title": "Engagement envers le client",
-            "text": "selon la politique que le client est au cœur de notre activité, et en protégeant notre marque par le respect de nos clients."
+            "title": "Orientation Client ",
+            "text": "Placer les besoins et la satisfaction de nos clients au centre de toutes nos actions."
           }
         }
       },
-      "Slogan": {
-        "title": "Notre <green>Slogan</green>",
-        "text": "Où la qualité rencontre la terre."
+      "Vision": {
+        "title": "Notre <green>Vision</green>",
+        "text": "Devenir un leader incontesté dans le secteur des semences en Égypte, au sein du monde arabe et en Afrique. Notre ambition repose sur un engagement constant envers le progrès et l'innovation scientifique, afin d'offrir des semences d'une qualité supérieure garantissant une productivité optimale."
       },
       "Button": "En savoir plus"
     },
     "Departments": {
-      "title": "départements <green>de l'entreprise</green>",
+      "title": "Notre <green>Organisation</green>",
       "list": {
         "1": {
           "id": "production",
           "title": "Production",
           "image": "/assets/images/production.jpg",
           "href": "/departments/production",
-          "text": "Le département de production de l’entreprise est chargé de cultiver les semences de base dans notre grande ferme de recherche située dans la région de Farafra, en Égypte, ou sur des terres sous contrat avec de grandes entreprises ou des agriculteurs importants à travers le pays. Ce département joue un rôle central car il est responsable de la qualité des semences produites et de leur conformité aux normes agricoles. Il regroupe les meilleurs ingénieurs en production de semences en Égypte, forts d’une grande expérience dans des entreprises internationales, ce qui fait d’eux les leaders du secteur."
+          "text": "Notre département de Production est responsable de la culture rigoureuse de nos semences de base, réalisée au sein de notre centre de recherche de Farafra et sur des parcelles partenaires sélectionnées à travers le pays. Notre priorité est d'assurer la sécurité et la conformité de chaque lot de semences aux normes de plantation les plus strictes. Cette mission est confiée à une équipe d'ingénieurs semenciers parmi les plus compétents d'Égypte, forts d'une expérience significative au sein d'entreprises internationales."
         },
         "2": {
           "id": "rnd",
           "title": "Recherche et Développement",
           "image": "/assets/images/rnd.jpeg",
           "href": "/departments/rnd",
-          "text": "Dans ce département vital, les semences sont continuellement testées pour évaluer leur qualité et leur conformité aux normes internationales. Le département est également chargé d’introduire de nouvelles variétés que l’entreprise produira exclusivement sous son nom sur les marchés locaux et mondiaux. Il comprend d’éminents universitaires égyptiens spécialisés dans la recherche agricole, titulaires de doctorats en sciences agricoles, avec une riche expérience pratique."
+          "text": "Véritable moteur de notre innovation, le département Recherche et Développement conduit des tests continus sur nos semences, garantissant leur conformité aux standards internationaux. Il est également le fer de lance du développement de nouvelles variétés exclusives destinées aux marchés nationaux et internationaux. Notre équipe R&D est composée d'éminents chercheurs agronomiques égyptiens, titulaires de doctorats et possédant une expertise pratique approfondie."
         },
         "3": {
           "id": "sales",
-          "title": "Ventes et Marketing",
+          "title": "Marketing et Commercialisation ",
           "image": "/assets/images/sales.jpeg",
           "href": "/departments/sales",
-          "text": "La mission du département des ventes et du marketing ne se limite pas à vendre nos produits. Il s’attache également à analyser en permanence les chiffres de vente, le comportement des consommateurs agricoles, ainsi que les tendances du marché mondial afin de proposer des produits adaptés aux marchés locaux et internationaux. Le département comprend des ingénieurs qualifiés académiquement, scientifiquement et pratiquement, possédant une grande expérience du marché local et une expertise approfondie en agriculture et en marketing."
+          "text": " Ce département stratégique ne se limite pas à la vente. Il assure une veille constante et une analyse approfondie des données de vente, du comportement des consommateurs agricoles et des tendances du marché mondial. Cette démarche permet d'adapter notre offre actuelle et future aux exigences des marchés. Notre équipe commerciale est constituée d'ingénieurs commerciaux hautement qualifiés, bénéficiant d'une solide expérience du marché local, d'une expertise technique agricole pointue et d'une maîtrise des stratégies de marketing et de vente."
         },
         "4": {
           "id": "silos",
-          "title": "Silos et Entrepôts",
+          "title": "Logistique et Stockage ",
           "image": "/assets/images/silos.jpeg",
           "href": "/departments/silos",
-          "text": "Notre entreprise est un pionnier dans le secteur de la production de semences, étant la première à posséder des silos à grains et à semences pour faciliter la production et préserver les semences de manière optimale tout au long de l’année. Nous disposons d’une capacité de stockage pouvant atteindre trois mille tonnes. De plus, l’entreprise possède plusieurs entrepôts certifiés par le Ministère de l’Agriculture pour stocker le produit final avant distribution. Ces entrepôts sont sécurisés et conçus pour faciliter la distribution dans toute l’Égypte et répondre aux normes internationales d’exportation des semences."
+          "text": "Shahbandar se distingue par son infrastructure logistique avancée, notamment ses silos dédiés au stockage des céréales et des semences, d'une capacité maximale de 3 000 tonnes. Ces installations garantissent une conservation optimale tout au long de l'année, optimisant notre processus de production. Nous disposons également de plusieurs entrepôts agréés par le Ministère de l'Agriculture, stratégiquement situés pour une distribution efficace à l'échelle nationale et pour faciliter les opérations d'exportation conformément aux normes internationales."
         },
         "5": {
           "id": "fridges",
-          "title": "Chambres Froides",
+          "title": "Préservation par Réfrigération ",
           "image": "/assets/images/fridge.jpg",
           "href": "/departments/refrigeration",
-          "text": "Notre entreprise dispose d’espaces de réfrigération suffisants pour assurer la conservation adéquate des semences et des graines en période de forte chaleur, garantissant ainsi la qualité optimale du produit final et un rendement élevé. Les chambres froides sont situées dans notre siège principal dans le gouvernorat d’Assouan, au sud de l’Égypte."
+          "text": "Afin de préserver l'intégrité et le potentiel de rendement élevé de nos semences, en particulier dans les conditions climatiques chaudes, nous exploitons des installations de réfrigération importantes au sein de notre centre principal d'Assouan."
         },
         "6": {
           "id": "admin",
-          "title": "Affaires Administratives",
-          "image": "/assets/images/admin.jpg",
+          "title": "Support Administratif ",
+          "image": "/assets/images/admin.jpeg",
           "href": "/departments/administration",
-          "text": "Notre service administratif organise principalement les transactions des clients, garantissant une livraison fluide et efficace du produit au client final. Il assure également une comptabilité précise et des performances administratives exemplaires, en cohérence avec notre valeur fondamentale : le client est au cœur de notre activité. Le service comprend les branches suivantes : comptabilité, ressources humaines, logistique et secrétariat."
+          "text": "Notre département des Affaires Administratives assure la gestion fluide des transactions de nos clients, facilitant l'accès logistique à nos produits dans le respect de notre engagement envers l'orientation client. Il comprend les services de comptabilité, des ressources humaines, de transport et de secrétariat."
         }
       }
     },
@@ -109,22 +109,22 @@
       "title": "Nos <green>Produits</green>",
       "list": {
         "1": {
-          "title": "Semences d'été",
-          "text": "La société <bold>Shahbandar</bold> produit de nombreuses variétés de semences d'été telles que le maïs, le riz, le soja et le sésame. Les variétés de maïs égyptien sont au cœur de notre production. Avec le temps, l'entreprise a développé ses propres variétés commerciales, parmi lesquelles : l'Hybride Simple 167, l'une des variétés les plus importantes du Ministère de l'Agriculture, désormais exclusive à l'entreprise ; l'Hybride Triple 353, deuxième variété exclusive du ministère ; et l'Hybride Simple Blanc 130, troisième variété exclusive. De plus, nous proposons d'autres variétés de semences de maïs du Ministère de l'Agriculture telles que 168, 368, 321 et d'autres variétés connues. Notre département de recherche travaille également sur le développement de nouveaux hybrides simples et triples de maïs.",
+          "title": "Semences de Cultures Estivales",
+          "text": "En tant que producteur majeur de semences de cultures d'été, <bold>Shahbandar</bold> Seeds Company offre une sélection Premium comprenant: Maïs - Pilier de notre offre estivale, notre gamme de semences de maïs se distingue par ses variétés exclusives à haut potentiel de rendement. Nous proposons notamment l'hybride simple jaune 167 (anciennement une variété phare du Ministère de l'Agriculture, désormais exclusive à <bold>Shahbandar</bold>), l'hybride triple jaune 353 (également exclusif) et notre hybride simple 130. Notre catalogue inclut également des variétés reconnues du Ministère de l'Agriculture telles que les 168, 368 et 321, ainsi que de nouvelles générations d'hybrides simples et triples, fruit des efforts de notre département de recherche dédié au maïs. D'autres produits incluent Riz, Soja, et Sésame. ",
           "href": "/products/summer",
           "id": "summer",
           "image": "/assets/images/summer.jpg"
         },
         "2": {
-          "title": "Semences d'hiver",
-          "text": "La société <bold>Shahbandar</bold> propose de nombreuses variétés de semences d'hiver, avec le blé en tête, car l'Égypte est réputée pour ses variétés de blé. L'entreprise produit la plupart des variétés égyptiennes à haut rendement telles que Misr 1, Misr 3, Misr 4, Sakha 95 et 96, Giza 171, Beni Suef 5, Sids 12 et 14, et Gemmeiza 11, entre autres variétés du Ministère de l'Agriculture égyptien. Notre département R&D travaille sur le développement d'une variété de blé supérieure adaptée aux climats égyptien et africain, visant à pénétrer les marchés mondiaux avec une variété égyptienne très productive et résistante aux maladies. Nous produisons également des semences d'orge, de trèfle, de haricots, de pois et d'autres semences d'hiver.",
+          "title": "Semences de Cultures Hivernales ",
+          "text": "Notre sélection de semences de cultures hivernales est vaste, avec un accent particulier sur les variétés de blé qui ont fait la renommée de l'Égypte. Nous proposons un large éventail de variétés à haut rendement développées par le Ministère de l'Agriculture, parmi lesquelles Misr 1, Misr 3, Misr 4, Sakha 95 et 96, Giza 171, Beni Suef 5, Seds 12, Seds 14 et Gemmayza 11. Soucieux de l'avenir de l'agriculture, notre département Recherche et Développement travaille activement à la création d'une variété de blé unique, spécifiquement adaptée aux conditions climatiques de l'Égypte et de l'Afrique. Cette initiative stratégique vise à positionner <bold>Shahbandar</bold> comme un acteur clé dans la production de blé égyptien à haut potentiel de rendement et de résistance aux maladies sur les marchés internationaux.Notre offre de semences hivernales comprend également : Orge, Luzerne, Féverole, Pois, et Autres cultures adaptées aux conditions hivernales",
           "href": "/products/winter",
           "id": "winter",
-          "image": "/assets/images/winter.jpg"
+          "image": "/assets/images/winter.jpeg"
         },
         "3": {
-          "title": "Graines",
-          "text": "La société <bold>Shahbandar</bold> propose de nombreuses variétés de graines adaptées au climat égyptien, notamment des graines de légumes. Elles sont distribuées à travers notre réseau en Égypte ainsi que par nos succursales et canaux de distribution dans les pays arabes et en Afrique.",
+          "title": "Semences Potagères",
+          "text": "<bold>Shahbandar</bold> propose une gamme diversifiée de semences potagères rigoureusement sélectionnées pour leur performance optimale sous le climat égyptien. Ces semences sont facilement accessibles aux agriculteurs à travers notre réseau de distribution étendu en Égypte, ainsi que via nos succursales et partenaires de distribution dans les pays arabes et africains.",
           "href": "/products/seeds",
           "id": "seeds",
           "image": "/assets/images/seeds.jpg"
@@ -133,53 +133,53 @@
     },
     "Clients": {
       "title": "Nos <green>Clients</green>",
-      "description": "Nous sommes fiers de servir une large gamme de clients, y compris des agriculteurs, des entreprises agricoles, des distributeurs, des agences gouvernementales et des exportateurs.",
+      "description": "La solide réputation de qualité et de fiabilité de <bold>Shahbandar</bold> Seeds nous positionne comme un partenaire privilégié auprès d'une clientèle diversifiée et exigeante.",
       "button": "En savoir plus",
       "list": {
         "1": {
           "id": "gov",
-          "title": "Organismes gouvernementaux",
-          "text": "Grâce à la renommée de la marque <bold>Shahbandar</bold> pour les semences, nous avons gagné la confiance de la plupart des organismes gouvernementaux qui distribuent des semences agricoles aux agriculteurs et aux entreprises agricoles. Notre entreprise collabore avec les centres de vulgarisation agricole gouvernementaux dans toutes les provinces d'Égypte, ainsi qu'avec toutes les branches de la Réforme Agraire. Nous travaillons également avec les entreprises du secteur public spécialisées dans la production agricole."
+          "title": "Partenariats Institutionnels",
+          "text": "Notre engagement à fournir des semences de haute qualité a permis d'établir des collaborations durables avec les principales institutions gouvernementales œuvrant pour le développement agricole. Nous sommes fiers de compter parmi nos partenaires les centres de vulgarisation agricole et les directions de la réforme agraire à travers l'ensemble des gouvernorats égyptiens, ainsi que les entreprises publiques opérant dans le domaine de la production agricole."
         },
         "2": {
           "id": "companies",
-          "title": "Grandes entreprises",
-          "text": "La marque <bold>Shahbandar</bold> est reconnue par les plus grandes entreprises agricoles en Égypte, notamment dans les régions de Toshka, El Owaynat, les Oasis, la Nouvelle Vallée et l'Axe de Dabaa. En voici quelques exemples :"
+          "title": "Collaboration avec les Leaders de l'Industrie ",
+          "text": "Dans les zones stratégiques de développement agricole en Égypte, telles que Toshka, El-Oweinat, El-Wahat, la Nouvelle Vallée et l'axe de Dabaa, <bold>Shahbandar</bold> Seeds est le fournisseur de référence pour de nombreuses entreprises agricoles de premier plan. Parmi nos partenaires figurent des acteurs majeurs tels que: "
         },
         "3": {
           "id": "traders",
-          "title": "Grands commerçants",
-          "text": "Grâce à notre réseau d'agents et de distributeurs, vous pouvez facilement trouver les semences <bold>Shahbandar</bold>. Nos produits sont distribués par les plus grands commerçants de semences à travers toute l'Égypte, que ce soit dans le Delta, en Haute-Égypte ou dans les grandes zones agricoles comme Nubariya, Wadi Al Natrun, Salhia, la Nouvelle Vallée, Toshka et El Owaynat."
+          "title": "Réseau de Distribution Étendu",
+          "text": "La qualité de nos semences de maïs est accessible à une large clientèle grâce à un réseau de négociants en semences agricoles rigoureusement sélectionnés et implantés sur l'ensemble du territoire égyptien. De la Basse à la Haute-Égypte, en passant par les principaux bassins agricoles tels que Nubaria, Wadi El Natrun, Salhia, la Nouvelle Vallée, Toshka et El Oweinat, nos produits sont disponibles au plus près des besoins des agriculteurs."
         },
         "4": {
           "id": "exports",
-          "title": "Exportations internationales",
-          "text": "Les exportations de <bold>Shahbandar</bold> ont commencé en Algérie, où de nombreux commerçants ont approuvé les semences de maïs égyptiennes produites par notre entreprise. Le secteur export s'est ensuite élargi à d'autres pays d'Afrique de l'Ouest comme le Sénégal et le Mali. Avec notre expansion en Afrique, nous avons ouvert une nouvelle succursale en Ouganda pour couvrir progressivement l'Afrique de l'Est. Nous avons également exporté vers d'autres pays arabes tels que le Soudan et la Syrie. <bold>Shahbandar</bold> continue à se développer dans le monde arabe et en Afrique."
+          "title": "Expansion Internationale Stratégique",
+          "text": "<bold>Shahbandar</bold> Seeds a initié avec succès son développement sur les marchés internationaux, en établissant des partenariats solides avec des négociants en Algérie, reconnaissant la qualité de nos semences de maïs égyptiennes. Notre présence à l'export s'est étendue à des pays d'Afrique de l'Ouest tels que le Sénégal et le Mali. Afin de renforcer notre position en Afrique de l'Est, nous avons établi une nouvelle entité en Ouganda. Nous sommes également fiers d'exporter vers d'autres nations arabes, notamment le Soudan et la Syrie, et poursuivons activement notre stratégie d'expansion sur les continents arabe et africain."
         }
       },
       "sublist": {
         "1": {
           "location": "Garf Hussein",
-          "c1": "Lahaye Développement Agricole"
+          "c1": "Lehaa Agricultural Development Company"
         },
         "2": {
           "location": "Toshka",
-          "c1": "Al Zahra (Émirats Arabes Unis)",
-          "c2": "Société du Sud de la Vallée",
-          "c3": "Société Al Baraka",
-          "c4": "Sud de la Haute-Égypte",
-          "c5": "Zeraa"
+          "c1": "Al-Zahra Emirates",
+          "c2": "South Valley Company",
+          "c3": "Al-Baraka Company",
+          "c4": "South Upper Egypt Company",
+          "c5": "Zira's Company"
         },
         "3": {
-          "location": "El Owaynat",
+          "location": "East El-Oweinat",
           "c1": "Navigator",
-          "c2": "Cléopâtre",
-          "c3": "Rakhā",
-          "c4": "Groupe Bagdadeya",
-          "c5": "Compagnie américano-saoudienne",
-          "c6": "Société Al-Saudi",
-          "c7": "Ferme Ahmed Al-Oqail",
-          "c8": "Secteur agricole du ministère de l'Agriculture à El Owaynat"
+          "c2": "Cleopatra",
+          "c3": "Rakhaa",
+          "c4": "Al-Baghdadia Group",
+          "c5": "Saudi American Company",
+          "c6": "Saudi",
+          "c7": "Ahmed Al-Aqeel Farm",
+          "c8": "Le secteur agricole du Ministère de l'Agriculture (East El-Oweinat) "
         },
         "4": {
           "location": "Farafra",
@@ -187,20 +187,20 @@
           "c2": "Green Seeds"
         },
         "5": {
-          "location": "Axe de Dabaa",
-          "c1": "Société de Dakahlia",
-          "c2": "Wadi Feed"
+          "location": "Dabaa Axis",
+          "c1": "Dakahlia",
+          "c2": "Wadi Fodder Company"
         }
       }
     },
     "Contact": {
-      "title": "Nous <green>contacter</green>",
+      "title": "Contactez-<green>nous</green>",
       "description": "Pour toute demande, veuillez nous contacter à :",
       "success": "E-mail envoyé avec succès",
       "fail": "Une erreur s'est produite lors de l'envoi de l'e-mail",
       "Email": {
         "label": "Email:",
-        "value": "info@shahbandar.tech"
+        "value": "info@shahbandar.biz"
       },
       "Email2": {
         "label": "Email:",
@@ -216,7 +216,7 @@
       },
       "Address": {
         "label": "Adresse:",
-        "value": "El-Ghonaymeya, Route Occidentale du Désert, Edfu - Assouan, Égypte"
+        "value": "Alghunaima, Route du Désert Occidental, Idfou - Assouan, République arabe d’Égypte"
       },
       "formEmail": {
         "label": "Email:",
@@ -255,15 +255,15 @@
       "href": "/departments/rnd"
     },
     "3": {
-      "label": "Ventes et Marketing",
+      "label": "Marketing et Commercialisation",
       "href": "/departments/sales"
     },
     "4": {
-      "label": "Silos et Entrepôts",
+      "label": "Logistique et Stockage",
       "href": "/departments/silos"
     },
     "5": {
-      "label": "Affaires Administratives",
+      "label": "Support Administratif",
       "href": "/departments/administration"
     }
   },
@@ -281,18 +281,18 @@
     }
   },
   "AboutPage": {
-    "h1": "À propos <green>de nous</green>",
+    "h1": "À propos <green>de Nous</green>",
     "brief": {
-      "p1": "La société <bold>Shahbandar</bold> a été fondée en 1995 en tant qu'entreprise commerciale dans le domaine de la production agricole, en particulier les céréales et les cultures. Avec l’expansion des activités de l’entreprise dans toute la République, il est devenu nécessaire pour nous d’évoluer. Ainsi, en 2004, <bold>Shahbandar</bold> s’est orientée vers la production de semences et de graines.",
-      "p2": "Le développement est une démarche constante pour nous. C’est pourquoi nous avons créé un département de recherche et développement, qui constitue un pilier essentide la société <bold>Shahbandar</bold>. Ce département contribue de manière significative à la marque <bold>Shahbandar</bold>.",
-      "p3": "Avec le temps, l’entreprise s’est développée et possède désormais de nombreuses variétés commerciales. Parmi les variétés les plus importantes de maïs figurent par exemple : l’hybride simple 167, l’une des variétés les plus importantes du Ministère de l’Agriculture et désormais une variété exclusive à l’entreprise. De même, la seconde variété exclusive accordée par le ministère à <bold>Shahbandar</bold> est l’hybride triple 353. En plus de cela, l’entreprise propose d’autres variétés de maïs du ministère comme 168, 368, 321 et d’autres variétés connues.",
-      "p4": "Concernant les variétés de blé, l’entreprise produit toutes les souches développées par le Ministère de l’Agriculture. Elle produit plus de dix variétés de haute qualité. <bold>Shahbandar</bold> s’est fait un grand nom et détient une part de marché importante dans la production et la commercialisation des variétés de blé égyptien à haut rendement. L’entreprise produit également des semences d’orge, de trèfle, de fèves, de soja, de riz et d'autres cultures.",
-      "p5": "Dans le domaine de la recherche scientifique, <bold>Shahbandar</bold> dispose d’une équipe de chercheurs spécialisés dans la production de maïs et d'autres cultures. Nous accordons une grande importance à la recherche appliquée dans l’intérêt des agriculteurs égyptiens, ainsi que pour la réputation des produits agricoles égyptiens sur le marché mondial de l’exportation. L’entreprise possède également de nouvelles variétés en cours d’enregistrement auprès du Ministère de l’Agriculture. Il convient de noter que <bold>Shahbandar</bold> est la seule entreprise de production de semences en Égypte à posséder des silos pour le stockage approprié des semences, ainsi qu’une chambre froide pour la conservation des semences dans son siège principal à Assouan.",
-      "p6": "Concernant le marché local, la société <bold>Shahbandar</bold> est présente dans toutes les provinces d’Égypte, avec un réseau d’agents dans toutes les régions, même dans les grands centres urbains. Il ne faut pas non plus oublier le secteur des grandes entreprises agricoles en Égypte, où nous avons également une forte présence. La majorité de ces grandes entreprises font confiance à la marque <bold>Shahbandar</bold> et comptent sur elle pour l’approvisionnement en semences et variétés agricoles, ce qui fait des semences <bold>Shahbandar</bold> l’un des fournisseurs les plus puissants auprès des grandes sociétés agricoles égyptiennes.",
-      "p7": "Quant au marché de l’exportation, la marque <bold>Shahbandar</bold> est présente dans plus de huit pays africains, notamment le Sénégal, l’Ouganda, l’Algérie, la Libye et le Soudan. <bold>Shahbandar</bold> a mis en place un système administratif solide et assure un suivi constant pour protéger la marque contre la contrefaçon et l’imitation, afin de protéger notre produit et la confiance des agriculteurs.",
-      "p8": "Les ingénieurs du département de production de <bold>Shahbandar</bold> fournissent toutes les directives nécessaires aux entreprises et aux agriculteurs pour garantir une productivité plus élevée et de meilleure qualité, y compris l’établissement de champs de démonstration pour les agriculteurs.",
-      "p9": "Concernant le département marketing et ventes, <bold>Shahbandar</bold> a veillé à disposer d’une équipe solide afin d’étudier le marché de manière scientifique, établir des plans pour le développement de nos produits et l’introduction de nouveaux produits dans la carte des cultures agricoles en Égypte, ainsi que pour soutenir les grands commerçants afin d’atteindre tous les agriculteurs égyptiens, grâce à des plans pratiques, scientifiques et appliqués sur le terrain."
-    }
+      "p1": "Fondée en 1995, la société <bold>Shahbandar</bold> s'est établie comme un acteur majeur du secteur agricole égyptien. Initialement spécialisée dans la production de céréales et de cultures, notre engagement envers l'innovation et la croissance nous a naturellement conduits à intégrer la production de semences à partir de 2004.",
+      "p2": "Notre département Recherche et Développement constitue le pilier de notre démarche d'amélioration continue. Cette équipe dédiée est le moteur de la qualité et de la performance associées à la marque <bold>Shahbandar</bold>, développant des solutions agricoles de pointe.",
+      "p4": "Notre portefeuille de produits se distingue notamment par ses variétés de maïs exclusives à haut rendement : l'hybride simple jaune 167 et l'hybride triple jaune 353. Nous proposons également une sélection rigoureuse d'autres semences de maïs développées par le Ministère de l'Agriculture.",
+      "p5": "<bold>Shahbandar</bold> est un producteur de référence pour l'ensemble des variétés de blé de qualité supérieure issues de la recherche du Ministère de l'Agriculture, offrant plus d'une dizaine de souches reconnues pour leur productivité et leur fiabilité. Notre position significative sur le marché témoigne de notre engagement à fournir aux agriculteurs égyptiens des semences de blé d'une qualité inégalée. Notre expertise agricole s'étend à une gamme diversifiée de cultures essentielles, incluant l'orge, la luzerne, les féveroles, le soja et le riz.",
+      "p6": "La recherche scientifique est au cœur de notre stratégie. Notre équipe de chercheurs spécialisés se consacre à l'optimisation de la production de maïs et des autres cultures, contribuant ainsi à l'amélioration des pratiques agricoles égyptiennes et au rayonnement de nos produits sur la scène internationale. Nous anticipons également l'arrivée de nouvelles variétés prometteuses, actuellement en phase d'homologation. Faisant figure de pionnier en Égypte, <bold>Shahbandar</bold> a investi dans des infrastructures de stockage de pointe, comprenant des silos dédiés et une unité de réfrigération à Assouan. Cet engagement garantit la préservation optimale et la qualité durable de nos semences.",
+      "p7": "Notre présence sur le marché local est étendue à l'ensemble des gouvernorats égyptiens, grâce à un réseau d'agents performant et à des partenariats solides avec les principales entreprises agricoles du pays, qui reconnaissent la qualité et la fiabilité de nos semences. ",
+      "p8": "Notre marque jouit d'une reconnaissance croissante à l'international, étant présente dans plus de huit pays africains, ce qui atteste de la qualité et de la fiabilité de nos produits.",
+      "p9": "Nous avons mis en place un système administratif rigoureux pour protéger notre marque contre la fraude et la contrefaçon, préservant ainsi la confiance de nos agriculteurs. Nos ingénieurs de production offrent un accompagnement technique expert aux entreprises et aux agriculteurs, notamment par la mise en place de parcelles de démonstration. Notre service marketing et commercial s'appuie sur une analyse approfondie du marché pour développer notre offre, introduire de nouvelles variétés et soutenir nos distributeurs dans leur mission auprès des agriculteurs égyptiens, grâce à des stratégies scientifiques et pratiques éprouvées."
+    },
+    "gallery": "Galerie"
   },
   "Footer": {
     "footerText": "© 2025 Shahbandar Inc. Tous droits réservés."

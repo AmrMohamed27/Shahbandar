@@ -23,7 +23,7 @@ const HeroSection = () => {
         alt="Wheat field"
         width={800}
         height={500}
-        className="top-0 left-0 absolute opacity-50 opacity-70 w-full h-96 object-cover"
+        className="top-0 left-0 absolute opacity-70 w-full h-96 object-cover"
       />
     </div>
   );

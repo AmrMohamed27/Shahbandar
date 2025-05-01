@@ -11,19 +11,19 @@
         "title": "Our <green>Goals</green>",
         "list": {
           "1": {
-            "text": "To have our products spread across all of Egypt, achieving the best reputation for our brand, Shahbandar."
+            "text": "To make our Shahbandar brand synonymous with quality and reliability throughout Egypt."
           },
           "2": {
-            "text": "To expand our exports throughout the Arab world and African countries."
+            "text": "To extend our reach to markets across the Arab world and African nations."
           },
           "3": {
-            "text": "To continuously develop our products and add new ones that serve the market at least every two years."
+            "text": "To consistently enhance our existing products and introduce new, market-relevant varieties every two years or less."
           },
           "4": {
-            "text": "To expand the use of the latest market research methods to improve our services and products."
+            "text": "To leverage the latest market research to refine our services and product offerings."
           },
           "5": {
-            "text": "To support agricultural expansion in Egypt’s new lands with products that suit the nature and requirements of these areas."
+            "text": "To provide tailored seed solutions that support Egypt's agricultural expansion into new territories."
           }
         }
       },
@@ -31,30 +31,30 @@
         "title": "Our <green>Values</green>",
         "list": {
           "1": {
-            "title": "Commitment",
-            "text": "to high-quality specifications in the production of planting seeds"
+            "title": "Uncompromising Quality",
+            "text": "We adhere to international standards to ensure the highest quality in every seed we produce."
           },
           "2": {
-            "title": "Adherence",
-            "text": "to the highest standards of scientific research to develop our products."
+            "title": "Scientific Excellence",
+            "text": "We are dedicated to rigorous scientific research to continuously improve our products."
           },
           "3": {
-            "title": "Support",
-            "text": "provided to traders, companies and farmers through the guidance of our engineers and technical experts."
+            "title": "Empowering Our Partners",
+            "text": "We are committed to supporting traders, companies, and farmers with expert guidance and technical assistance."
           },
           "4": {
-            "title": "Reaching",
-            "text": "all our customers in Egypt, along with the Arab and African markets."
+            "title": "Extensive Market Presence",
+            "text": "We strive to reach every customer in Egypt and expand our presence throughout Arab and African markets."
           },
           "5": {
-            "title": "Working",
-            "text": "according to the policy that The customer is the core of our business, and protecting our brand by respecting our customers."
+            "title": "Customer-Centric Approach",
+            "text": "Our work is driven by a deep understanding and focuses on the needs of our customers."
           }
         }
       },
-      "Slogan": {
-        "title": "Our <green>Slogan</green>",
-        "text": "Where Quality Meets the Earth."
+      "Vision": {
+        "title": "Our <green>Vision</green>",
+        "text": "To cultivate a leading position in the seed industry across Egypt, the Arab world, and Africa. We are driven by a commitment to progress and scientific discovery, ensuring the highest quality seeds for optimal productivity."
       },
       "Button": "Read more"
     },
@@ -66,65 +66,66 @@
           "title": "Production",
           "image": "/assets/images/production.jpg",
           "href": "/departments/production",
-          "text": "The Production Department in the company is responsible for cultivating foundation seeds at our major research farm in the Farafra region of Egypt, or on lands contracted with major companies or large-scale farmers across different parts of Egypt. The department plays a central role, being responsible for the quality and conformity of the seeds produced, ensuring they meet agricultural standards. It is staffed by some of Egypt’s top seed production engineers, who bring extensive experience from global companies, positioning them among the leading seed cultivation experts in the country."
+          "text": "Our Production Department oversees the cultivation of foundational seeds at our extensive research farm in Farafra and on contracted lands with trusted partners nationwide. Their core mission is to ensure the safety and quality of all seeds, meeting precise planting specifications. Our team comprises Egypt's leading seed production engineers, bringing vast experience from international companies."
         },
         "2": {
           "id": "rnd",
           "title": "Research and Development",
           "image": "/assets/images/rnd.jpeg",
           "href": "/departments/rnd",
-          "text": "In this vital department, seeds are continuously tested to assess their quality and compliance with international standards. The department is also responsible for introducing new varieties that the company will produce exclusively under its name in both local and global markets. It includes some of Egypt's finest agricultural academics, all holding PhDs in agricultural sciences, and possessing deep and extensive practical experience."
+          "text": "This vital department is the engine of our innovation. We continuously test seeds against rigorous international standards and spearhead the development of exclusive new varieties for both local and global markets. Our R&D team includes top Egyptian agricultural academics holding advanced degrees and extensive practical experience."
         },
         "3": {
           "id": "sales",
           "title": "Sales and Marketing",
           "image": "/assets/images/sales.jpeg",
           "href": "/departments/sales",
-          "text": "The mission of the Sales and Marketing Department goes beyond simply selling our products. The department constantly analyzes sales figures, agricultural consumer behavior, and global market trends to offer products tailored to both local and international markets. It includes engineers who are academically, scientifically, and practically qualified, all with vast experience in the local market and strong expertise in both agriculture and marketing."
+          "text": "More than just sales, this department drives our market understanding. They analyze sales data, consumer behavior, and global trends to strategically position our current and future products. Our team consists of highly qualified sales engineers with deep local market knowledge, strong agricultural technical expertise, and proven marketing and sales acumen."
         },
         "4": {
           "id": "silos",
           "title": "Silos and Warehouses",
           "image": "/assets/images/silos.jpeg",
           "href": "/departments/silos",
-          "text": "Our company is a pioneer in the seed production industry, being the first to own grain and seed silos to facilitate the production process and optimally preserve seeds scientifically, practically, and hygienically throughout the year. Our storage capacity reaches up to three thousand tons. We also have several qualified and Ministry-of-Agriculture-certified warehouses for storing the final product before distribution. These warehouses are secure and designed to facilitate distribution across Egypt and to meet global seed export standards."
+          "text": "Our company is a pioneer in seed storage, being among the first to own dedicated grain and seed silos. With a capacity of up to 3,000 tons, these facilities ensure optimal preservation throughout the year, streamlining our production process. We also operate multiple Ministry of Agriculture-licensed warehouses strategically located for efficient distribution across Egypt and to facilitate international exports according to global standards."
         },
         "5": {
           "id": "fridges",
           "title": "Refrigeration",
           "image": "/assets/images/fridge.jpg",
           "href": "/departments/refrigeration",
-          "text": "Our company has sufficient cooling spaces to ensure the proper preservation of seeds and grains during hot weather. This guarantees the optimal condition and superior qualities of the final product for high productivity. The refrigeration units are located at our main center in Aswan Governorate, southern Egypt."
+          "text": "To guarantee the quality of our final product, especially in warmer climates, we maintain substantial refrigeration facilities at our main center in Aswan. This ensures optimal preservation and maintains the excellent qualities of our seeds for high productivity."
         },
         "6": {
           "id": "admin",
           "title": "Administration",
-          "image": "/assets/images/admin.jpg",
+          "image": "/assets/images/admin.jpeg",
           "href": "/departments/administration",
-          "text": "Our administrative unit is primarily responsible for organizing client transactions, ensuring the product reaches the final customer smoothly and efficiently. It also guarantees accurate accounting and excellent administrative performance, reflecting our core value that the customer is at the heart of our work. The department includes branches for accounting, human resources, logistics, and secretarial services."
+          "text": "Our dedicated administrative team ensures seamless transactions for our clients, facilitating efficient logistical access to our products. This department encompasses Accounts, Human Resources, Transportation, and Secretarial Affairs, all operating under our core value of customer focus."
         }
       }
     },
     "Products": {
       "title": "Our <green>Products</green>",
+      "description": "We offer a comprehensive range of high-quality seeds tailored to Egypt's diverse agricultural seasons and needs.",
       "list": {
         "1": {
           "title": "Summer Seeds",
-          "text": "<bold>Shahbandar</bold> Seeds Company produces many varieties of summer seeds, such as corn, rice, soybeans, and sesame. At the forefront of our production are Egyptian corn varieties. Over time, the company has developed its own commercial varieties, with key examples including: Single Hybrid 167, one of the Ministry of Agriculture’s most important varieties, now exclusively owned by the company; Triple Hybrid 353, the second exclusive variety from the Ministry; and Single White Hybrid 130, the third exclusive variety. In addition, we offer other corn seed varieties from the Ministry of Agriculture such as 168, 368, 321, and other well-known types. Our research department is also currently developing new single and triple corn hybrids.",
+          "text": "<bold>Shahbandar</bold> Seeds Company is a leading producer of summer crop seeds, featuring premium varieties of corn, as our corn seed production is a cornerstone of our summer offerings. We proudly feature proprietary varieties, including the high-performing 167 Single-Cross Hybrid Yellow (formerly a key Ministry of Agriculture variety, now exclusively ours), the robust triple hybrid 353 (also exclusive), and our distinct 130 Single-Cross Hybrid. Additionally, we offer trusted Ministry of Agriculture corn varieties such as 168, 368, and 321, alongside promising new single and triple hybrids currently under development by our dedicated Corn Research Department. We also produce premium varieties of rice, soybeans, and sesame.",
           "href": "/products/summer",
           "id": "summer",
           "image": "/assets/images/summer.jpg"
         },
         "2": {
           "title": "Winter Seeds",
-          "text": "<bold>Shahbandar</bold> Seeds Company offers many varieties of winter seeds, with wheat being the most prominent, as Egypt is known for its wheat varieties. The company produces most of the high-yield Egyptian varieties such as Misr 1, Misr 3, Misr 4, Sakha 95 and 96, Giza 171, Beni Suef 5, Sids 12 and 14, and Gemmeiza 11, among others from the Egyptian Ministry of Agriculture. Our R&D department is working on developing a superior wheat variety that suits both Egyptian and African climates, aiming to lead global markets with a highly productive, disease-resistant Egyptian wheat variety. We also produce winter seeds for barley, clover, beans, peas, and more.",
+          "text": "<bold>Shahbandar</bold> Seeds provides a wide selection of winter crop seeds, with a strong emphasis on Egypt's renowned wheat varieties. Our portfolio includes many of the Ministry of Agriculture's high-yielding and well-established options, such as Misr 1, Misr 3, Misr 4, Sakha 95 and 96, Giza 171, Beni Suef 5, Seds 12, Seds 14, and Gemmayza 11, among others. Looking ahead, our Research and Development department is actively developing a unique wheat variety specifically adapted to Egyptian and African climates. This initiative aims to position <bold>Shahbandar</bold> as a global leader in providing highly productive and disease-resistant Egyptian wheat. Our winter seed offerings also include: barley, alfalfa, fava beans, peas and other winter-suitable crops.",
           "href": "/products/winter",
           "id": "winter",
-          "image": "/assets/images/winter.jpg"
+          "image": "/assets/images/winter.jpeg"
         },
         "3": {
           "title": "Seeds",
-          "text": "<bold>Shahbandar</bold> Seeds Company offers many types of seeds suitable for the Egyptian climate, especially vegetable seeds. We distribute them through our network within Egypt as well as through <bold>Shahbandar</bold> branches and distribution channels across Arab countries and Africa.",
+          "text": "<bold>Shahbandar</bold> provides a diverse selection of vegetable seeds specifically chosen for optimal performance in Egyptian climates. These seeds are readily available through our extensive distribution network across Egypt, as well as through <bold>Shahbandar</bold> branches and distribution partners in Arab and African countries.",
           "href": "/products/seeds",
           "id": "seeds",
           "image": "/assets/images/seeds.jpg"
@@ -133,53 +134,53 @@
     },
     "Clients": {
       "title": "Our <green>Clients</green>",
-      "description": "We are proud to serve a diverse range of clients, including farmers, agricultural companies, distributors, government agencies and exporters.",
+      "description": "<bold>Shahbandar</bold> Seeds has earned a strong reputation for quality and reliability, making us a trusted partner for a diverse range of clients.",
       "button": "Read more",
       "list": {
         "1": {
           "id": "gov",
           "title": "Government Entities",
-          "text": "Thanks to the strong reputation of the <bold>Shahbandar</bold> Seeds brand, we have gained the trust of most government entities that distribute agricultural seeds to farmers and agribusinesses. Our company works with government agricultural extension centers in all governorates of Egypt, as well as with all branches of the Agrarian Reform Authority. We also work with public sector companies involved in agricultural production."
+          "text": "Our commitment to providing high-quality seeds has established strong relationships with key government entities involved in agricultural development. We proudly supply agricultural extension centers and agricultural reform branches across all Egyptian governorates, as well as public sector agricultural production companies."
         },
         "2": {
           "id": "companies",
           "title": "Major Companies",
-          "text": "The <bold>Shahbandar</bold> Seeds brand is trusted by the largest agricultural companies in Egypt, particularly in regions like Toshka, El Owaynat, the Oases, the New Valley, and the Dabaa Axis. Examples include:"
+          "text": ": In Egypt's key agricultural development zones – including Toshka, El-Oweinat, El-Wahat, New Valley, and the Dabaa Axis – <bold>Shahbandar</bold> Seed is the preferred supplier for numerous leading companies. These include esteemed organizations such as:"
         },
         "3": {
           "id": "traders",
           "title": "Top Traders",
-          "text": "Thanks to our network of agents and distributors, <bold>Shahbandar</bold> seeds are widely accessible. Our products are trusted by leading seed traders across Egypt, whether in the Delta, Upper Egypt, or major agricultural regions like Nubaria, Wadi Al Natrun, Salhia, the New Valley, Toshka, and El Owaynat."
+          "text": "Our high-quality corn seeds are readily accessible through a widespread network of reputable agricultural seed traders throughout Egypt. From Lower and Upper Egypt to major agricultural hubs like Nubaria, Wadi El Natrun, Salhia, New Valley, Toshka, and El Oweinat, our products are available where you need them."
         },
         "4": {
           "id": "exports",
           "title": "International Exports",
-          "text": "Our export journey began in Algeria, where many traders approved of Egyptian corn seeds produced by <bold>Shahbandar</bold>. The export market later expanded to include West African countries like Senegal and Mali. As our presence in Africa grew, we decided to open a new branch in Uganda to gradually cover East Africa. We have also exported to Arab countries such as Sudan and Syria. <bold>Shahbandar</bold> Seeds continues to pursue expansion into more Arab and African countries."
+          "text": "<bold>Shahbandar</bold> Seed has successfully entered international markets, beginning with strong partnerships with traders in Algeria who rely on our Egyptian corn seeds. Our export reach has expanded to West African nations like Senegal and Mali. To better serve East Africa, we have established a new company in Uganda. We also proudly export to other Arab countries, including Sudan and Syria, and are actively pursuing further expansion across the Arab and African continents."
         }
       },
       "sublist": {
         "1": {
           "location": "Garf Hussein",
-          "c1": "Lahaye Agricultural Development Company"
+          "c1": "Lehaa Agricultural Development Company"
         },
         "2": {
           "location": "Toshka",
-          "c1": "Al Zahra Emirati Company",
+          "c1": "Al-Zahra Emirates Company",
           "c2": "South Valley Company",
-          "c3": "Al Baraka Company",
+          "c3": "Al-Baraka Company",
           "c4": "South Upper Egypt Company",
-          "c5": "Zeraa Company"
+          "c5": "Zira's Company"
         },
         "3": {
-          "location": "El Owaynat",
+          "location": "East El-Oweinat",
           "c1": "Navigator Company",
           "c2": "Cleopatra Company",
-          "c3": "Rakhā Company",
-          "c4": "Baghdadeya Group",
-          "c5": "American-Saudi Company",
-          "c6": "Al-Saudi Company",
-          "c7": "Ahmed Al-Oqail Farm",
-          "c8": "Ministry of Agriculture's Agriculture Sector in El Owaynat"
+          "c3": "Rakhaa Company",
+          "c4": "Al-Baghdadia Group",
+          "c5": "the Saudi-American Company",
+          "c6": "the Saudi",
+          "c7": "Ahmed Al-Aqeel Farm",
+          "c8": "Ministry of Agriculture's Agriculture Sector"
         },
         "4": {
           "location": "Farafra",
@@ -189,7 +190,7 @@
         "5": {
           "location": "Dabaa Axis",
           "c1": "Dakahlia Company",
-          "c2": "Wadi Feed Company"
+          "c2": "Wadi Fodder Company"
         }
       }
     },
@@ -200,23 +201,23 @@
       "fail": "Something went wrong",
       "Email": {
         "label": "Email:",
-        "value": "info@shahbandar.tech"
+        "value": "info@shahbandar.biz"
       },
       "Email2": {
         "label": "Email:",
         "value": "eaea131215@gmail.com"
       },
       "Phone": {
-        "label": "Phone:",
+        "label": "Tel:",
         "value": "+201126957895"
       },
       "Phone2": {
-        "label": "Phone:",
+        "label": "Tel:",
         "value": "+201155995467"
       },
       "Address": {
         "label": "Address:",
-        "value": "El-Ghonaymeya, Western Desert Road, Edfu - Aswan, Egypt"
+        "value": "Alghunaima, Western Desert Road, Edfu - Aswan, Arab Republic ofEgypt"
       },
       "formEmail": {
         "label": "Email:",
@@ -286,16 +287,16 @@
   "AboutPage": {
     "h1": "About <green>Us</green>",
     "brief": {
-      "p1": "<bold>Shahbandar</bold> Company was established in 1995 as a commercial company in the field of agricultural production, particularly grains and crops. As the company expanded its operations across the republic, it became necessary for us to evolve. Thus, in 2004, <bold>Shahbandar</bold> entered the field of seed and crop production.",
-      "p2": "Development is a constant approach for us, which is why we established a Research and Development department to serve as a core pillar of <bold>Shahbandar</bold> Company. This department has made a significant contribution to the <bold>Shahbandar</bold> brand.",
-      "p3": "Over time, the company has developed itself and now has many commercial varieties. Among the most important maize varieties, for example: the Single Hybrid 167, which is one of the Ministry of Agriculture’s most important varieties and is now exclusively owned by the company. Also, the second exclusive variety from the Ministry to <bold>Shahbandar</bold> is the Triple Hybrid 353. In addition, the company also offers other maize seed varieties from the Ministry such as 168, 368, 321, and other well-known varieties.",
-      "p4": "As for wheat varieties, the company produces all strains developed by the Ministry of Agriculture. It produces more than ten high-quality varieties. <bold>Shahbandar</bold> has gained a prominent name and a large market share in the production and marketing of high-yield Egyptian wheat varieties. The company also produces barley, clover, fava beans, soybeans, rice, and other crops.",
-      "p5": "In the field of scientific research, <bold>Shahbandar</bold> has a team of researchers specializing in maize and other crop production. We give great importance to practical research for the benefit of Egyptian farmers and to uphold the reputation of Egyptian agricultural products in the global export market. The company also has new varieties under registration with the Ministry of Agriculture. Notably, <bold>Shahbandar</bold> is the only seed production company in Egypt that owns silos for proper seed storage, as well as a seed storage refrigerator at its headquarters in Aswan.",
-      "p6": "Regarding the local market, <bold>Shahbandar</bold> has a presence in all governorates of Egypt and has a network of agents across the country, even in the major centers. Of course, we cannot overlook the large agricultural companies in Egypt, where we also have a strong presence. Most of these major companies trust the <bold>Shahbandar</bold> name and rely on it for the supply of seed and crop varieties, making <bold>Shahbandar</bold> seeds among the strongest suppliers to Egypt’s top agricultural companies.",
-      "p7": "As for the export market, the <bold>Shahbandar</bold> brand is present in more than eight African countries, including Senegal, Uganda, Algeria, Libya, and Sudan. <bold>Shahbandar</bold> has developed a strong administrative system and maintains constant oversight to protect the brand from counterfeiting and imitation, in order to safeguard our product and farmers’ trust.",
-      "p8": "<bold>Shahbandar</bold>’s production engineers provide full guidance to companies and farmers to ensure greater and better productivity, including the establishment of demonstration fields for farmers.",
-      "p9": "As for the Marketing and Sales Department, <bold>Shahbandar</bold> has invested in a strong marketing and sales team to conduct thorough scientific market studies, develop plans for product improvement, introduce new products into Egypt’s crop cultivation map, and support major traders in reaching farmers across Egypt through well-planned, practical, and field-implemented strategies."
-    }
+      "p1": "<bold>Shahbandar</bold> Company has been a leading force in Egyptian agriculture since its establishment in 1995. Initially specializing in grain and crop production, our commitment to growth led us to expand into seed production in 2004.",
+      "p2": "Our unwavering dedication to innovation is embodied by our vital Research and Development Department. This team is the engine behind the <bold>Shahbandar</bold> brand, consistently developing superior agricultural solutions.",
+      "p4": "We pride ourselves on our exclusive portfolio of high-performing corn varieties, including 167 Single-Cross Hybrid Yellow and 353 Three- way Cross Hybrid Yellow. We also offer a range of other trusted corn seeds developed by the Ministry of Agriculture.",
+      "p5": "<bold>Shahbandar</bold> is a key producer of all high-quality wheat strains developed by the Ministry of Agriculture, offering over ten varieties renowned for their yield and reliability. Our strong market share reflects our commitment to providing Egyptian farmers with the best wheat seeds available. Our agricultural expertise extends to barley, alfalfa, fava beans, soybeans, rice, and other important crops.",
+      "p6": "Scientific research is paramount at <bold>Shahbandar</bold>. Our team of specialized researchers is dedicated to advancing corn production and other crops, ensuring practical benefits for Egyptian farmers and enhancing the global standing of Egyptian agricultural products. We are also excited about our new varieties currently under registration. Uniquely in Egypt, <bold>Shahbandar</bold> invests in superior seed storage with our own silos and a dedicated refrigeration facility in Aswan, guaranteeing the quality and longevity of our seeds.",
+      "p7": "Our commitment to the local market is evident in our presence across all Egyptian governorates, supported by a strong network of agents and trusted partnerships with major agricultural companies who rely on <bold>Shahbandar</bold> for their seed needs. Internationally, the <bold>Shahbandar</bold> brand is recognized in over eight African nations, a testament to our quality and reliability.",
+      "p8": "We are dedicated to protecting our brand and the trust of our farmers through a robust administrative system that actively combats commercial fraud and counterfeiting. Our production engineers provide invaluable technical support to companies and farmers, including establishing demonstration fields to showcase best practices.",
+      "p9": "Our dynamic marketing and sales department utilizes in-depth market analysis to strategically develop our product line, introduce new innovations, and empower our traders to effectively reach farmers throughout Egypt with practical, science-backed strategies."
+    },
+    "gallery": "Gallery"
   },
 
   "ErrorPage": {
