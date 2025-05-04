@@ -1,7 +1,6 @@
 "use client";
 import { ProductObject } from "@/types";
 import { motion } from "framer-motion";
-import { Sprout } from "lucide-react";
 import Image from "next/image";
 
 type Props = {
