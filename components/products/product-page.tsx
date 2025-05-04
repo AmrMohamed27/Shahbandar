@@ -2,6 +2,7 @@
 import { ProductObject } from "@/types";
 import { motion } from "framer-motion";
 import { Sprout } from "lucide-react";
+import Image from "next/image";
 
 type Props = {
   product: ProductObject;
@@ -25,8 +26,14 @@ const ProductPageTemplate = ({ product }: Props) => {
       >
         <ul className="flex flex-col gap-2">
           {sentences.map((s, i) => (
-            <li key={i} className="flex flex-row gap-2">
-              <Sprout className="mt-2 text-primary-green shrink-0" size={16} />
+            <li key={i} className="flex flex-row gap-0">
+              <Image
+                src={"/assets/images/leaves.png"}
+                alt={"roots"}
+                width={500}
+                height={500}
+                className="w-12 h-12 shrink-0"
+              />
               <span
                 dangerouslySetInnerHTML={{ __html: s + "." + "<br />" }}
               ></span>

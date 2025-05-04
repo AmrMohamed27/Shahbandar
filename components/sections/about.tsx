@@ -2,7 +2,6 @@ import { Link } from "@/i18n/navigation";
 import { cn, renderBoldHtml, renderGreenHtml } from "@/lib/utils";
 import {
   BadgeCheck,
-  CheckCheck,
   FlaskConical,
   Globe,
   Leaf,
@@ -11,7 +10,7 @@ import {
   Tractor,
   TrendingUp,
   UserRoundPlus,
-  UsersRound,
+  UsersRound
 } from "lucide-react";
 import { useLocale, useMessages, useTranslations } from "next-intl";
 import Image from "next/image";
@@ -43,7 +42,7 @@ const AboutSection = () => {
     { icon: <Plane key={3} size={24} className="text-primary-green" /> },
     { icon: <UsersRound key={4} size={24} className="text-primary-green" /> },
   ];
-  const logoSublist = messages.HomePage.About.Vision.sublist;
+  const logoSublist = messages.HomePage.About.logo.sublist;
   const locale = useLocale();
   const dir = getLangDir(locale);
   return (
@@ -148,7 +147,7 @@ const AboutSection = () => {
         </ul>
       </div>
 
-      {/* Our Vision */}
+      {/* Our Logo */}
       <div className="flex flex-col justify-center items-center gap-4 text-center">
         <h2
           className={cn(
@@ -156,7 +155,7 @@ const AboutSection = () => {
             locale === "ar" ? "" : ""
           )}
           dangerouslySetInnerHTML={{
-            __html: renderGreenHtml(t.raw("About.Vision.title")),
+            __html: renderGreenHtml(t.raw("About.logo.title")),
           }}
         ></h2>
         <div className="flex xl:flex-row flex-col items-center gap-4" dir="ltr">
@@ -169,14 +168,17 @@ const AboutSection = () => {
           <div className="flex flex-col gap-2 text-start" dir={dir}>
             {Object.keys(logoSublist).map((key) => (
               <div key={key} className="flex flex-row gap-2">
-                <CheckCheck
-                  className="mt-1 text-primary-green shrink-0"
-                  size={16}
+                <Image
+                  src="/assets/images/leaves.png"
+                  alt={t.raw(`About.logo.title`)}
+                  width={500}
+                  height={500}
+                  className="mt-1 w-12 h-12 shrink-0"
                 />
                 <span
                   dangerouslySetInnerHTML={{
                     __html: renderBoldHtml(
-                      t.raw(`About.Vision.sublist.${key}` as KeyType)
+                      t.raw(`About.logo.sublist.${key}` as KeyType)
                     ),
                   }}
                 ></span>

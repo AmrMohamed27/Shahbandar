@@ -18,7 +18,7 @@ const HeroImageTemplate = ({ title, description, imageSrc }: Props) => {
       >
         <h1
           className={cn(
-            "text-center font-bold  text-2xl md:text-3xl lg:text-7xl "
+            "text-center font-bold  text-2xl md:text-3xl lg:text-7xl text-white"
           )}
           dangerouslySetInnerHTML={{
             __html: title,
