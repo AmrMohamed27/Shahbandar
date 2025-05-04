@@ -1,20 +1,15 @@
+import Footer from "@/components/footer";
+import Loader from "@/components/loader";
 import Header from "@/components/navbar/header";
+import { Toaster } from "@/components/ui/sonner";
 import { routing } from "@/i18n/routing";
+import { cn } from "@/lib/utils";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
-import { Zain } from "next/font/google";
+import { notFound } from "next/navigation";
+import { Suspense } from "react";
 import { getLangDir } from "rtl-detect";
 import { ThemeProvider } from "../providers/theme-provider";
-import { notFound } from "next/navigation";
-import Footer from "@/components/footer";
-import { Suspense } from "react";
-import Loader from "@/components/loader";
-import { Toaster } from "@/components/ui/sonner";
-
-const zain = Zain({
-  variable: "--font-zain",
-  subsets: ["latin", "arabic"],
-  weight: ["200", "300", "400", "700", "800", "900"],
-});
+import { latin_secondary_font, arabic_font, header_font } from "@/lib/fonts";
 
 export default async function LocaleLayout({
   children,
@@ -30,7 +25,15 @@ export default async function LocaleLayout({
   const direction = getLangDir(locale);
   return (
     <html lang={locale} dir={direction} suppressHydrationWarning>
-      <body className={`${zain.className} antialiased`}>
+      <body
+        className={cn(
+          "antialiased",
+          header_font.variable,
+          direction === "rtl"
+            ? arabic_font.className
+            : latin_secondary_font.className
+        )}
+      >
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
@@ -39,7 +42,7 @@ export default async function LocaleLayout({
         >
           <NextIntlClientProvider>
             <Header />
-            <main className="min-h-screen">
+            <main>
               <Suspense fallback={<Loader />}>
                 {children}
                 <Toaster />

@@ -1,4 +1,5 @@
 import { Locale } from "@/i18n/config";
+import { Playfair_Display_SC } from "next/font/google";
 
 export const languages: { id: Locale; name: string }[] = [
   {
@@ -14,3 +15,10 @@ export const languages: { id: Locale; name: string }[] = [
     name: "عربي",
   },
 ];
+
+export const playfairFont = Playfair_Display_SC({
+  weight: "700",
+  variable: "--font-playfair",
+  subsets: ["latin"],
+});
+

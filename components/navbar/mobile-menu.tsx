@@ -20,7 +20,7 @@ import { getLangDir } from "rtl-detect";
 const MobileMenu = () => {
   const { NavLinks } = useMessages();
   const t = useTranslations("NavLinks");
-  type keyType = Parameters<typeof t>[0];
+  type KeyType = Parameters<typeof t>[0];
   const [open, setOpen] = useState(false);
 
   const toggleOpen = () => {
@@ -33,7 +33,7 @@ const MobileMenu = () => {
   return (
     <Sheet open={open} onOpenChange={toggleOpen}>
       <SheetTrigger asChild>
-        <Button variant={"outline"} size={"icon"}>
+        <Button variant={"green"} size={"icon"}>
           <MenuIcon />
         </Button>
       </SheetTrigger>
@@ -43,7 +43,7 @@ const MobileMenu = () => {
             <div className="max-w-[80px]">
               <Link href="/" className="">
                 <Image
-                  src={"/assets/images/original-logo-green.png"}
+                  src={"/assets/images/logo.png"}
                   alt="logo"
                   width={100}
                   height={100}
@@ -63,21 +63,21 @@ const MobileMenu = () => {
                 onClick={() => setOpen(false)}
               >
                 {key === "departments" ? (
-                  <DepartmentsCollapsible label={t(key as keyType)} />
+                  <DepartmentsCollapsible label={t(key as KeyType)} />
                 ) : key === "clients" ? (
                   <ClientsCollapsible
-                    label={t(key as keyType)}
+                    label={t(key as KeyType)}
                     link={`${key}`}
                   />
                 ) : key === "products" ? (
-                  <ProductsCollapsible label={t(key as keyType)} />
+                  <ProductsCollapsible label={t(key as KeyType)} />
                 ) : key === "about" ? (
                   <Link className="w-full" href={`/${key}`}>
-                    {t(key as keyType)}
+                    {t(key as KeyType)}
                   </Link>
                 ) : (
                   <Link className="w-full" href={`/#${key}`}>
-                    {t(key as keyType)}
+                    {t(key as KeyType)}
                   </Link>
                 )}
               </li>

@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import Marquee from "react-fast-marquee";
+import { motion } from "framer-motion";
 
 const MarqueeComponent = () => {
   const logos = [
@@ -15,7 +16,12 @@ const MarqueeComponent = () => {
     { src: "/assets/images/company-logo-6.png", alt: "El-Wadi Feed Company" },
   ];
   return (
-    <div dir="ltr">
+    <motion.div
+      initial={{ y: -100, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.5, ease: "easeInOut" }}
+      dir="ltr"
+    >
       <Marquee
         className="before:top-0 after:top-0 after:right-0 before:left-0 before:z-10 after:z-10 before:absolute after:absolute before:bg-gradient-to-r after:bg-gradient-to-l before:from-background after:from-background before:to-transparent after:to-transparent mx-auto before:w-10 after:w-10 max-w-[1200px] before:h-full after:h-full before:content-[''] after:content-[''] container"
         autoFill
@@ -32,7 +38,7 @@ const MarqueeComponent = () => {
           />
         ))}
       </Marquee>
-    </div>
+    </motion.div>
   );
 };
 

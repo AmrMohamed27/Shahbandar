@@ -15,23 +15,23 @@ type Props = {
 const ClientsHoverCard = ({ label, link }: Props) => {
   const t = useTranslations("HomePage.Clients");
   const messages = useMessages();
-  type keyType = Parameters<typeof t>[0];
+  type KeyType = Parameters<typeof t>[0];
   const clientsObject = messages.HomePage.Clients.list;
   const clients = Object.keys(clientsObject).map((key) => ({
-    id: t(`list.${key}.id` as keyType),
-    title: t(`list.${key}.title` as keyType),
+    id: t(`list.${key}.id` as KeyType),
+    title: t(`list.${key}.title` as KeyType),
   }));
   return (
     <HoverCard>
       <HoverCardTrigger className="cursor-pointer" asChild>
         <Link
-          href={`/#${link}`}
+          href={`${link}`}
           className="group flex flex-row items-center gap-2"
         >
           <span>{label}</span>
           <ChevronDown
-            size={10}
-            className="group-data-[state=open]:rotate-180 transition duration-200"
+            size={24}
+            className="group-data-[state=open]:rotate-180 transition duration-200 shrink-0"
           />
         </Link>
       </HoverCardTrigger>

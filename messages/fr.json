@@ -1,12 +1,12 @@
 {
   "HomePage": {
     "Hero": {
-      "title": "L'avenir <green>pousse</green> dans le sol",
-      "subtitle": "Des fermes de la vallée du Nil aux projets de réhabilitation du désert, nos semences alimentent l'avenir de l'agriculture durable."
+      "title": "Nous sommes le Shahbandar du marché des semences",
+      "description": "Des fermes de la vallée du Nil aux projets de réhabilitation du désert, nos semences alimentent l'avenir de l'agriculture durable."
     },
     "About": {
       "title": "À propos <green>de Nous</green>",
-      "description": "<bold>Shahbandar</bold> est une entreprise égyptienne de premier plan dans la production de semences et de cultures, forte de décennies d’expertise et d’innovation agricole. Depuis 1995, nous accompagnons les agriculteurs en Égypte et en Afrique avec des variétés à haut rendement et une recherche fiable.",
+      "description": "<bold>Shahbandar</bold> est une entreprise égyptienne de premier plan dans la production de semences et de cultures, forte de décennies d’expertise et d’innovation agricole. Depuis 1995, nous accompagnons les agriculteurs en Égypte et en Afrique avec des variétés à haut rendement et une recherche fiable. Notre vision est de devenir un leader incontesté dans le secteur des semences en Égypte, au sein du monde arabe et en Afrique. Notre ambition repose sur un engagement constant envers le progrès et l'innovation scientifique, afin d'offrir des semences d'une qualité supérieure garantissant une productivité optimale.",
       "Goals": {
         "title": "Nos <green>Objectifs</green>",
         "list": {
@@ -53,8 +53,15 @@
         }
       },
       "Vision": {
-        "title": "Notre <green>Vision</green>",
-        "text": "Devenir un leader incontesté dans le secteur des semences en Égypte, au sein du monde arabe et en Afrique. Notre ambition repose sur un engagement constant envers le progrès et l'innovation scientifique, afin d'offrir des semences d'une qualité supérieure garantissant une productivité optimale."
+        "title": "Notre <green>Logo</green>",
+        "sublist": {
+          "1": "Le logo d'<bold>Shahbandar</bold> Seed Production Company communique clairement son activité principale et ses valeurs entrepreneuriales. ",
+          "2": "Une plante verte et florissante, dont la feuille supérieure baignée de lumière solaire, symbolise la croissance, la vitalité et la qualité de ses semences, éléments essentiels pour une agriculture pérenne. ",
+          "3": "Les racines entrelacées représentent l'assise solide de l'entreprise, son lien intrinsèque avec la terre et sa détermination à construire des relations clients durables et fructueuses. ",
+          "4": "Le cercle qui l'entoure illustre l'unité, le cycle de vie agricole et son engagement envers des pratiques respectueuses de l'environnement. La palette de couleurs renforce ce message: les nuances de vert évoquent la nature et la prospérité, tandis que le brun des racines rappelle l'importance des ressources naturelles. ",
+          "5": "Ce design distinctif et facile à mémoriser reflète l'objectif d'<bold>Shahbandar</bold> de se développer à l'échelle mondiale, de servir efficacement ses clients et de tisser des liens solides et durables, tout en promouvant une production agricole de haute qualité et durable. ",
+          "6": "Son esthétique moderne et simple assure sa pertinence sur les marchés internationaux."
+        }
       },
       "Button": "En savoir plus"
     },
@@ -65,69 +72,70 @@
           "id": "production",
           "title": "Production",
           "image": "/assets/images/production.jpg",
-          "href": "/departments/production",
+          "href": "/departments#production",
           "text": "Notre département de Production est responsable de la culture rigoureuse de nos semences de base, réalisée au sein de notre centre de recherche de Farafra et sur des parcelles partenaires sélectionnées à travers le pays. Notre priorité est d'assurer la sécurité et la conformité de chaque lot de semences aux normes de plantation les plus strictes. Cette mission est confiée à une équipe d'ingénieurs semenciers parmi les plus compétents d'Égypte, forts d'une expérience significative au sein d'entreprises internationales."
         },
         "2": {
           "id": "rnd",
           "title": "Recherche et Développement",
           "image": "/assets/images/rnd.jpeg",
-          "href": "/departments/rnd",
+          "href": "/departments#rnd",
           "text": "Véritable moteur de notre innovation, le département Recherche et Développement conduit des tests continus sur nos semences, garantissant leur conformité aux standards internationaux. Il est également le fer de lance du développement de nouvelles variétés exclusives destinées aux marchés nationaux et internationaux. Notre équipe R&D est composée d'éminents chercheurs agronomiques égyptiens, titulaires de doctorats et possédant une expertise pratique approfondie."
         },
         "3": {
           "id": "sales",
           "title": "Marketing et Commercialisation ",
           "image": "/assets/images/sales.jpeg",
-          "href": "/departments/sales",
+          "href": "/departments#sales",
           "text": " Ce département stratégique ne se limite pas à la vente. Il assure une veille constante et une analyse approfondie des données de vente, du comportement des consommateurs agricoles et des tendances du marché mondial. Cette démarche permet d'adapter notre offre actuelle et future aux exigences des marchés. Notre équipe commerciale est constituée d'ingénieurs commerciaux hautement qualifiés, bénéficiant d'une solide expérience du marché local, d'une expertise technique agricole pointue et d'une maîtrise des stratégies de marketing et de vente."
         },
         "4": {
           "id": "silos",
           "title": "Logistique et Stockage ",
           "image": "/assets/images/silos.jpeg",
-          "href": "/departments/silos",
+          "href": "/departments#silos",
           "text": "Shahbandar se distingue par son infrastructure logistique avancée, notamment ses silos dédiés au stockage des céréales et des semences, d'une capacité maximale de 3 000 tonnes. Ces installations garantissent une conservation optimale tout au long de l'année, optimisant notre processus de production. Nous disposons également de plusieurs entrepôts agréés par le Ministère de l'Agriculture, stratégiquement situés pour une distribution efficace à l'échelle nationale et pour faciliter les opérations d'exportation conformément aux normes internationales."
         },
         "5": {
           "id": "fridges",
           "title": "Préservation par Réfrigération ",
           "image": "/assets/images/fridge.jpg",
-          "href": "/departments/refrigeration",
+          "href": "/departments#refrigeration",
           "text": "Afin de préserver l'intégrité et le potentiel de rendement élevé de nos semences, en particulier dans les conditions climatiques chaudes, nous exploitons des installations de réfrigération importantes au sein de notre centre principal d'Assouan."
         },
         "6": {
-          "id": "admin",
+          "id": "administration",
           "title": "Support Administratif ",
-          "image": "/assets/images/admin.jpeg",
-          "href": "/departments/administration",
+          "image": "/assets/images/administration.jpeg",
+          "href": "/departments#administration",
           "text": "Notre département des Affaires Administratives assure la gestion fluide des transactions de nos clients, facilitant l'accès logistique à nos produits dans le respect de notre engagement envers l'orientation client. Il comprend les services de comptabilité, des ressources humaines, de transport et de secrétariat."
         }
       }
     },
     "Products": {
       "title": "Nos <green>Produits</green>",
+      "button": "En savoir plus",
       "list": {
         "1": {
           "title": "Semences de Cultures Estivales",
           "text": "En tant que producteur majeur de semences de cultures d'été, <bold>Shahbandar</bold> Seeds Company offre une sélection Premium comprenant: Maïs - Pilier de notre offre estivale, notre gamme de semences de maïs se distingue par ses variétés exclusives à haut potentiel de rendement. Nous proposons notamment l'hybride simple jaune 167 (anciennement une variété phare du Ministère de l'Agriculture, désormais exclusive à <bold>Shahbandar</bold>), l'hybride triple jaune 353 (également exclusif) et notre hybride simple 130. Notre catalogue inclut également des variétés reconnues du Ministère de l'Agriculture telles que les 168, 368 et 321, ainsi que de nouvelles générations d'hybrides simples et triples, fruit des efforts de notre département de recherche dédié au maïs. D'autres produits incluent Riz, Soja, et Sésame. ",
-          "href": "/products/summer",
+          "href": "/products#summer",
           "id": "summer",
-          "image": "/assets/images/summer.jpg"
+          "video": "/assets/videos/summer.mp4"
         },
         "2": {
           "title": "Semences de Cultures Hivernales ",
           "text": "Notre sélection de semences de cultures hivernales est vaste, avec un accent particulier sur les variétés de blé qui ont fait la renommée de l'Égypte. Nous proposons un large éventail de variétés à haut rendement développées par le Ministère de l'Agriculture, parmi lesquelles Misr 1, Misr 3, Misr 4, Sakha 95 et 96, Giza 171, Beni Suef 5, Seds 12, Seds 14 et Gemmayza 11. Soucieux de l'avenir de l'agriculture, notre département Recherche et Développement travaille activement à la création d'une variété de blé unique, spécifiquement adaptée aux conditions climatiques de l'Égypte et de l'Afrique. Cette initiative stratégique vise à positionner <bold>Shahbandar</bold> comme un acteur clé dans la production de blé égyptien à haut potentiel de rendement et de résistance aux maladies sur les marchés internationaux.Notre offre de semences hivernales comprend également : Orge, Luzerne, Féverole, Pois, et Autres cultures adaptées aux conditions hivernales",
-          "href": "/products/winter",
+          "href": "/products#winter",
           "id": "winter",
-          "image": "/assets/images/winter.jpeg"
+          "video": "/assets/videos/winter.mp4"
         },
         "3": {
           "title": "Semences Potagères",
           "text": "<bold>Shahbandar</bold> propose une gamme diversifiée de semences potagères rigoureusement sélectionnées pour leur performance optimale sous le climat égyptien. Ces semences sont facilement accessibles aux agriculteurs à travers notre réseau de distribution étendu en Égypte, ainsi que via nos succursales et partenaires de distribution dans les pays arabes et africains.",
-          "href": "/products/seeds",
+          "href": "/products#seeds",
           "id": "seeds",
-          "image": "/assets/images/seeds.jpg"
+          "video": "/assets/videos/seeds.mp4"
         }
       }
     },
@@ -248,23 +256,23 @@
   "NavDepartments": {
     "1": {
       "label": "Production",
-      "href": "/departments/production"
+      "href": "/departments#production"
     },
     "2": {
       "label": "Recherche et Développement",
-      "href": "/departments/rnd"
+      "href": "/departments#rnd"
     },
     "3": {
       "label": "Marketing et Commercialisation",
-      "href": "/departments/sales"
+      "href": "/departments#sales"
     },
     "4": {
       "label": "Logistique et Stockage",
-      "href": "/departments/silos"
+      "href": "/departments#silos"
     },
     "5": {
       "label": "Support Administratif",
-      "href": "/departments/administration"
+      "href": "/departments#administration"
     }
   },
   "Dark": {
@@ -282,6 +290,7 @@
   },
   "AboutPage": {
     "h1": "À propos <green>de Nous</green>",
+    "image": "/assets/images/about.jpeg",
     "brief": {
       "p1": "Fondée en 1995, la société <bold>Shahbandar</bold> s'est établie comme un acteur majeur du secteur agricole égyptien. Initialement spécialisée dans la production de céréales et de cultures, notre engagement envers l'innovation et la croissance nous a naturellement conduits à intégrer la production de semences à partir de 2004.",
       "p2": "Notre département Recherche et Développement constitue le pilier de notre démarche d'amélioration continue. Cette équipe dédiée est le moteur de la qualité et de la performance associées à la marque <bold>Shahbandar</bold>, développant des solutions agricoles de pointe.",
@@ -295,7 +304,35 @@
     "gallery": "Galerie"
   },
   "Footer": {
-    "footerText": "© 2025 Shahbandar Inc. Tous droits réservés."
+    "footerText": "© 2025 Shahbandar Seeds Company. Tous droits réservés.",
+    "companyName": "Shahbandar Seed Company",
+    "slogan": "Nous sommes le Shahbandar du marché des semences.",
+    "links": {
+      "label": "Liens importants",
+      "list": {
+        "home": {
+          "label": "Accueil",
+          "href": "/"
+        },
+        "about": {
+          "label": "À propos",
+          "href": "/about"
+        },
+        "clients": {
+          "label": "Nos clients",
+          "href": "/clients"
+        }
+      }
+    },
+    "contact": {
+      "label": "Nous contacter",
+      "list": {
+        "Address": "Alghunaima, Route du Désert Occidental, Idfou - Assouan, République arabe d’Égypte",
+        "Email": "info@shahbandar.biz",
+        "Phone": "+201126957895",
+        "Phone2": "+201155995467"
+      }
+    }
   },
   "ErrorPage": {
     "notFound": "Erreur 404 - Page non trouvée",

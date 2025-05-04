@@ -16,6 +16,6 @@ export const renderGreenHtml = (htmlString: string) => {
 export const renderBoldHtml = (htmlString: string) => {
   return htmlString.replace(
     /<bold>(.*?)<\/bold>/g,
-    '<span class="font-bold text-lg">$1</span>'
+    '<span class="font-bold  text-primary-green font-sans">$1</span>'
   );
 };

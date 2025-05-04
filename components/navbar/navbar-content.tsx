@@ -1,45 +1,58 @@
-import { Link } from "@/i18n/navigation";
+import { Link, usePathname } from "@/i18n/navigation";
 import { useMessages, useTranslations } from "next-intl";
 import Image from "next/image";
 import ClientsHoverCard from "../clients/clients-hover-card";
 import DepartmentsHoverCard from "../departments/departments-hover-card";
+import ProductHoverCard from "../products/product-hover-card";
 import ChangeLanguage from "./change-language";
 import { DarkModeToggle } from "./dark-mode-toggle";
 import MobileMenu from "./mobile-menu";
-import ProductHoverCard from "../products/product-hover-card";
+import { cn } from "@/lib/utils";
 
 const NavbarContent = () => {
   const { NavLinks } = useMessages();
   const t = useTranslations("NavLinks");
-  type keyType = Parameters<typeof t>[0];
+  type KeyType = Parameters<typeof t>[0];
+  const pathname = usePathname();
 
   return (
-    <div className="flex flex-row justify-between items-center mx-auto px-2 sm:px-4 md:px-8 lg:px-8 py-4 container">
+    <div
+      className={`flex flex-row justify-between items-center mx-auto px-2 sm:px-4 md:px-8 lg:px-8 py-4 container font-bold  `}
+    >
       {/* Logo */}
       <Link href="/">
         <Image
-          src={"/assets/images/original-logo-green.png"}
+          src={"/assets/images/logo.png"}
           alt="logo"
           width={100}
           height={100}
-          className="w-10 h-auto"
+          className="w-16 h-auto"
         />
       </Link>
 
       {/* Desktop Nav Links */}
-      <ul className="hidden lg:flex flex-row items-center gap-6 text-lg">
+      <ul className="hidden xl:flex flex-row items-center gap-8 text-xl">
         {Object.keys(NavLinks).map((key) => (
-          <li key={key}>
+          <li
+            key={key}
+            className={cn(
+              pathname.includes(key)
+                ? "text-primary-green"
+                : pathname === "/" && key === "home"
+                  ? "text-primary-green"
+                  : ""
+            )}
+          >
             {key === "departments" ? (
-              <DepartmentsHoverCard label={t(key as keyType)} id={`/#${key}`} />
+              <DepartmentsHoverCard label={t(key as KeyType)} id={`/${key}`} />
             ) : key === "clients" ? (
-              <ClientsHoverCard label={t(key as keyType)} link={`${key}`} />
+              <ClientsHoverCard label={t(key as KeyType)} link={`/${key}`} />
             ) : key === "products" ? (
-              <ProductHoverCard label={t(key as keyType)} id={`/#${key}`} />
+              <ProductHoverCard label={t(key as KeyType)} id={`/${key}`} />
             ) : key === "about" ? (
-              <Link href={`/${key}`}>{t(key as keyType)}</Link>
+              <Link href={`/${key}`}>{t(key as KeyType)}</Link>
             ) : (
-              <Link href={`/#${key}`}>{t(key as keyType)}</Link>
+              <Link href={`/#${key}`}>{t(key as KeyType)}</Link>
             )}
           </li>
         ))}
@@ -50,7 +63,7 @@ const NavbarContent = () => {
         <DarkModeToggle />
         <ChangeLanguage />
         {/* Mobile Menu */}
-        <div className="lg:hidden">
+        <div className="xl:hidden">
           <MobileMenu />
         </div>
       </div>

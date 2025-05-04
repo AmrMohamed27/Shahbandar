@@ -2,43 +2,20 @@
 import { ProductObject } from "@/types";
 import { motion } from "framer-motion";
 import { Sprout } from "lucide-react";
-import Image from "next/image";
 
 type Props = {
   product: ProductObject;
 };
 
-const ProductPage = ({ product }: Props) => {
+const ProductPageTemplate = ({ product }: Props) => {
   // Destructure department object
-  const { text, image, title } = product;
+  const { text } = product;
   const sentences = text
     .split(".")
     .map((s) => s.trim())
     .filter(Boolean);
   return (
-    <div className="flex flex-col gap-10">
-      {/* Image */}
-      <div className="relative flex justify-center items-center h-96">
-        {/* Title */}
-        <motion.div
-          className="z-20 mt-0 px-2 sm:px-4 md:px-8 pt-0 border-0"
-          initial={{ y: -100, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.5, ease: "easeInOut" }}
-          id="home"
-        >
-          <h1 className="font-bold text-2xl md:text-3xl lg:text-7xl">
-            {title}
-          </h1>
-        </motion.div>
-        <Image
-          src={image}
-          alt={title}
-          width={1000}
-          height={100}
-          className="top-0 left-0 absolute opacity-90 dark:opacity-50 w-full h-full object-cover"
-        />
-      </div>
+    <div className="flex flex-col gap-8 py-2">
       {/* Text */}
       <motion.div
         className="mt-0 px-2 sm:px-4 md:px-8 pt-0 border-0"
@@ -49,7 +26,7 @@ const ProductPage = ({ product }: Props) => {
         <ul className="flex flex-col gap-2">
           {sentences.map((s, i) => (
             <li key={i} className="flex flex-row gap-2">
-              <Sprout className="mt-1 text-primary-green shrink-0" size={16} />
+              <Sprout className="mt-2 text-primary-green shrink-0" size={16} />
               <span
                 dangerouslySetInnerHTML={{ __html: s + "." + "<br />" }}
               ></span>
@@ -61,4 +38,4 @@ const ProductPage = ({ product }: Props) => {
   );
 };
 
-export default ProductPage;
+export default ProductPageTemplate;

@@ -22,13 +22,13 @@ interface Props {
 
 const DepartmentsCollapsible = ({ label }: Props) => {
   const t = useTranslations("NavDepartments");
-  type keyType = Parameters<typeof t>[0];
+  type KeyType = Parameters<typeof t>[0];
   const messages = useMessages().NavDepartments;
   const departments = Object.keys(messages).map((key) => ({
-    label: t(`${key}.label` as keyType),
-    href: t(`${key}.href` as keyType),
+    label: t(`${key}.label` as KeyType),
+    href: t(`${key}.href` as KeyType),
   }));
-  const icons = [
+  const departmentIcons = [
     {
       icon: (
         <Wheat key={0} size={16} className="mt-1 text-primary-green shrink-0" />
@@ -93,8 +93,8 @@ const DepartmentsCollapsible = ({ label }: Props) => {
         <div className="group flex flex-row justify-between items-center gap-2">
           <span>{label}</span>
           <ChevronDown
-            size={10}
-            className="group-data-[state=open]:rotate-180 transition duration-200"
+            size={24}
+            className="group-data-[state=open]:rotate-180 transition duration-200 shrink-0"
           />
         </div>
       </CollapsibleTrigger>
@@ -103,7 +103,7 @@ const DepartmentsCollapsible = ({ label }: Props) => {
           {departments.map(({ label, href }, index) => (
             <li key={index}>
               <Link href={href} className="flex flex-row gap-2 hover:underline">
-                {icons[index].icon}
+                {departmentIcons[index].icon}
                 <span>{label}</span>
               </Link>
             </li>

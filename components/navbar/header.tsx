@@ -23,12 +23,12 @@ const Header = () => {
   }, [scrolledPast]);
 
   return (
-    <div className="h-16">
+    <>
       <AnimatePresence>
         {/* When scrolledPast is true, show this fixed header */}
         {scrolledPast && (
           <motion.div
-            className="top-0 right-0 left-0 z-50 fixed bg-background backdrop-blur-2xl border-b-2"
+            className="top-0 right-0 left-0 z-50 fixed bg-background backdrop-blur-2xl border-b-2 h-24"
             initial={{ y: -100, opacity: 0 }}
             animate={{ y: 0, opacity: 0.9 }}
             exit={{ y: -100, opacity: 0 }}
@@ -44,13 +44,13 @@ const Header = () => {
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.7, ease: "easeInOut" }}
         className={cn(
-          "absolute top-0 left-0 right-0 z-40",
+          "absolute top-0 left-0 right-0 z-40 h-24 text-white  ",
           scrolledPast ? "opacity-0 pointer-events-none" : "opacity-100"
         )}
       >
         <NavbarContent />
       </motion.div>
-    </div>
+    </>
   );
 };
 

@@ -1,6 +1,6 @@
 import { useMessages, useTranslations } from "next-intl";
 import { notFound } from "next/navigation";
-import ProductPage from "./product-page";
+import ProductPageTemplate from "./product-page";
 import { renderBoldHtml } from "@/lib/utils";
 
 type Props = {
@@ -9,23 +9,23 @@ type Props = {
 
 const ProductFetcher = ({ id }: Props) => {
   const t = useTranslations("HomePage.Products.list");
-  type keyType = Parameters<typeof t>[0];
+  type KeyType = Parameters<typeof t>[0];
   const messages = useMessages();
   const product = Object.keys(messages.HomePage.Products.list)
     .map((key) => {
       return {
-        text: renderBoldHtml(t.raw(`${key}.text` as keyType)),
-        image: t(`${key}.image` as keyType),
-        title: t(`${key}.title` as keyType),
-        href: t(`${key}.href` as keyType),
-        id: t(`${key}.id` as keyType),
+        text: renderBoldHtml(t.raw(`${key}.text` as KeyType)),
+        video: t(`${key}.video` as KeyType),
+        title: t(`${key}.title` as KeyType),
+        href: t(`${key}.href` as KeyType),
+        id: t(`${key}.id` as KeyType),
       };
     })
     .find((dep) => dep.id === id);
   if (!product) {
     notFound();
   }
-  return <ProductPage product={product} />;
+  return <ProductPageTemplate product={product} />;
 };
 
 export default ProductFetcher;

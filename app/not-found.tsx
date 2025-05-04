@@ -1,10 +1,9 @@
+import Footer from "@/components/footer";
+import Header from "@/components/navbar/header";
 import { NextIntlClientProvider, useLocale, useTranslations } from "next-intl";
-import React from "react";
+import { Zain } from "next/font/google";
 import { getLangDir } from "rtl-detect";
 import { ThemeProvider } from "./providers/theme-provider";
-import Header from "@/components/navbar/header";
-import Footer from "@/components/footer";
-import { Zain } from "next/font/google";
 const zain = Zain({
   variable: "--font-zain",
   subsets: ["latin", "arabic"],
@@ -28,7 +27,7 @@ const NotFound = () => {
             <Header />
             <main className="min-h-screen">
               <div className="flex flex-col justify-center items-center mx-auto mt-20 container">
-                <h1 className="font-bold text-xl md:text-2xl lg:text-4xl">
+                <h1 className={`font-bold text-xl md:text-2xl lg:text-4xl `}>
                   {t("notFound")}
                 </h1>
                 <p className="text-lg md:text-xl lg:text-2xl">

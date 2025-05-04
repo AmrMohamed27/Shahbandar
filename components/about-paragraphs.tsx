@@ -7,16 +7,16 @@ const AboutParagraphs = () => {
   const messages = useMessages();
   const paragraphsObject = messages.AboutPage.brief;
   const t = useTranslations("AboutPage.brief");
-  type keyType = Parameters<typeof t>[0];
+  type KeyType = Parameters<typeof t>[0];
   const paragraphs = Object.keys(paragraphsObject).map((key) =>
-    t.raw(key as keyType)
+    t.raw(key as KeyType)
   );
   return (
     <div className="flex flex-col gap-2">
       {paragraphs.map((text, index) => (
         <Fragment key={index}>
           <div className="flex flex-row items-start gap-2">
-            <Check className="mt-1 text-primary-green shrink-0" size={16} />
+            <Check className="mt-2 text-primary-green shrink-0" size={16} />
             <span
               dangerouslySetInnerHTML={{ __html: renderBoldHtml(text) }}
             ></span>

@@ -14,11 +14,11 @@ interface Props {
 
 const ProductHoverCard = ({ label, id }: Props) => {
   const t = useTranslations("HomePage.Products.list");
-  type keyType = Parameters<typeof t>[0];
+  type KeyType = Parameters<typeof t>[0];
   const messages = useMessages().HomePage.Products.list;
   const products = Object.keys(messages).map((key) => ({
-    title: t(`${key}.title` as keyType),
-    href: t(`${key}.href` as keyType),
+    title: t(`${key}.title` as KeyType),
+    href: t(`${key}.href` as KeyType),
   }));
   const icons = [
     {
@@ -34,8 +34,8 @@ const ProductHoverCard = ({ label, id }: Props) => {
         <Link href={id} className="group flex flex-row items-center gap-2">
           <span>{label}</span>
           <ChevronDown
-            size={10}
-            className="group-data-[state=open]:rotate-180 transition duration-200"
+            size={24}
+            className="group-data-[state=open]:rotate-180 transition duration-200 shrink-0"
           />
         </Link>
       </HoverCardTrigger>

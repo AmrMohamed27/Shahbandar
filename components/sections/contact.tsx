@@ -11,7 +11,8 @@ const ContactSection = () => {
   return (
     <AnimatedSection
       id="contact"
-      className="flex flex-col justify-center items-center gap-10 mx-auto px-2 container"
+      firstChild
+      className="flex flex-col justify-center items-center gap-8 mx-auto px-2 container"
     >
       <h2
         className="font-bold md:text-3xl lg:text-5xl"

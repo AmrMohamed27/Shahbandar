@@ -15,11 +15,11 @@ type Props = {
 const ProductsCollapsible = ({ label }: Props) => {
   const t = useTranslations("HomePage.Products.list");
   const messages = useMessages();
-  type keyType = Parameters<typeof t>[0];
+  type KeyType = Parameters<typeof t>[0];
   const productsObject = messages.HomePage.Products.list;
   const products = Object.keys(productsObject).map((key) => ({
-    title: t(`${key}.title` as keyType),
-    href: t(`${key}.href` as keyType),
+    title: t(`${key}.title` as KeyType),
+    href: t(`${key}.href` as KeyType),
   }));
   const icons = [
     {
@@ -39,8 +39,8 @@ const ProductsCollapsible = ({ label }: Props) => {
         >
           <span>{label}</span>
           <ChevronDown
-            size={10}
-            className="group-data-[state=open]:rotate-180 transition duration-200"
+            size={24}
+            className="group-data-[state=open]:rotate-180 transition duration-200 shrink-0"
           />
         </div>
       </CollapsibleTrigger>

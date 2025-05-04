@@ -10,6 +10,16 @@ export interface ProductObject {
   id: string;
   title: string;
   text: string;
-  image: string;
+  video: string;
   href: string;
 }
+
+export type Department =
+  | "production"
+  | "rnd"
+  | "sales"
+  | "silos"
+  | "fridges"
+  | "administration";
+
+export type Product = "summer" | "winter" | "seeds";

@@ -12,15 +12,15 @@ import { Separator } from "../ui/separator";
 
 export function DepartmentsList() {
   const t = useTranslations("HomePage.Departments.list");
-  type keyType = Parameters<typeof t>[0];
+  type KeyType = Parameters<typeof t>[0];
   const messages = useMessages();
   const departments = Object.keys(messages.HomePage.Departments.list).map(
     (key) => {
       return {
-        text: t(`${key}.text` as keyType),
-        image: t(`${key}.image` as keyType),
-        title: t(`${key}.title` as keyType),
-        href: t(`${key}.href` as keyType),
+        text: t(`${key}.text` as KeyType),
+        image: t(`${key}.image` as KeyType),
+        title: t(`${key}.title` as KeyType),
+        href: t(`${key}.href` as KeyType),
       };
     }
   );
@@ -37,7 +37,7 @@ export function DepartmentsList() {
     { icon: <UserRoundPen key={5} size={24} className="text-primary-green" /> },
   ];
   return (
-    <div className="flex flex-row flex-wrap justify-center gap-4">
+    <div className="flex flex-row flex-wrap justify-start gap-4">
       {departments.map(({ title, href }, index) => (
         <div key={index} className="flex flex-row gap-4">
           <Link

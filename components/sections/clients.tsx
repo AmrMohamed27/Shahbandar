@@ -1,18 +1,17 @@
-import React from "react";
-import AnimatedSection from "./animated-section";
+import { Link } from "@/i18n/navigation";
 import { renderBoldHtml, renderGreenHtml } from "@/lib/utils";
 import { useTranslations } from "next-intl";
 import MarqueeComponent from "../marquee";
 import { Button } from "../ui/button";
-import { Link } from "@/i18n/navigation";
+import AnimatedSection from "./animated-section";
 
 const ClientsSection = () => {
   const t = useTranslations("HomePage.Clients");
   return (
-    <div className="flex flex-col justify-center items-center gap-10 mx-auto container">
+    <div className="flex flex-col justify-center items-center gap-8 mx-auto container">
       <AnimatedSection
         id="clients"
-        className="flex flex-col justify-center items-center gap-10 mx-auto px-2"
+        className="flex flex-col justify-center items-center gap-8 mx-auto mt-0 px-2 pt-4 border-0"
       >
         <h2
           className="font-bold text-xl md:text-3xl lg:text-5xl"

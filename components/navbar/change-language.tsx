@@ -25,12 +25,14 @@ const ChangeLanguage = () => {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button className="flex items-center gap-2" variant={"outline"}>
-          <span>{currentLocale}</span>
-          <ChevronDown size={10} />
+        <Button className="flex items-center gap-2" variant={"green"}>
+          <span>
+            {languages.find((lang) => lang.id === currentLocale)?.name}
+          </span>
+          <ChevronDown size={24} className="shrink-0" />
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent>
+      <DropdownMenuContent className="bg-primary-green text-background">
         <DropdownMenuRadioGroup
           value={currentLocale}
           onValueChange={handleChangeLang}
