@@ -2,9 +2,14 @@ import { Link } from "@/i18n/navigation";
 import { Mail, MapPin, Phone } from "lucide-react";
 import { useMessages, useTranslations } from "next-intl";
 import Image from "next/image";
+import {
+  FaFacebook as FacebookIcon,
+  FaYoutube as YoutubeIcon,
+} from "react-icons/fa";
 
 const Footer = () => {
   const t = useTranslations("Footer");
+  const tSocial = useTranslations("HomePage.Contact.socialMedia");
   type KeyType = Parameters<typeof t>[0];
   const messages = useMessages();
   const links = messages.Footer.links.list;
@@ -81,6 +86,30 @@ const Footer = () => {
                 <span>{t(`contact.list.${key}` as KeyType)}</span>
               </li>
             ))}
+            <li className="flex flex-row gap-4">
+              <Link
+                href={tSocial("facebook.link")}
+                className="flex flex-row gap-2 hover:underline"
+              >
+                <FacebookIcon
+                  size={20}
+                  className="mt-1 text-primary-green shrink-0"
+                />
+                <span>{tSocial("facebook.label")}</span>
+              </Link>
+            </li>
+            <li>
+              <Link
+                href={tSocial("youtube.link")}
+                className="flex flex-row gap-2 hover:underline"
+              >
+                <YoutubeIcon
+                  size={20}
+                  className="mt-1 text-primary-green shrink-0"
+                />
+                <span>{tSocial("youtube.label")}</span>
+              </Link>
+            </li>
           </ul>
         </div>
       </div>

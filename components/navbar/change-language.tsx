@@ -32,7 +32,7 @@ const ChangeLanguage = () => {
           <ChevronDown size={24} className="shrink-0" />
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent className="bg-primary-green text-background">
+      <DropdownMenuContent className="bg-primary-green dark:bg-primary-green-400 text-white">
         <DropdownMenuRadioGroup
           value={currentLocale}
           onValueChange={handleChangeLang}

@@ -83,10 +83,10 @@
   /* Primary Green */
   --primary-green: oklch(0.79 0.1834 118.04);
   --primary-green-300: oklch(0.53 0.1371 150.07);
-  --primary-green-400: oklch(0.63 0.1699 149.21);
+  --primary-green-400: oklch(0.57 0.1392 141.33);
   --primary-green-600: oklch(0.87 0.1363 154.45);
   /* Secondary Brown */
-  --secondary-brown: oklch(0.95 0.1243 101.54);
+  --secondary-brown: oklch(0.48 0.1034 61.91);
 }
 
 @theme inline {
@@ -174,7 +174,7 @@
 
   h1,
   h2 {
-    @apply font-sans text-secondary-brown dark:text-white;
+    @apply font-sans text-secondary-brown;
   }
 
   .common-padding {

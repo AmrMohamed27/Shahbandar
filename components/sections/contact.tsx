@@ -2,7 +2,10 @@ import { Link } from "@/i18n/navigation";
 import { renderGreenHtml } from "@/lib/utils";
 import { Mail, Notebook, Phone } from "lucide-react";
 import { useTranslations } from "next-intl";
-import Image from "next/image";
+import {
+  FaFacebook as FacebookIcon,
+  FaYoutube as YoutubeIcon,
+} from "react-icons/fa";
 import ContactForm from "../contact-form";
 import AnimatedSection from "./animated-section";
 
@@ -66,31 +69,27 @@ const ContactSection = () => {
             </div>
             <span>{t("Address.value")}</span>
           </div>
-          {/* Social Media */}
-          <div className="flex flex-row items-start gap-4">
-            <div className="flex flex-row items-center gap-2">
-              <Image
-                src={"/assets/icons/facebook-dark.svg"}
-                alt="facebook"
-                width={16}
-                height={16}
-                className="not-dark:hidden"
-              />
-              <Image
-                src={"/assets/icons/facebook-light.svg"}
-                alt="facebook"
-                width={16}
-                height={16}
-                className="dark:hidden"
-              />
-              <Link
-                className="hover:underline"
-                href={t("socialMedia.link")}
-                target="_blank"
-              >
-                {t("socialMedia.label")}
-              </Link>
-            </div>
+          {/* Facebook */}
+          <div className="flex flex-row items-center gap-2">
+            <FacebookIcon size={16} className="shrink-0" />
+            <Link
+              className="hover:underline"
+              href={t("socialMedia.facebook.link")}
+              target="_blank"
+            >
+              {t("socialMedia.facebook.label")}
+            </Link>
+          </div>
+          {/* Youtube */}
+          <div className="flex flex-row items-center gap-2">
+            <YoutubeIcon size={16} className="shrink-0" />
+            <Link
+              className="hover:underline"
+              href={t("socialMedia.youtube.link")}
+              target="_blank"
+            >
+              {t("socialMedia.youtube.label")}
+            </Link>
           </div>
         </div>
       </div>

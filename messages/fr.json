@@ -121,21 +121,21 @@
           "text": "En tant que producteur majeur de semences de cultures d'été, <bold>Shahbandar</bold> Seeds Company offre une sélection Premium comprenant: Maïs - Pilier de notre offre estivale, notre gamme de semences de maïs se distingue par ses variétés exclusives à haut potentiel de rendement. Nous proposons notamment l'hybride simple jaune 167 (anciennement une variété phare du Ministère de l'Agriculture, désormais exclusive à <bold>Shahbandar</bold>), l'hybride triple jaune 353 (également exclusif) et notre hybride simple 130. Notre catalogue inclut également des variétés reconnues du Ministère de l'Agriculture telles que les 168, 368 et 321, ainsi que de nouvelles générations d'hybrides simples et triples, fruit des efforts de notre département de recherche dédié au maïs. D'autres produits incluent Riz, Soja, et Sésame. ",
           "href": "/products#summer",
           "id": "summer",
-          "video": "/assets/videos/summer.mp4"
+          "image": "/assets/images/summer.jpg"
         },
         "2": {
           "title": "Semences de Cultures Hivernales ",
           "text": "Notre sélection de semences de cultures hivernales est vaste, avec un accent particulier sur les variétés de blé qui ont fait la renommée de l'Égypte. Nous proposons un large éventail de variétés à haut rendement développées par le Ministère de l'Agriculture, parmi lesquelles Misr 1, Misr 3, Misr 4, Sakha 95 et 96, Giza 171, Beni Suef 5, Seds 12, Seds 14 et Gemmayza 11. Soucieux de l'avenir de l'agriculture, notre département Recherche et Développement travaille activement à la création d'une variété de blé unique, spécifiquement adaptée aux conditions climatiques de l'Égypte et de l'Afrique. Cette initiative stratégique vise à positionner <bold>Shahbandar</bold> comme un acteur clé dans la production de blé égyptien à haut potentiel de rendement et de résistance aux maladies sur les marchés internationaux.Notre offre de semences hivernales comprend également : Orge, Luzerne, Féverole, Pois, et Autres cultures adaptées aux conditions hivernales",
           "href": "/products#winter",
           "id": "winter",
-          "video": "/assets/videos/winter.mp4"
+          "image": "/assets/images/winter.png"
         },
         "3": {
           "title": "Semences Potagères",
           "text": "<bold>Shahbandar</bold> propose une gamme diversifiée de semences potagères rigoureusement sélectionnées pour leur performance optimale sous le climat égyptien. Ces semences sont facilement accessibles aux agriculteurs à travers notre réseau de distribution étendu en Égypte, ainsi que via nos succursales et partenaires de distribution dans les pays arabes et africains.",
           "href": "/products#seeds",
           "id": "seeds",
-          "video": "/assets/videos/seeds.mp4"
+          "image": "/assets/images/seeds.png"
         }
       }
     },
@@ -240,8 +240,14 @@
       },
       "Submit": "Soumettre",
       "socialMedia": {
-        "label": "Suivez-nous sur Facebook",
-        "link": "https://www.facebook.com/profile.php?id=100087597900802"
+        "facebook": {
+          "label": "Suivez-nous sur Facebook",
+          "link": "https://www.facebook.com/profile.php?id=100087597900802"
+        },
+        "youtube": {
+          "label": "Abonnez-vous à notre chaîne YouTube",
+          "link": "https://www.youtube.com/@SHAHBANDARSEED"
+        }
       }
     }
   },

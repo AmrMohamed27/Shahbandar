@@ -122,21 +122,21 @@
           "text": "<bold>Shahbandar</bold> Seeds Company is a leading producer of summer crop seeds, featuring premium varieties of corn, as our corn seed production is a cornerstone of our summer offerings. We proudly feature proprietary varieties, including the high-performing 167 Single-Cross Hybrid Yellow (formerly a key Ministry of Agriculture variety, now exclusively ours), the robust triple hybrid 353 (also exclusive), and our distinct 130 Single-Cross Hybrid. Additionally, we offer trusted Ministry of Agriculture corn varieties such as 168, 368, and 321, alongside promising new single and triple hybrids currently under development by our dedicated Corn Research Department. We also produce premium varieties of rice, soybeans, and sesame.",
           "href": "/products#summer",
           "id": "summer",
-          "video": "/assets/videos/summer.mp4"
+          "image": "/assets/images/summer.jpg"
         },
         "2": {
           "title": "Winter Seeds",
           "text": "<bold>Shahbandar</bold> Seeds provides a wide selection of winter crop seeds, with a strong emphasis on Egypt's renowned wheat varieties. Our portfolio includes many of the Ministry of Agriculture's high-yielding and well-established options, such as Misr 1, Misr 3, Misr 4, Sakha 95 and 96, Giza 171, Beni Suef 5, Seds 12, Seds 14, and Gemmayza 11, among others. Looking ahead, our Research and Development department is actively developing a unique wheat variety specifically adapted to Egyptian and African climates. This initiative aims to position <bold>Shahbandar</bold> as a global leader in providing highly productive and disease-resistant Egyptian wheat. Our winter seed offerings also include: barley, alfalfa, fava beans, peas and other winter-suitable crops.",
           "href": "/products#winter",
           "id": "winter",
-          "video": "/assets/videos/winter.mp4"
+          "image": "/assets/images/winter.png"
         },
         "3": {
           "title": "Seeds",
           "text": "<bold>Shahbandar</bold> provides a diverse selection of vegetable seeds specifically chosen for optimal performance in Egyptian climates. These seeds are readily available through our extensive distribution network across Egypt, as well as through <bold>Shahbandar</bold> branches and distribution partners in Arab and African countries.",
           "href": "/products#seeds",
           "id": "seeds",
-          "video": "/assets/videos/seeds.mp4"
+          "image": "/assets/images/seeds.png"
         }
       }
     },
@@ -241,8 +241,14 @@
       },
       "Submit": "Submit",
       "socialMedia": {
-        "label": "Follow us on Facebook",
-        "link": "https://www.facebook.com/profile.php?id=100087597900802"
+        "facebook": {
+          "label": "Follow us on Facebook",
+          "link": "https://www.facebook.com/profile.php?id=100087597900802"
+        },
+        "youtube": {
+          "label": "Subscribe to our YouTube channel",
+          "link": "https://www.youtube.com/@SHAHBANDARSEED"
+        }
       }
     }
   },

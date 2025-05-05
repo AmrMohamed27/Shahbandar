@@ -10,19 +10,21 @@ import {
   Tractor,
   TrendingUp,
   UserRoundPlus,
-  UsersRound
+  UsersRound,
 } from "lucide-react";
 import { useLocale, useMessages, useTranslations } from "next-intl";
 import Image from "next/image";
 import { getLangDir } from "rtl-detect";
 import { Button } from "../ui/button";
 import AnimatedSection from "./animated-section";
+import { Feature } from "../ui/feature";
 
 const AboutSection = () => {
   const t = useTranslations("HomePage");
   type KeyType = Parameters<typeof t>[0];
   const messages = useMessages();
-  const goals = messages.HomePage.About.Goals.list;
+  const goalsObject = messages.HomePage.About.Goals.list;
+
   const goalsIcons = [
     { icon: <Sprout key={0} size={32} /> },
     { icon: <Globe key={1} size={32} /> },
@@ -30,6 +32,10 @@ const AboutSection = () => {
     { icon: <TrendingUp key={3} size={32} /> },
     { icon: <Tractor key={4} size={32} /> },
   ];
+  const goals = Object.keys(goalsObject).map((key) => ({
+    text: t(`About.Goals.list.${key}.text` as KeyType),
+    icon: goalsIcons[parseInt(key) - 1].icon,
+  }));
   const values = messages.HomePage.About.Values.list;
   const valuesIcons = [
     {
@@ -95,18 +101,11 @@ const AboutSection = () => {
             __html: renderGreenHtml(t.raw("About.Goals.title")),
           }}
         />
-        <ul className="flex flex-row flex-wrap justify-between gap-x-4 gap-y-4">
-          {Object.keys(goals).map((key) => (
-            <li
-              key={key}
-              className="flex flex-col flex-1 items-center gap-4 bg-primary-green dark:bg-primary-green-300 px-8 py-16 rounded-md text-white text-center basis-full md:basis-1/3 xl:basis-1/6"
-            >
-              {/* Icon */}
-              {goalsIcons[parseInt(key) - 1].icon}
-              {t(`About.Goals.list.${key}.text` as KeyType)}
-            </li>
+        <div className="z-10 relative max-md:gap-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 mx-auto py-4 max-w-7xl">
+          {goals.map((goal, index) => (
+            <Feature key={index} {...goal} index={index} />
           ))}
-        </ul>
+        </div>
       </div>
 
       {/* Our Values */}

@@ -54,12 +54,12 @@ const ProductPage = () => {
               {/* Title */}
               <div className="flex flex-row gap-2 mt-2">
                 {productIcons[index].icon}
-                <span className="font-semibold text-lg md:text-xl lg:text-2xl">
+                <span className="font-semibold text-secondary-brown text-lg md:text-xl lg:text-2xl">
                   {title}
                 </span>
                 <ChevronDown
                   size={24}
-                  className="mt-2 group-data-[state=open]:rotate-180 transition duration-200"
+                  className="mt-2 text-secondary-brown group-data-[state=open]:rotate-180 transition duration-200"
                 />
               </div>
             </CollapsibleTrigger>
